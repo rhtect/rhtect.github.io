@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="default">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-blog1" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/05/22/blog1/" class="article-date">
+  <time datetime="2019-05-22T02:36:44.000Z" itemprop="datePublished">2019-05-22</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/技术选型/">技术选型</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/05/22/blog1/">实时对讲方案</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>[toc] </p>
+<h1 id="实时对讲方案"><a href="#实时对讲方案" class="headerlink" title="实时对讲方案"></a>实时对讲方案</h1><table>
+<thead>
+<tr>
+<th style="text-align:center">开源方案</th>
+<th style="text-align:center">商业方案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">WebRTC</td>
+<td style="text-align:center">juphoon</td>
+</tr>
+<tr>
+<td style="text-align:center">voip</td>
+<td style="text-align:center">浩联时代</td>
+</tr>
+<tr>
+<td style="text-align:center">P2P</td>
+<td style="text-align:center">微喇</td>
+</tr>
+<tr>
+<td style="text-align:center">Linphone</td>
+<td style="text-align:center">ZEGO即构科技</td>
+</tr>
+</tbody>
+</table>
+<h3 id="1-开源方案"><a href="#1-开源方案" class="headerlink" title="1. 开源方案"></a>1. 开源方案</h3><table>
+<thead>
+<tr>
+<th style="text-align:center">方案</th>
+<th style="text-align:center">优点</th>
+<th style="text-align:center">缺点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Linphone</td>
+<td style="text-align:center">目前应用最广泛基于ilbc的编解码；ilbc的编解码压缩比率还是比较大的，大概在1/10至1/9之间。也就是说假如每秒20kb的语音数据，编码后就2kb/s，非常小，非常利于网络传输。</td>
+<td style="text-align:center">必须遵循GPL协议</td>
+</tr>
+<tr>
+<td style="text-align:center">WebRTC</td>
+<td style="text-align:center">框架成熟 稳定 方便扩展</td>
+<td style="text-align:center">Google 开源程序 国内有限制</td>
+</tr>
+<tr>
+<td style="text-align:center">voip</td>
+<td style="text-align:center">腾讯无线的VOIP杀手锏产品，实时音视频技术是源于早期的VoIP通信， mina框架，发现很适合做即时通信后台; SIP协议。Linphone 本质也属于这项技术</td>
+<td style="text-align:center">待查</td>
+</tr>
+<tr>
+<td style="text-align:center">P2P</td>
+<td style="text-align:center">专门为对等网络设计，技术较成熟</td>
+<td style="text-align:center">技术较老</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2-商业方案"><a href="#2-商业方案" class="headerlink" title="2. 商业方案"></a>2. 商业方案</h3><table>
+<thead>
+<tr>
+<th style="text-align:center">方案</th>
+<th style="text-align:center">官网</th>
+<th style="text-align:center">技术类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">ZEGO即构科技</td>
+<td style="text-align:center"><a href="https://www.zego.im" target="_blank" rel="noopener">https://www.zego.im</a></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">juphoon</td>
+<td style="text-align:center"><a href="http://www.juphoon.com" target="_blank" rel="noopener">http://www.juphoon.com</a></td>
+<td style="text-align:center">采用voip</td>
+</tr>
+<tr>
+<td style="text-align:center">浩联时代(北京)科技有限公司</td>
+<td style="text-align:center"><a href="https://www.weptt.com" target="_blank" rel="noopener">https://www.weptt.com</a></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">微喇</td>
+<td style="text-align:center"><a href="http://www.weila.hk" target="_blank" rel="noopener">http://www.weila.hk</a></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">浪涛数码</td>
+<td style="text-align:center"><a href="http://www.vnow.cn" target="_blank" rel="noopener">http://www.vnow.cn</a></td>
+</tr>
+</tbody>
+</table>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/05/22/blog1/" data-id="cjvyovzzh0000ymi88qupwy9d" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/辅助运输/">辅助运输</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/05/22/hello-world/" class="article-date">
+  <time datetime="2019-05-22T02:30:09.142Z" itemprop="datePublished">2019-05-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/05/22/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/05/22/hello-world/" data-id="cjvyovzzm0001ymi8qfb7do7w" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/技术选型/">技术选型</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/辅助运输/">辅助运输</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/辅助运输/" style="font-size: 10px;">辅助运输</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">May 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/05/22/blog1/">实时对讲方案</a>
+          </li>
+        
+          <li>
+            <a href="/2019/05/22/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
