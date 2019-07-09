@@ -94,22 +94,23 @@
 
 
 
-<meta name="description" content="服务端增加功能  派车时增加手机号功能 统计一下现有手机号数量派车时增加手机号已派车辆修改手机号    手机号管理后台（可以开放给执行车队） 不用与司机匹配手机号实现CRUD    地图车辆信息增加司机手机号 (丹平) 如果没有手机号则不用显示    增加威龙/塔通指派车辆姓氏序号筛选功能 每组10个按钮车辆增加序号筛选按钮，全部、其他和10个数一组，司机增加姓名筛选按钮，全部、其他和姓氏（数量从">
+<meta name="description" content="服务端增加功能  派车时增加手机号功能 统计一下现有手机号数量( 65个 )没有手机号不能提交派车没有绑定手机号的司机选中后显示手机号列表已经绑定手机号的司机选中后不显示手机号列表，点击头像后显示手机号列表可以临时更换手机号执行中更改司机的逻辑同派车逻辑，默认不显示手机号列表，点击头像后可以临时更换手机号    手机号管理后台（可以开放给执行车队） 不用与司机匹配手机号实现CRUD手机号唯一手机号">
 <meta name="keywords" content="辅助运输">
 <meta property="og:type" content="article">
 <meta property="og:title" content="辅助运输190707">
 <meta property="og:url" content="http://yoursite.com/2019/07/07/transportation190707/index.html">
 <meta property="og:site_name" content="瑞华科技">
-<meta property="og:description" content="服务端增加功能  派车时增加手机号功能 统计一下现有手机号数量派车时增加手机号已派车辆修改手机号    手机号管理后台（可以开放给执行车队） 不用与司机匹配手机号实现CRUD    地图车辆信息增加司机手机号 (丹平) 如果没有手机号则不用显示    增加威龙/塔通指派车辆姓氏序号筛选功能 每组10个按钮车辆增加序号筛选按钮，全部、其他和10个数一组，司机增加姓名筛选按钮，全部、其他和姓氏（数量从">
+<meta property="og:description" content="服务端增加功能  派车时增加手机号功能 统计一下现有手机号数量( 65个 )没有手机号不能提交派车没有绑定手机号的司机选中后显示手机号列表已经绑定手机号的司机选中后不显示手机号列表，点击头像后显示手机号列表可以临时更换手机号执行中更改司机的逻辑同派车逻辑，默认不显示手机号列表，点击头像后可以临时更换手机号    手机号管理后台（可以开放给执行车队） 不用与司机匹配手机号实现CRUD手机号唯一手机号">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/2019/07/07/transportation190707/liucheng.jpg">
 <meta property="og:image" content="http://yoursite.com/2019/07/07/transportation190707/filter.jpg">
 <meta property="og:image" content="http://yoursite.com/2019/07/07/transportation190707/QC.jpg">
 <meta property="og:image" content="http://yoursite.com/2019/07/07/transportation190707/QC.jpg">
-<meta property="og:updated_time" content="2019-07-09T09:08:24.683Z">
+<meta property="og:updated_time" content="2019-07-09T16:56:15.613Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="辅助运输190707">
-<meta name="twitter:description" content="服务端增加功能  派车时增加手机号功能 统计一下现有手机号数量派车时增加手机号已派车辆修改手机号    手机号管理后台（可以开放给执行车队） 不用与司机匹配手机号实现CRUD    地图车辆信息增加司机手机号 (丹平) 如果没有手机号则不用显示    增加威龙/塔通指派车辆姓氏序号筛选功能 每组10个按钮车辆增加序号筛选按钮，全部、其他和10个数一组，司机增加姓名筛选按钮，全部、其他和姓氏（数量从">
-<meta name="twitter:image" content="http://yoursite.com/2019/07/07/transportation190707/filter.jpg">
+<meta name="twitter:description" content="服务端增加功能  派车时增加手机号功能 统计一下现有手机号数量( 65个 )没有手机号不能提交派车没有绑定手机号的司机选中后显示手机号列表已经绑定手机号的司机选中后不显示手机号列表，点击头像后显示手机号列表可以临时更换手机号执行中更改司机的逻辑同派车逻辑，默认不显示手机号列表，点击头像后可以临时更换手机号    手机号管理后台（可以开放给执行车队） 不用与司机匹配手机号实现CRUD手机号唯一手机号">
+<meta name="twitter:image" content="http://yoursite.com/2019/07/07/transportation190707/liucheng.jpg">
 
 
 
@@ -368,11 +369,11 @@
       
         <h3 id="服务端"><a href="#服务端" class="headerlink" title="服务端"></a>服务端</h3><h4 id="增加功能"><a href="#增加功能" class="headerlink" title="增加功能"></a>增加功能</h4><ul>
 <li style="list-style: none"><input type="checkbox"> 派车时增加手机号功能<blockquote>
-<p>统计一下现有手机号数量<br>派车时增加手机号<br>已派车辆修改手机号</p>
+<p><del>统计一下现有手机号数量</del>( <font color="red"><strong>65个</strong></font> )<br>没有手机号不能提交派车<br>没有绑定手机号的司机选中后显示<code>手机号</code>列表<br>已经绑定手机号的司机选中后不显示<code>手机号</code>列表，点击头像后显示<code>手机号</code>列表可以<font color="red"><strong>临时更换</strong></font>手机号<br><code>执行中</code>更改司机的逻辑同<code>派车</code>逻辑，默认不显示<code>手机号</code>列表，点击头像后可以<font color="red"><strong>临时更换</strong></font>手机号<br><img src="liucheng.jpg" alt></p>
 </blockquote>
 </li>
 <li style="list-style: none"><input type="checkbox"> 手机号管理后台（可以开放给执行车队）<blockquote>
-<p>不用与司机匹配<br>手机号实现CRUD</p>
+<p>不用与司机匹配<br>手机号实现CRUD<br>手机号唯一<br>手机号修改后可以自动生效<br><code>使用中</code>的手机号不能删除</p>
 </blockquote>
 </li>
 <li style="list-style: none"><input type="checkbox"> 地图车辆信息增加司机手机号 (丹平)<blockquote>
