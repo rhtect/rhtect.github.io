@@ -61,6 +61,7 @@ category_map:
       计划任务: plan
       技术选型: technology
       文档: document
+      汇报: report
 tag_map:
       辅助运输: transportation
 
