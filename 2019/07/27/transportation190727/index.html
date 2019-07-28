@@ -94,19 +94,19 @@
 
 
 
-<meta name="description" content="BUG修改  威龙塔通账户不弹出车辆识别照片（丹平）  井下实时数据显示手机号     增加功能 [ ] 地图车辆信息增加司机手机号 (丹平)  如果没有手机号则不用显示   [ ] 增加车辆绑定状态  指派司机和车辆的时完成绑定增加系统完成 人工完成任务状态操作人工完成状态时，同时解绑车辆和司机，进入可以指派状态    客户端车载终端  地图包在线下载（左俊） 完整下载地图 增量下载地图 手动安">
+<meta name="description" content="BUG修改  威龙塔通账户不弹出车辆识别照片（丹平）  井下实时数据显示手机号     增加功能 [ ] 地图车辆信息增加司机手机号 (丹平)  如果没有手机号则不用显示   [ ] 增加车辆绑定状态  指派司机和车辆的时完成绑定增加系统完成 人工完成任务状态执行系统完成 时，只改变任务状态，不改变绑定状态再次指派任务时，人工完成上一个任务（保证执行中列表中每个有效实体只有一条记录）操作人工完成状">
 <meta name="keywords" content="辅助运输">
 <meta property="og:type" content="article">
 <meta property="og:title" content="辅助运输190729">
 <meta property="og:url" content="http://yoursite.com/2019/07/27/transportation190727/index.html">
 <meta property="og:site_name" content="瑞华科技">
-<meta property="og:description" content="BUG修改  威龙塔通账户不弹出车辆识别照片（丹平）  井下实时数据显示手机号     增加功能 [ ] 地图车辆信息增加司机手机号 (丹平)  如果没有手机号则不用显示   [ ] 增加车辆绑定状态  指派司机和车辆的时完成绑定增加系统完成 人工完成任务状态操作人工完成状态时，同时解绑车辆和司机，进入可以指派状态    客户端车载终端  地图包在线下载（左俊） 完整下载地图 增量下载地图 手动安">
+<meta property="og:description" content="BUG修改  威龙塔通账户不弹出车辆识别照片（丹平）  井下实时数据显示手机号     增加功能 [ ] 地图车辆信息增加司机手机号 (丹平)  如果没有手机号则不用显示   [ ] 增加车辆绑定状态  指派司机和车辆的时完成绑定增加系统完成 人工完成任务状态执行系统完成 时，只改变任务状态，不改变绑定状态再次指派任务时，人工完成上一个任务（保证执行中列表中每个有效实体只有一条记录）操作人工完成状">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2019/07/27/transportation190727/21563112424_.pic_hd.jpg">
-<meta property="og:updated_time" content="2019-07-27T15:03:45.272Z">
+<meta property="og:updated_time" content="2019-07-28T09:14:37.057Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="辅助运输190729">
-<meta name="twitter:description" content="BUG修改  威龙塔通账户不弹出车辆识别照片（丹平）  井下实时数据显示手机号     增加功能 [ ] 地图车辆信息增加司机手机号 (丹平)  如果没有手机号则不用显示   [ ] 增加车辆绑定状态  指派司机和车辆的时完成绑定增加系统完成 人工完成任务状态操作人工完成状态时，同时解绑车辆和司机，进入可以指派状态    客户端车载终端  地图包在线下载（左俊） 完整下载地图 增量下载地图 手动安">
+<meta name="twitter:description" content="BUG修改  威龙塔通账户不弹出车辆识别照片（丹平）  井下实时数据显示手机号     增加功能 [ ] 地图车辆信息增加司机手机号 (丹平)  如果没有手机号则不用显示   [ ] 增加车辆绑定状态  指派司机和车辆的时完成绑定增加系统完成 人工完成任务状态执行系统完成 时，只改变任务状态，不改变绑定状态再次指派任务时，人工完成上一个任务（保证执行中列表中每个有效实体只有一条记录）操作人工完成状">
 <meta name="twitter:image" content="http://yoursite.com/2019/07/27/transportation190727/21563112424_.pic_hd.jpg">
 
 
@@ -379,7 +379,13 @@
 </li>
 <li><p>[ ] 增加车辆绑定状态</p>
 <blockquote>
-<p>指派司机和车辆的时完成绑定<br>增加<code>系统完成</code> <code>人工完成</code>任务状态<br>操作<code>人工完成</code>状态时，同时解绑车辆和司机，进入可以指派状态</p>
+<p>指派司机和车辆的时完成绑定<br>增加<code>系统完成</code> <code>人工完成</code>任务状态<br>执行<code>系统完成</code> 时，只改变<code>任务状态</code>，不改变<code>绑定状态</code><br>再次<code>指派任务</code>时，<code>人工完成</code>上一个任务（保证<code>执行中</code>列表中每个<code>有效实体</code>只有一条记录）<br>操作<code>人工完成</code>状态时，同时解绑车辆和司机，进入可以指派状态<br><code>执行中</code>显示所有尚未<code>人工完成</code>的任务（<code>系统完成</code>的任务也显示在这里）</p>
+</blockquote>
+</li>
+</ul>
+<ul>
+<li style="list-style: none"><input type="checkbox"> 威龙塔通派车是记录手机号<blockquote>
+<p>每指派一次任务就记录一次手机号<br><code>生产车队</code> <code>威龙车队</code> <code>塔通车队</code> 记录手机记录次数，次数依次增加<br> 记录手机号对应的<code>司机姓名</code>，每个手机号仅保存一个司机姓名<br> 派车时先优先从<code>手机记录表</code>查询，然后是<code>出勤表</code>查询。</p>
 </blockquote>
 </li>
 </ul>
