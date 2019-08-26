@@ -94,18 +94,18 @@
 
 
 
-<meta name="description" content="设备清单12345笔记本电脑 *2 （显示屏分辨率1920*1080）车载终端 *1 （平板加底座）倒车影像摄像头 *14G智能机 *24G功能机 *2 演示功能 车辆人员定位地图展示   123展示车辆运行轨迹展示车辆人员信息通过搜索定位车辆位置  车辆派单流程展示   1234通过用车申请APP提交申请矿调度员审批申请生产车队调度员分配申请执行车队调度元指派司机和车辆  车载平板任务执行展示">
+<meta name="description" content="环境搭建启动服务 启动LocationDataCollector – 人员定位系统数据采集采集程序 物理成和设备通讯 启动RHDataEngineServiceLS.exe – 人员车辆定位程序（距离 和 位置） 启动HubRuntime – 辅助运输采集定位数据 启动AppConsole – 下发排版 防碰撞 视频通话 启动Internet Information Services (IIS)管">
 <meta name="keywords" content="辅助运输">
 <meta property="og:type" content="article">
 <meta property="og:title" content="辅助运输演示功能列表">
 <meta property="og:url" content="http://yoursite.com/2019/07/31/documentList/index.html">
 <meta property="og:site_name" content="瑞华科技">
-<meta property="og:description" content="设备清单12345笔记本电脑 *2 （显示屏分辨率1920*1080）车载终端 *1 （平板加底座）倒车影像摄像头 *14G智能机 *24G功能机 *2 演示功能 车辆人员定位地图展示   123展示车辆运行轨迹展示车辆人员信息通过搜索定位车辆位置  车辆派单流程展示   1234通过用车申请APP提交申请矿调度员审批申请生产车队调度员分配申请执行车队调度元指派司机和车辆  车载平板任务执行展示">
+<meta property="og:description" content="环境搭建启动服务 启动LocationDataCollector – 人员定位系统数据采集采集程序 物理成和设备通讯 启动RHDataEngineServiceLS.exe – 人员车辆定位程序（距离 和 位置） 启动HubRuntime – 辅助运输采集定位数据 启动AppConsole – 下发排版 防碰撞 视频通话 启动Internet Information Services (IIS)管">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-07-31T10:11:31.567Z">
+<meta property="og:updated_time" content="2019-08-26T08:57:11.447Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="辅助运输演示功能列表">
-<meta name="twitter:description" content="设备清单12345笔记本电脑 *2 （显示屏分辨率1920*1080）车载终端 *1 （平板加底座）倒车影像摄像头 *14G智能机 *24G功能机 *2 演示功能 车辆人员定位地图展示   123展示车辆运行轨迹展示车辆人员信息通过搜索定位车辆位置  车辆派单流程展示   1234通过用车申请APP提交申请矿调度员审批申请生产车队调度员分配申请执行车队调度元指派司机和车辆  车载平板任务执行展示">
+<meta name="twitter:description" content="环境搭建启动服务 启动LocationDataCollector – 人员定位系统数据采集采集程序 物理成和设备通讯 启动RHDataEngineServiceLS.exe – 人员车辆定位程序（距离 和 位置） 启动HubRuntime – 辅助运输采集定位数据 启动AppConsole – 下发排版 防碰撞 视频通话 启动Internet Information Services (IIS)管">
 
 
 
@@ -362,7 +362,26 @@
       
 
       
-        <h3 id="设备清单"><a href="#设备清单" class="headerlink" title="设备清单"></a>设备清单</h3><pre><code><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">笔记本电脑 *2 （显示屏分辨率1920*1080）</span><br><span class="line">车载终端 *1 （平板加底座）</span><br><span class="line">倒车影像摄像头 *1</span><br><span class="line">4G智能机 *2</span><br><span class="line">4G功能机 *2</span><br></pre></td></tr></table></figure>
+        <h3 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h3><h4 id="启动服务"><a href="#启动服务" class="headerlink" title="启动服务"></a>启动服务</h4><ul>
+<li>启动LocationDataCollector – 人员定位系统数据采集采集程序 物理成和设备通讯</li>
+<li>启动RHDataEngineServiceLS.exe – 人员车辆定位程序（距离 和 位置）</li>
+<li>启动HubRuntime – 辅助运输采集定位数据</li>
+<li>启动AppConsole – 下发排版 防碰撞 视频通话</li>
+<li>启动Internet Information Services (IIS)管理器 – 启动WEB服务</li>
+<li>启动Web8085 – 开网页8085端口</li>
+<li>启动Web8088 – 开网页8088端口</li>
+<li>启动Web9088 – 开网页9088端口</li>
+</ul>
+<h4 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h4><ol>
+<li>默认内网地址：<code>10.238.255.253</code></li>
+<li>车载平板的IP设置为固定IP：<code>10.238.255.1</code></li>
+<li>防碰撞预警功能端口号：<code>8085</code></li>
+<li>防碰撞消息转发端口号：<code>8083</code></li>
+<li>车载平板接口端口号：<code>8087</code></li>
+<li>视频通话端口号：<code>8085</code> <code>8088</code> <code>9088</code></li>
+<li>网页访问端口号：<code>8085</code> <code>8088</code> <code>9088</code></li>
+</ol>
+<h3 id="设备清单"><a href="#设备清单" class="headerlink" title="设备清单"></a>设备清单</h3><pre><code><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">笔记本电脑 *1 （服务端 CPU达到I5以上 内存达到8g以上 硬盘为SSD固态硬盘容量大于256GB）</span><br><span class="line">笔记本电脑 *1 （客户端 显示屏分辨率1920*1080）</span><br><span class="line">车载终端 *1</span><br><span class="line">人员定位卡 *n （至少1个）</span><br><span class="line">车辆定位卡 *n （至少2个）</span><br><span class="line">定位基站 *n （至少2个）</span><br><span class="line">路由器 *1</span><br><span class="line">无线AP *1</span><br></pre></td></tr></table></figure>
 </code></pre><h3 id="演示功能"><a href="#演示功能" class="headerlink" title="演示功能"></a>演示功能</h3><ul>
 <li><p>车辆人员定位地图展示</p>
   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">展示车辆运行轨迹</span><br><span class="line">展示车辆人员信息</span><br><span class="line">通过搜索定位车辆位置</span><br></pre></td></tr></table></figure>
@@ -559,7 +578,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#设备清单"><span class="nav-number">1.</span> <span class="nav-text">设备清单</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#演示功能"><span class="nav-number">2.</span> <span class="nav-text">演示功能</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#环境搭建"><span class="nav-number">1.</span> <span class="nav-text">环境搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#启动服务"><span class="nav-number">1.1.</span> <span class="nav-text">启动服务</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#注意事项"><span class="nav-number">1.2.</span> <span class="nav-text">注意事项</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设备清单"><span class="nav-number">2.</span> <span class="nav-text">设备清单</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#演示功能"><span class="nav-number">3.</span> <span class="nav-text">演示功能</span></a></li></ol></div>
             
 
           </div>
