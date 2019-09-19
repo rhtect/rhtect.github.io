@@ -94,18 +94,18 @@
 
 
 
-<meta name="description" content="辅助运输二期需求文档车载接单模块车载导航模块客户端 正确绘制车辆图标方向 导航路径弯道绘制  研究一下现有的寻路算法     服务端视频通话模块车载对讲模块 WEBRTC通话关闭视频  语音广播模块周边障碍物预警模块客户端 判断行驶方向 判断障碍物前后位置 障碍物距离去抖动：抖动范围：$Range \leq 30cm$服务端 筛选碰撞消息符合条件的消息   筛选障碍物类型  固定障碍物：红绿灯、路">
+<meta name="description" content="基础功能(预计完成时间10月12日)订单系统服务端 任务结束后修改订单状态（同自动结束任务） 查询终端合法状态 查询终端合法状态 车队派单后推送到平板 获取司机信息 绑定司机与车辆 行车导航数据 收车解除司机与车辆绑定客户端 查询终端合法状态 获取司机信息 绑定司机与车辆  如果之前有绑定的司机 自动替换    弹出实时订单 出车&amp;amp;拒绝 绘制行车导航路径 结束任务 已完成任务列表 已拒绝任">
 <meta name="keywords" content="辅助运输">
 <meta property="og:type" content="article">
 <meta property="og:title" content="辅助运输二期需求文档">
 <meta property="og:url" content="http://yoursite.com/2019/09/12/wendang201909012/index.html">
 <meta property="og:site_name" content="瑞华科技">
-<meta property="og:description" content="辅助运输二期需求文档车载接单模块车载导航模块客户端 正确绘制车辆图标方向 导航路径弯道绘制  研究一下现有的寻路算法     服务端视频通话模块车载对讲模块 WEBRTC通话关闭视频  语音广播模块周边障碍物预警模块客户端 判断行驶方向 判断障碍物前后位置 障碍物距离去抖动：抖动范围：$Range \leq 30cm$服务端 筛选碰撞消息符合条件的消息   筛选障碍物类型  固定障碍物：红绿灯、路">
+<meta property="og:description" content="基础功能(预计完成时间10月12日)订单系统服务端 任务结束后修改订单状态（同自动结束任务） 查询终端合法状态 查询终端合法状态 车队派单后推送到平板 获取司机信息 绑定司机与车辆 行车导航数据 收车解除司机与车辆绑定客户端 查询终端合法状态 获取司机信息 绑定司机与车辆  如果之前有绑定的司机 自动替换    弹出实时订单 出车&amp;amp;拒绝 绘制行车导航路径 结束任务 已完成任务列表 已拒绝任">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-09-12T05:41:59.096Z">
+<meta property="og:updated_time" content="2019-09-19T05:40:50.553Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="辅助运输二期需求文档">
-<meta name="twitter:description" content="辅助运输二期需求文档车载接单模块车载导航模块客户端 正确绘制车辆图标方向 导航路径弯道绘制  研究一下现有的寻路算法     服务端视频通话模块车载对讲模块 WEBRTC通话关闭视频  语音广播模块周边障碍物预警模块客户端 判断行驶方向 判断障碍物前后位置 障碍物距离去抖动：抖动范围：$Range \leq 30cm$服务端 筛选碰撞消息符合条件的消息   筛选障碍物类型  固定障碍物：红绿灯、路">
+<meta name="twitter:description" content="基础功能(预计完成时间10月12日)订单系统服务端 任务结束后修改订单状态（同自动结束任务） 查询终端合法状态 查询终端合法状态 车队派单后推送到平板 获取司机信息 绑定司机与车辆 行车导航数据 收车解除司机与车辆绑定客户端 查询终端合法状态 获取司机信息 绑定司机与车辆  如果之前有绑定的司机 自动替换    弹出实时订单 出车&amp;amp;拒绝 绘制行车导航路径 结束任务 已完成任务列表 已拒绝任">
 
 
 
@@ -362,22 +362,69 @@
       
 
       
-        <h2 id="辅助运输二期需求文档"><a href="#辅助运输二期需求文档" class="headerlink" title="辅助运输二期需求文档"></a>辅助运输二期需求文档</h2><h3 id="车载接单模块"><a href="#车载接单模块" class="headerlink" title="车载接单模块"></a>车载接单模块</h3><h3 id="车载导航模块"><a href="#车载导航模块" class="headerlink" title="车载导航模块"></a>车载导航模块</h3><h4 id="客户端"><a href="#客户端" class="headerlink" title="客户端"></a>客户端</h4><ul>
-<li>正确绘制车辆图标方向</li>
-<li>导航路径弯道绘制<blockquote>
+        <h2 id="基础功能-预计完成时间10月12日"><a href="#基础功能-预计完成时间10月12日" class="headerlink" title="基础功能(预计完成时间10月12日)"></a>基础功能(预计完成时间10月12日)</h2><h3 id="订单系统"><a href="#订单系统" class="headerlink" title="订单系统"></a>订单系统</h3><h4 id="服务端"><a href="#服务端" class="headerlink" title="服务端"></a>服务端</h4><ul>
+<li><font color="red">任务结束后修改订单状态（同自动结束任务）</font></li>
+<li><font color="red">查询终端合法状态</font></li>
+<li><font color="red">查询终端合法状态</font></li>
+<li>车队派单后推送到平板</li>
+<li>获取司机信息</li>
+<li>绑定司机与车辆</li>
+<li>行车导航数据</li>
+<li>收车解除司机与车辆绑定<h4 id="客户端"><a href="#客户端" class="headerlink" title="客户端"></a>客户端</h4></li>
+<li><font color="red">查询终端合法状态</font></li>
+<li><font color="red">获取司机信息</font></li>
+<li><font color="red">绑定司机与车辆</font><blockquote>
 <ul>
-<li>研究一下现有的寻路算法</li>
+<li>如果之前有绑定的司机 自动替换</li>
 </ul>
 </blockquote>
 </li>
+<li>弹出实时订单</li>
+<li>出车&amp;拒绝</li>
+<li>绘制行车导航路径</li>
+<li>结束任务</li>
+<li>已完成任务列表</li>
+<li>已拒绝任务列表</li>
+<li>未完成任务列表</li>
+<li>收车解除司机与车辆绑定<blockquote>
+<ul>
+<li>回到初始界面</li>
 </ul>
-<h4 id="服务端"><a href="#服务端" class="headerlink" title="服务端"></a>服务端</h4><h3 id="视频通话模块"><a href="#视频通话模块" class="headerlink" title="视频通话模块"></a>视频通话模块</h3><h3 id="车载对讲模块"><a href="#车载对讲模块" class="headerlink" title="车载对讲模块"></a>车载对讲模块</h3><ul>
-<li>WEBRTC通话关闭视频</li>
+</blockquote>
+<h3 id="视频通话"><a href="#视频通话" class="headerlink" title="视频通话"></a>视频通话</h3><h4 id="服务端-1"><a href="#服务端-1" class="headerlink" title="服务端"></a>服务端</h4></li>
+<li>调度到平板呼叫视频通话</li>
+<li>行车记录监控功能<h4 id="客户端-1"><a href="#客户端-1" class="headerlink" title="客户端"></a>客户端</h4></li>
+<li>调度到平板呼叫视频通话</li>
+<li>行车记录监控功能</li>
+<li>通过话筒通话</li>
+<li>通过底座的外放</li>
 </ul>
-<h3 id="语音广播模块"><a href="#语音广播模块" class="headerlink" title="语音广播模块"></a>语音广播模块</h3><h3 id="周边障碍物预警模块"><a href="#周边障碍物预警模块" class="headerlink" title="周边障碍物预警模块"></a>周边障碍物预警模块</h3><h4 id="客户端-1"><a href="#客户端-1" class="headerlink" title="客户端"></a>客户端</h4><ul>
+<h3 id="车载底座按键功能"><a href="#车载底座按键功能" class="headerlink" title="车载底座按键功能"></a>车载底座按键功能</h3><h4 id="客户端-2"><a href="#客户端-2" class="headerlink" title="客户端"></a>客户端</h4><ul>
+<li>出车 长按F1键10秒</li>
+<li>收车 长按F1键10秒</li>
+<li>进入菜单 双击F3键</li>
+<li>方向键</li>
+<li>确定取消键</li>
+</ul>
+<hr>
+<h2 id="扩展功能"><a href="#扩展功能" class="headerlink" title="扩展功能"></a>扩展功能</h2><h3 id="订单系统-1"><a href="#订单系统-1" class="headerlink" title="订单系统"></a>订单系统</h3><ul>
+<li>司机与车辆的匹配</li>
+</ul>
+<h3 id="视频通话-1"><a href="#视频通话-1" class="headerlink" title="视频通话"></a>视频通话</h3><ul>
+<li>语音对讲通话（关闭视频）</li>
+<li>平板到调度呼叫视频通话</li>
+<li>语音广播功能</li>
+</ul>
+<h3 id="其他功能"><a href="#其他功能" class="headerlink" title="其他功能"></a>其他功能</h3><ul>
+<li>领导终端APP</li>
+<li>司机终端APP</li>
+<li>数据分析统计报表</li>
+</ul>
+<hr>
+<h2 id="边缘功能"><a href="#边缘功能" class="headerlink" title="边缘功能"></a>边缘功能</h2><h3 id="周边障碍物预警模块"><a href="#周边障碍物预警模块" class="headerlink" title="周边障碍物预警模块"></a>周边障碍物预警模块</h3><h4 id="客户端-3"><a href="#客户端-3" class="headerlink" title="客户端"></a>客户端</h4><ul>
 <li>判断行驶方向</li>
 <li>判断障碍物前后位置</li>
-<li>障碍物距离去抖动：抖动范围：$Range \leq 30cm$<h4 id="服务端-1"><a href="#服务端-1" class="headerlink" title="服务端"></a>服务端</h4></li>
+<li>障碍物距离去抖动：抖动范围：$Range \leq 30cm$<h4 id="服务端-2"><a href="#服务端-2" class="headerlink" title="服务端"></a>服务端</h4></li>
 <li>筛选碰撞消息符合条件的消息 <blockquote>
 <ul>
 <li>筛选障碍物类型<blockquote>
@@ -576,7 +623,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#辅助运输二期需求文档"><span class="nav-number">1.</span> <span class="nav-text">辅助运输二期需求文档</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#车载接单模块"><span class="nav-number">1.1.</span> <span class="nav-text">车载接单模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#车载导航模块"><span class="nav-number">1.2.</span> <span class="nav-text">车载导航模块</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#客户端"><span class="nav-number">1.2.1.</span> <span class="nav-text">客户端</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#服务端"><span class="nav-number">1.2.2.</span> <span class="nav-text">服务端</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#视频通话模块"><span class="nav-number">1.3.</span> <span class="nav-text">视频通话模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#车载对讲模块"><span class="nav-number">1.4.</span> <span class="nav-text">车载对讲模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#语音广播模块"><span class="nav-number">1.5.</span> <span class="nav-text">语音广播模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#周边障碍物预警模块"><span class="nav-number">1.6.</span> <span class="nav-text">周边障碍物预警模块</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#客户端-1"><span class="nav-number">1.6.1.</span> <span class="nav-text">客户端</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#服务端-1"><span class="nav-number">1.6.2.</span> <span class="nav-text">服务端</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#基础功能-预计完成时间10月12日"><span class="nav-number">1.</span> <span class="nav-text">基础功能(预计完成时间10月12日)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#订单系统"><span class="nav-number">1.1.</span> <span class="nav-text">订单系统</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#服务端"><span class="nav-number">1.1.1.</span> <span class="nav-text">服务端</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#客户端"><span class="nav-number">1.1.2.</span> <span class="nav-text">客户端</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#视频通话"><span class="nav-number">1.2.</span> <span class="nav-text">视频通话</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#服务端-1"><span class="nav-number">1.2.1.</span> <span class="nav-text">服务端</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#客户端-1"><span class="nav-number">1.2.2.</span> <span class="nav-text">客户端</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#车载底座按键功能"><span class="nav-number">1.3.</span> <span class="nav-text">车载底座按键功能</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#客户端-2"><span class="nav-number">1.3.1.</span> <span class="nav-text">客户端</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#扩展功能"><span class="nav-number">2.</span> <span class="nav-text">扩展功能</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#订单系统-1"><span class="nav-number">2.1.</span> <span class="nav-text">订单系统</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#视频通话-1"><span class="nav-number">2.2.</span> <span class="nav-text">视频通话</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#其他功能"><span class="nav-number">2.3.</span> <span class="nav-text">其他功能</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#边缘功能"><span class="nav-number">3.</span> <span class="nav-text">边缘功能</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#周边障碍物预警模块"><span class="nav-number">3.1.</span> <span class="nav-text">周边障碍物预警模块</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#客户端-3"><span class="nav-number">3.1.1.</span> <span class="nav-text">客户端</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#服务端-2"><span class="nav-number">3.1.2.</span> <span class="nav-text">服务端</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
