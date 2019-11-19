@@ -40,4 +40,4 @@ sign示例：
 > * `APP version`:当前软件的版本号
 > * `OS version`：当前操作系统的版本号
 > * `Model`：当前手机型号
-> * `sign`：用户签名
+> * `sign`：用户签名 MD5加密
