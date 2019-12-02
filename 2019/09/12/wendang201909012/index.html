@@ -102,7 +102,7 @@
 <meta property="og:site_name" content="瑞华科技">
 <meta property="og:description" content="基础功能订单系统服务端  查询终端合法状态  绑定司机与车辆  车队派单后推送到平板   轮询方式（耗电）  维持心跳主动推送方式     行车导航数据  收车解除司机与车辆绑定  任务结束后修改订单状态（同自动结束任务）  客户端  查询终端合法状态  获取司机信息  绑定司机与车辆  如果之前有绑定的司机 自动替换     弹出实时订单   轮询方式（耗电）  维持心跳被动接收方式     出">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-10-21T12:24:04.492Z">
+<meta property="og:updated_time" content="2019-11-29T14:00:00.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="辅助运输二期需求文档">
 <meta name="twitter:description" content="基础功能订单系统服务端  查询终端合法状态  绑定司机与车辆  车队派单后推送到平板   轮询方式（耗电）  维持心跳主动推送方式     行车导航数据  收车解除司机与车辆绑定  任务结束后修改订单状态（同自动结束任务）  客户端  查询终端合法状态  获取司机信息  绑定司机与车辆  如果之前有绑定的司机 自动替换     弹出实时订单   轮询方式（耗电）  维持心跳被动接收方式     出">
@@ -413,9 +413,16 @@
 <h3 id="视频通话"><a href="#视频通话" class="headerlink" title="视频通话"></a>视频通话</h3><h4 id="服务端-1"><a href="#服务端-1" class="headerlink" title="服务端"></a>服务端</h4></li>
 <li style="list-style: none"><input type="checkbox" checked> 调度到平板呼叫视频通话</li>
 <li style="list-style: none"><input type="checkbox" checked> 平板到调度呼叫视频通话</li>
-<li style="list-style: none"><input type="checkbox" checked> 行车记录监控功能</li>
+<li style="list-style: none"><input type="checkbox" checked> 行车记录监控功能<blockquote>
+<ul>
+<li style="list-style: none"><input type="checkbox"> 本地整段存储</li>
+<li style="list-style: none"><input type="checkbox"> 本地分段存储</li>
+<li style="list-style: none"><input type="checkbox"> 云端存储</li>
+</ul>
+</blockquote>
+</li>
 <li style="list-style: none"><input type="checkbox"> 通信信号增加用户管理机制</li>
-<li style="list-style: none"><input type="checkbox"> 通信中占线功能<blockquote>
+<li style="list-style: none"><input type="checkbox" checked> 通信中占线功能<blockquote>
 <ul>
 <li style="list-style: none"><input type="checkbox" checked> 通信呼叫中返回<code>占线</code>状态</li>
 <li style="list-style: none"><input type="checkbox" checked> 通信过返回<code>占线</code>状态</li>
@@ -455,7 +462,7 @@
 </blockquote>
 </li>
 <li style="list-style: none"><input type="checkbox"> 通信信号增加用户管理机制</li>
-<li style="list-style: none"><input type="checkbox"> 通信中占线功能<blockquote>
+<li style="list-style: none"><input type="checkbox" checked> 通信中占线功能<blockquote>
 <ul>
 <li style="list-style: none"><input type="checkbox" checked> 通信呼叫中提示<code>忙线中</code></li>
 <li style="list-style: none"><input type="checkbox" checked> 通信过程中提示<code>忙线中</code></li>
@@ -465,7 +472,8 @@
 </li>
 </ul>
 <h3 id="车载底座按键功能"><a href="#车载底座按键功能" class="headerlink" title="车载底座按键功能"></a>车载底座按键功能</h3><h4 id="客户端-2"><a href="#客户端-2" class="headerlink" title="客户端"></a>客户端</h4><ul>
-<li style="list-style: none"><input type="checkbox" checked> 呼叫调度 双击F1键</li>
+<li style="list-style: none"><input type="checkbox" checked> 视频呼叫调度 双击F1键</li>
+<li style="list-style: none"><input type="checkbox"> 语音呼叫调度 双击F4键</li>
 <li style="list-style: none"><input type="checkbox" checked> 打开行车监控 双击F2键</li>
 <li style="list-style: none"><input type="checkbox" checked> 出车 长按F1键10秒</li>
 <li style="list-style: none"><input type="checkbox" checked> 收车 长按F1键10秒</li>
@@ -474,10 +482,11 @@
 <li style="list-style: none"><input type="checkbox" checked> 确定取消键</li>
 </ul>
 <h3 id="候车站功能-王垒"><a href="#候车站功能-王垒" class="headerlink" title="候车站功能 (王垒)"></a>候车站功能 (王垒)</h3><ul>
-<li style="list-style: none"><input type="checkbox"> 候车站硬件调试</li>
-<li style="list-style: none"><input type="checkbox"> 候车站地点筛选</li>
+<li style="list-style: none"><input type="checkbox" checked> 候车站硬件调试</li>
+<li style="list-style: none"><input type="checkbox" checked> 候车站地点筛选</li>
 <li style="list-style: none"><input type="checkbox" checked> 候车站人车筛选</li>
 <li style="list-style: none"><input type="checkbox" checked> 候车站路径绘制</li>
+<li style="list-style: none"><input type="checkbox"> 候车站安装调试</li>
 </ul>
 <h3 id="数据分析统计系统-（孙虎）"><a href="#数据分析统计系统-（孙虎）" class="headerlink" title="数据分析统计系统 （孙虎）"></a>数据分析统计系统 （孙虎）</h3><ul>
 <li style="list-style: none"><input type="checkbox"> 用车申请<blockquote>
@@ -510,13 +519,13 @@
 <li style="list-style: none"><input type="checkbox"> 司机工作量 （待调研）</li>
 </ul>
 <h3 id="用车申请APP（优化）"><a href="#用车申请APP（优化）" class="headerlink" title="用车申请APP（优化）"></a>用车申请APP（优化）</h3><ul>
-<li style="list-style: none"><input type="checkbox"> 通信接口增加用户身份验证</li>
-<li style="list-style: none"><input type="checkbox"> APP后台增加版本统计</li>
+<li style="list-style: none"><input type="checkbox" checked> 通信接口增加用户身份验证</li>
+<li style="list-style: none"><input type="checkbox" checked> APP后台增加版本统计</li>
 </ul>
 <h3 id="存在的问题"><a href="#存在的问题" class="headerlink" title="存在的问题"></a>存在的问题</h3><ul>
-<li style="list-style: none"><input type="checkbox"> 地面WIFI信号没有覆盖</li>
-<li style="list-style: none"><input type="checkbox"> 蓝牙与WIFI信号干扰</li>
-<li style="list-style: none"><input type="checkbox"> 蓝牙按键信号与语音信号冲突</li>
+<li style="list-style: none"><input type="checkbox" checked> 地面WIFI信号没有覆盖</li>
+<li style="list-style: none"><input type="checkbox" checked> 蓝牙与WIFI信号干扰</li>
+<li style="list-style: none"><input type="checkbox" checked> 蓝牙按键信号与语音信号冲突</li>
 </ul>
 <hr>
 <h2 id="扩展功能"><a href="#扩展功能" class="headerlink" title="扩展功能"></a>扩展功能</h2><h3 id="订单系统-1"><a href="#订单系统-1" class="headerlink" title="订单系统"></a>订单系统</h3><ul>
@@ -684,7 +693,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">53</span>
+                <span class="site-state-item-count">63</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
