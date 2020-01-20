@@ -14,6 +14,7 @@ tags: 辅助运输
 ```
 访问地址：http://10.238.255.175:9086/#
 浏览器设置： "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --unsafely-treat-insecure-origin-as-secure="http://10.238.255.175:9086" --user-data-dir="c:\temp"
+浏览器设置兼容性和管理员权限
 ```
 * 网页主动呼叫平板
 > ![](81579184381_.pic_hd.jpg)
@@ -45,6 +46,16 @@ tags: 辅助运输
 > ![](71579195337_.pic.jpg)
 * 执行&完成任务
 > ![](111579196231_.pic_hd.jpg)
+
+* 蓝牙操作步骤
+```
+    在系统里搜索&连接蓝牙：类似"CZXXXXXXXXX"
+    打开车载终端APP，点击蓝牙图标，再次连接终端设备
+```
+> ![](111579248651_.pic_hd.jpg)
+> * 视频呼叫调度`双击F1键`
+> * 音呼叫调度`双击F4键`
+> * 进入菜单`双击F3键`
 
 ### 版本维护
 
