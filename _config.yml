@@ -63,6 +63,7 @@ category_map:
       文档: document
       汇报: report
       软件更新: update
+      测试情况: test
 tag_map:
       辅助运输: transportation
 
