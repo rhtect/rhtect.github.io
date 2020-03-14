@@ -1,10 +1,10 @@
 ---
-title: 辅助运输20200221
+title: 辅助运输20200229
 date: 2020-02-28 17:46:04
 updated: 2020-02-28 17:46:04
 categories: 计划任务
 tags: 辅助运输
-password: ruihua
+password: ruihua123
 ---
 
 ### 服务端
@@ -20,6 +20,8 @@ password: ruihua
 ### 车载终端APP
 **花雷 左俊**
 * 测试车载终端底座蓝牙功能
+* 视频呼叫连续5-6次后出错
+> ![出错界面](141583115345_.pic_hd.jpg)
 * 电话中心服务增加多账户和多用户支持
 * 地图在线更新
 > ![](车载终端原型_地图更新.jpg)
@@ -31,7 +33,7 @@ password: ruihua
 **左俊**
 * 用车申请APP首页图片增加点击事件
 > * `actionurl`: 为空，无点击事件
-> * `actionurl`：https://www.baidu.com/ 包含`http://`的绝对路径，直接跳转
+> * `actionurl`：https://www.baidu.com/ 包含`http://`绝对路径，直接跳转
 > * `actionurl`：appbanner/index 需要根据实际情况补齐URL后跳转
 > * 弹出页面参考下图：
 ![webview](331582886870_.pic_hd.jpg)
