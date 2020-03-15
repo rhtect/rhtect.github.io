@@ -96,15 +96,18 @@
 
 
 
+<meta name="description" content="用车申请统计 统计时间：7:00-16:00  3吨料车 最大值    76 最小值    23 中位数    49 平均数    49.05737705             // 基于准备好的dom，初始化echarts实例         var myChart = echarts.init(document.getElementById(&apos;echarts6651&apos;));">
 <meta name="keywords" content="辅助运输">
 <meta property="og:type" content="article">
-<meta property="og:title" content="车辆派车时间统计">
+<meta property="og:title" content="车辆出入井与用车申请统计">
 <meta property="og:url" content="http://yoursite.com/2020/03/15/huibao202003151/index.html">
 <meta property="og:site_name" content="瑞华科技">
+<meta property="og:description" content="用车申请统计 统计时间：7:00-16:00  3吨料车 最大值    76 最小值    23 中位数    49 平均数    49.05737705             // 基于准备好的dom，初始化echarts实例         var myChart = echarts.init(document.getElementById(&apos;echarts6651&apos;));">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2020-03-15T10:19:40.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="车辆派车时间统计">
+<meta name="twitter:title" content="车辆出入井与用车申请统计">
+<meta name="twitter:description" content="用车申请统计 统计时间：7:00-16:00  3吨料车 最大值    76 最小值    23 中位数    49 平均数    49.05737705             // 基于准备好的dom，初始化echarts实例         var myChart = echarts.init(document.getElementById(&apos;echarts6651&apos;));">
 
 
 
@@ -139,7 +142,7 @@
 
 
 
-  <title>车辆派车时间统计 | 瑞华科技</title>
+  <title>车辆出入井与用车申请统计 | 瑞华科技</title>
   
 
 
@@ -321,7 +324,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">车辆派车时间统计</h1>
+          <h1 class="post-title" itemprop="name headline">车辆出入井与用车申请统计</h1>
         
 
         <div class="post-meta">
@@ -405,7 +408,677 @@
       
 
       
-        
+        <h3 id="用车申请统计"><a href="#用车申请统计" class="headerlink" title="用车申请统计"></a>用车申请统计</h3><ul>
+<li>统计时间：<code>7:00-16:00</code></li>
+</ul>
+<h4 id="3吨料车"><a href="#3吨料车" class="headerlink" title="3吨料车"></a>3吨料车</h4><ul>
+<li>最大值    76</li>
+<li>最小值    23</li>
+<li>中位数    49</li>
+<li>平均数    49.05737705</li>
+</ul>
+<div id="echarts6651" style="width: 100%;height: 400px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts6651'));
+        // 指定图表的配置项和数据
+        var option = {
+    title: {
+        text: "3吨料车",
+        subtext: ""
+    },
+    tooltip: {
+        trigger: "axis"
+    },
+    legend: {
+        data: ["9月", "10月", "11月", "12月"]
+    },
+    toolbox: {
+        show: true,
+        feature: {
+            mark: {
+                show: false
+            },
+            dataView: {
+                show: false,
+                readOnly: true
+            },
+            magicType: {
+                show: false,
+                type: ["line", "bar"]
+            },
+            restore: {
+                show: false
+            },
+            saveAsImage: {
+                show: true
+            }
+        }
+    },
+    calculable: true,
+    xAxis: [
+        {
+            type: "category",
+            data: ["1号", "2号", "3号", "4号", "5号", "6号", "7号", "8号", "9号", "10号", "11号", "12号", "13号", "14号", "15号", "16号", "17号", "18号", "19号", "20号", "21号", "22号", "23号", "24号", "25号", "26号", "27号", "28号", "29号", "30号", "31号"]
+        }
+    ],
+    yAxis: [
+        {
+            type: "value"
+        }
+    ],
+    series: [
+        {
+            name: "9月",
+            type: "bar",
+            data: [45, 38, 31, 52, 46, 51, 47, 44, 50, 42, 40, 40, 48, 41, 59, 58, 40, 54, 53, 56, 56, 62, 42, 52, 49, 49, 42, 54, 48, 33, 0]
+        },
+        {
+            type: "bar",
+            name: "10月",
+            data: [32, 36, 23, 41, 28, 28, 37, 40, 41, 39, 37, 42, 43, 34, 31, 47, 44, 43, 51, 48, 49, 41, 52, 50, 49, 42, 55, 49, 61, 46, 39]
+        },
+        {
+            type: "bar",
+            name: "11月",
+            data: [47, 51, 56, 43, 49, 37, 46, 47, 45, 40, 51, 64, 52, 60, 76, 50, 65, 47, 51, 36, 68, 72, 60, 62, 47, 56, 61, 52, 64, 54, 0]
+        },
+        {
+            type: "bar",
+            name: "12月",
+            data: [50, 52, 57, 70, 45, 44, 49, 47, 64, 56, 48, 50, 55, 53, 62, 42, 51, 69, 49, 73, 75, 45, 47, 51, 55, 45, 52, 46, 49, 40, 65]
+        }
+    ]
+}
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+<h4 id="5吨翻斗"><a href="#5吨翻斗" class="headerlink" title="5吨翻斗"></a>5吨翻斗</h4><ul>
+<li>最大值    10</li>
+<li>最小值    0</li>
+<li>中位数    4</li>
+<li>平均数    4.278688525</li>
+</ul>
+<div id="echarts2676" style="width: 100%;height: 400px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts2676'));
+        // 指定图表的配置项和数据
+        var option = {
+    title: {
+        text: "5吨翻斗",
+        subtext: ""
+    },
+    tooltip: {
+        trigger: "axis"
+    },
+    legend: {
+        data: ["9月", "10月", "11月", "12月"]
+    },
+    toolbox: {
+        show: true,
+        feature: {
+            mark: {
+                show: false
+            },
+            dataView: {
+                show: false,
+                readOnly: true
+            },
+            magicType: {
+                show: false,
+                type: ["line", "bar"]
+            },
+            restore: {
+                show: false
+            },
+            saveAsImage: {
+                show: true
+            }
+        }
+    },
+    calculable: true,
+    xAxis: [
+        {
+            type: "category",
+            data: ["1号", "2号", "3号", "4号", "5号", "6号", "7号", "8号", "9号", "10号", "11号", "12号", "13号", "14号", "15号", "16号", "17号", "18号", "19号", "20号", "21号", "22号", "23号", "24号", "25号", "26号", "27号", "28号", "29号", "30号", "31号"]
+        }
+    ],
+    yAxis: [
+        {
+            type: "value"
+        }
+    ],
+    series: [
+        {
+            name: "9月",
+            type: "bar",
+            data: [4, 2, 2, 3, 3, 2, 3, 1, 2, 2, 2, 3, 2, 3, 5, 3, 6, 5, 3, 4, 6, 6, 0, 4, 5, 1, 4, 2, 4, 6, 0]
+        },
+        {
+            type: "bar",
+            name: "10月",
+            data: [9, 5, 3, 7, 5, 4, 2, 6, 4, 7, 7, 7, 6, 3, 7, 4, 4, 5, 8, 3, 3, 6, 4, 3, 4, 6, 7, 5, 5, 1, 4]
+        },
+        {
+            type: "bar",
+            name: "11月",
+            data: [4, 3, 3, 7, 7, 5, 3, 4, 5, 3, 5, 2, 6, 5, 3, 6, 5, 5, 5, 5, 1, 5, 2, 1, 3, 3, 6, 5, 3, 1, 0]
+        },
+        {
+            type: "bar",
+            name: "12月",
+            data: [7, 4, 2, 3, 4, 6, 3, 4, 4, 5, 2, 3, 5, 6, 2, 2, 6, 6, 8, 2, 4, 2, 5, 9, 7, 7, 5, 4, 7, 5, 10]
+        }
+    ]
+}
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+<h4 id="5吨平板"><a href="#5吨平板" class="headerlink" title="5吨平板"></a>5吨平板</h4><ul>
+<li>最大值    20</li>
+<li>最小值    3</li>
+<li>中位数    11</li>
+<li>平均数    11.16393443</li>
+</ul>
+<div id="echarts7203" style="width: 100%;height: 400px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts7203'));
+        // 指定图表的配置项和数据
+        var option = {
+    title: {
+        text: "5吨平板",
+        subtext: ""
+    },
+    tooltip: {
+        trigger: "axis"
+    },
+    legend: {
+        data: ["9月", "10月", "11月", "12月"]
+    },
+    toolbox: {
+        show: true,
+        feature: {
+            mark: {
+                show: false
+            },
+            dataView: {
+                show: false,
+                readOnly: true
+            },
+            magicType: {
+                show: false,
+                type: ["line", "bar"]
+            },
+            restore: {
+                show: false
+            },
+            saveAsImage: {
+                show: true
+            }
+        }
+    },
+    calculable: true,
+    xAxis: [
+        {
+            type: "category",
+            data: ["1号", "2号", "3号", "4号", "5号", "6号", "7号", "8号", "9号", "10号", "11号", "12号", "13号", "14号", "15号", "16号", "17号", "18号", "19号", "20号", "21号", "22号", "23号", "24号", "25号", "26号", "27号", "28号", "29号", "30号", "31号"]
+        }
+    ],
+    yAxis: [
+        {
+            type: "value"
+        }
+    ],
+    series: [
+        {
+            name: "9月",
+            type: "bar",
+            data: [7, 14, 4, 10, 7, 8, 18, 10, 7, 13, 5, 7, 6, 11, 8, 12, 12, 10, 3, 8, 9, 10, 4, 9, 11, 9, 13, 11, 11, 8, 0]
+        },
+        {
+            type: "bar",
+            name: "10月",
+            data: [7, 16, 11, 14, 13, 4, 6, 11, 9, 6, 9, 11, 7, 9, 6, 12, 12, 11, 7, 8, 12, 12, 11, 8, 7, 11, 9, 12, 16, 11, 14]
+        },
+        {
+            type: "bar",
+            name: "11月",
+            data: [11, 13, 16, 19, 17, 11, 15, 9, 7, 13, 11, 13, 15, 12, 11, 15, 6, 4, 17, 8, 10, 15, 15, 7, 11, 13, 9, 14, 12, 9, 0]
+        },
+        {
+            type: "bar",
+            name: "12月",
+            data: [17, 12, 8, 20, 12, 15, 14, 16, 12, 19, 9, 18, 18, 15, 17, 13, 14, 12, 20, 16, 12, 8, 8, 15, 17, 17, 10, 7, 10, 8, 8]
+        }
+    ]
+}
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+<h4 id="5吨加长平"><a href="#5吨加长平" class="headerlink" title="5吨加长平"></a>5吨加长平</h4><ul>
+<li>最大值    4</li>
+<li>最小值    0</li>
+<li>中位数    1</li>
+<li>平均数    0.93442623</li>
+</ul>
+<div id="echarts9726" style="width: 100%;height: 400px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts9726'));
+        // 指定图表的配置项和数据
+        var option = {
+    title: {
+        text: "5吨加长平",
+        subtext: ""
+    },
+    tooltip: {
+        trigger: "axis"
+    },
+    legend: {
+        data: ["9月", "10月", "11月", "12月"]
+    },
+    toolbox: {
+        show: true,
+        feature: {
+            mark: {
+                show: false
+            },
+            dataView: {
+                show: false,
+                readOnly: true
+            },
+            magicType: {
+                show: false,
+                type: ["line", "bar"]
+            },
+            restore: {
+                show: false
+            },
+            saveAsImage: {
+                show: true
+            }
+        }
+    },
+    calculable: true,
+    xAxis: [
+        {
+            type: "category",
+            data: ["1号", "2号", "3号", "4号", "5号", "6号", "7号", "8号", "9号", "10号", "11号", "12号", "13号", "14号", "15号", "16号", "17号", "18号", "19号", "20号", "21号", "22号", "23号", "24号", "25号", "26号", "27号", "28号", "29号", "30号", "31号"]
+        }
+    ],
+    yAxis: [
+        {
+            type: "value"
+        }
+    ],
+    series: [
+        {
+            name: "9月",
+            type: "bar",
+            data: [0, 0, 0, 0, 1, 0, 0, 0, 0, 3, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0]
+        },
+        {
+            type: "bar",
+            name: "10月",
+            data: [1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 4, 2, 1, 0, 0, 0, 1, 0, 2]
+        },
+        {
+            type: "bar",
+            name: "11月",
+            data: [0, 1, 1, 0, 2, 2, 0, 1, 0, 2, 0, 1, 3, 2, 2, 1, 1, 0, 0, 0, 2, 4, 2, 0, 2, 1, 1, 1, 1, 2, 0]
+        },
+        {
+            type: "bar",
+            name: "12月",
+            data: [1, 1, 1, 2, 1, 0, 4, 1, 3, 0, 0, 1, 2, 2, 2, 1, 4, 3, 0, 1, 1, 2, 1, 3, 2, 1, 2, 2, 2, 1, 1]
+        }
+    ]
+}
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+<h3 id="出入井数量差统计"><a href="#出入井数量差统计" class="headerlink" title="出入井数量差统计"></a>出入井数量差统计</h3><ul>
+<li>统计时间：<code>7:00-16:00</code></li>
+</ul>
+<h4 id="3吨料车-1"><a href="#3吨料车-1" class="headerlink" title="3吨料车"></a>3吨料车</h4><ul>
+<li>最大值    33</li>
+<li>最小值    10</li>
+<li>中位数    24</li>
+<li>平均数    23.17213115</li>
+</ul>
+<div id="echarts7105" style="width: 100%;height: 400px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts7105'));
+        // 指定图表的配置项和数据
+        var option = {
+    title: {
+        text: "3吨料车",
+        subtext: ""
+    },
+    tooltip: {
+        trigger: "axis"
+    },
+    legend: {
+        data: ["9月", "10月", "11月", "12月"]
+    },
+    toolbox: {
+        show: true,
+        feature: {
+            mark: {
+                show: false
+            },
+            dataView: {
+                show: false,
+                readOnly: true
+            },
+            magicType: {
+                show: false,
+                type: ["line", "bar"]
+            },
+            restore: {
+                show: false
+            },
+            saveAsImage: {
+                show: true
+            }
+        }
+    },
+    calculable: true,
+    xAxis: [
+        {
+            type: "category",
+            data: ["1号", "2号", "3号", "4号", "5号", "6号", "7号", "8号", "9号", "10号", "11号", "12号", "13号", "14号", "15号", "16号", "17号", "18号", "19号", "20号", "21号", "22号", "23号", "24号", "25号", "26号", "27号", "28号", "29号", "30号", "31号"]
+        }
+    ],
+    yAxis: [
+        {
+            type: "value"
+        }
+    ],
+    series: [
+        {
+            name: "9月",
+            type: "bar",
+            data: [25, 23, 22, 28, 29, 23, 19, 30, 30, 25, 24, 26, 22, 23, 22, 33, 32, 22, 27, 25, 24, 27, 26, 23, 26, 27, 22, 18, 25, 28, 0]
+        },
+        {
+            name: "10月",
+            type: "bar",
+            data: [25, 29, 17, 16, 21, 22, 10, 18, 21, 19, 20, 20, 16, 20, 20, 16, 19, 14, 17, 17, 26, 26, 21, 20, 19, 24, 22, 29, 26, 17, 26]
+        },
+        {
+            type: "bar",
+            name: "11月",
+            data: [21, 16, 20, 25, 26, 28, 24, 27, 24, 16, 27, 28, 21, 25, 23, 26, 27, 25, 29, 29, 16, 25, 27, 24, 20, 27, 22, 20, 24, 21, 0]
+        },
+        {
+            type: "bar",
+            name: "12月",
+            data: [25, 25, 25, 27, 31, 26, 22, 20, 25, 20, 25, 26, 17, 22, 15, 21, 20, 16, 27, 23, 22, 26, 25, 21, 23, 24, 31, 25, 25, 22, 23]
+        }
+    ]
+}
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+<h4 id="5吨翻斗-1"><a href="#5吨翻斗-1" class="headerlink" title="5吨翻斗"></a>5吨翻斗</h4><ul>
+<li>最大值    4</li>
+<li>最小值    -1</li>
+<li>中位数    1</li>
+<li>平均数    1.336065574</li>
+</ul>
+<div id="echarts9588" style="width: 100%;height: 400px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts9588'));
+        // 指定图表的配置项和数据
+        var option = {
+    title: {
+        text: "5吨翻斗",
+        subtext: ""
+    },
+    tooltip: {
+        trigger: "axis"
+    },
+    legend: {
+        data: ["9月", "10月", "11月", "12月"]
+    },
+    toolbox: {
+        show: true,
+        feature: {
+            mark: {
+                show: false
+            },
+            dataView: {
+                show: false,
+                readOnly: true
+            },
+            magicType: {
+                show: false,
+                type: ["line", "bar"]
+            },
+            restore: {
+                show: false
+            },
+            saveAsImage: {
+                show: true
+            }
+        }
+    },
+    calculable: true,
+    xAxis: [
+        {
+            type: "category",
+            data: ["1号", "2号", "3号", "4号", "5号", "6号", "7号", "8号", "9号", "10号", "11号", "12号", "13号", "14号", "15号", "16号", "17号", "18号", "19号", "20号", "21号", "22号", "23号", "24号", "25号", "26号", "27号", "28号", "29号", "30号", "31号"]
+        }
+    ],
+    yAxis: [
+        {
+            type: "value"
+        }
+    ],
+    series: [
+        {
+            name: "9月",
+            type: "bar",
+            data: [1, 0, 0, 0, 1, 0, 2, 3, 4, 1, 2, 2, 1, 3, 1, 0, 1, 0, 1, 2, 1, 2, 0, 0, 1, 2, 1, 1, 0, 0, 0]
+        },
+        {
+            name: "10月",
+            type: "bar",
+            data: [2, 1, 1, -1, 2, 1, 0, 1, 1, 2, 0, 3, 3, 1, 2, 0, 2, 2, 2, 0, 2, 1, 1, 1, 1, 2, 3, 0, 1, 0, 2]
+        },
+        {
+            type: "bar",
+            name: "11月",
+            data: [0, 0, 0, 0, 3, 2, 2, 3, 2, 1, 2, 1, 1, 4, 0, 2, 2, 2, 2, 4, 1, 0, 2, 1, 0, 1, 3, 2, 1, 1, 0]
+        },
+        {
+            type: "bar",
+            name: "12月",
+            data: [4, 0, 1, 1, 2, 0, 0, 1, 0, 0, 3, 2, 2, 4, 2, 4, 2, 2, -1, 2, 1, 0, 3, 2, 2, 0, 1, 2, 3, 0, 1]
+        }
+    ]
+}
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+<h4 id="5吨平板-1"><a href="#5吨平板-1" class="headerlink" title="5吨平板"></a>5吨平板</h4><ul>
+<li>最大值    11</li>
+<li>最小值    -2</li>
+<li>中位数    3</li>
+<li>平均数    3.614754098</li>
+</ul>
+<div id="echarts1705" style="width: 100%;height: 400px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts1705'));
+        // 指定图表的配置项和数据
+        var option = {
+    title: {
+        text: "5吨平板",
+        subtext: ""
+    },
+    tooltip: {
+        trigger: "axis"
+    },
+    legend: {
+        data: ["9月", "10月", "11月", "12月"]
+    },
+    toolbox: {
+        show: true,
+        feature: {
+            mark: {
+                show: false
+            },
+            dataView: {
+                show: false,
+                readOnly: true
+            },
+            magicType: {
+                show: false,
+                type: ["line", "bar"]
+            },
+            restore: {
+                show: false
+            },
+            saveAsImage: {
+                show: true
+            }
+        }
+    },
+    calculable: true,
+    xAxis: [
+        {
+            type: "category",
+            data: ["1号", "2号", "3号", "4号", "5号", "6号", "7号", "8号", "9号", "10号", "11号", "12号", "13号", "14号", "15号", "16号", "17号", "18号", "19号", "20号", "21号", "22号", "23号", "24号", "25号", "26号", "27号", "28号", "29号", "30号", "31号"]
+        }
+    ],
+    yAxis: [
+        {
+            type: "value"
+        }
+    ],
+    series: [
+        {
+            name: "9月",
+            type: "bar",
+            data: [3, 1, 7, 3, 5, 3, 5, 6, 5, 4, 2, 5, 1, 3, 5, 2, 2, 4, 3, 7, 0, 2, 6, 2, 2, 2, -2, 6, 3, 2, 0]
+        },
+        {
+            name: "10月",
+            type: "bar",
+            data: [0, 4, 6, 5, 2, 2, 1, 3, 2, 4, 2, 4, 3, 4, 2, 2, 3, 11, 1, 4, 5, 2, 0, 2, 4, 6, -2, 2, 3, 7, 6]
+        },
+        {
+            type: "bar",
+            name: "11月",
+            data: [2, 3, 5, 6, 4, 5, 2, 1, 2, 1, 5, 1, 3, 5, 1, 5, 3, 2, 4, 2, 0, 4, 1, 3, 2, 4, 5, 0, 2, 6, 0]
+        },
+        {
+            type: "bar",
+            name: "12月",
+            data: [8, 5, 0, 2, 3, 1, 1, 4, 2, 4, 3, 5, 10, 4, 11, 4, 8, 10, 2, 9, 7, 6, 7, 2, 7, 6, 4, 4, 9, 1, 4]
+        }
+    ]
+}
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+<h4 id="5吨加长平-1"><a href="#5吨加长平-1" class="headerlink" title="5吨加长平"></a>5吨加长平</h4><ul>
+<li>最大值    2</li>
+<li>最小值    -1</li>
+<li>中位数    0</li>
+<li>平均数    0.114754098</li>
+</ul>
+<div id="echarts4102" style="width: 100%;height: 400px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts4102'));
+        // 指定图表的配置项和数据
+        var option = {
+    title: {
+        text: "5吨加长平",
+        subtext: ""
+    },
+    tooltip: {
+        trigger: "axis"
+    },
+    legend: {
+        data: ["9月", "10月", "11月", "12月"]
+    },
+    toolbox: {
+        show: true,
+        feature: {
+            mark: {
+                show: false
+            },
+            dataView: {
+                show: false,
+                readOnly: true
+            },
+            magicType: {
+                show: false,
+                type: ["line", "bar"]
+            },
+            restore: {
+                show: false
+            },
+            saveAsImage: {
+                show: true
+            }
+        }
+    },
+    calculable: true,
+    xAxis: [
+        {
+            type: "category",
+            data: ["1号", "2号", "3号", "4号", "5号", "6号", "7号", "8号", "9号", "10号", "11号", "12号", "13号", "14号", "15号", "16号", "17号", "18号", "19号", "20号", "21号", "22号", "23号", "24号", "25号", "26号", "27号", "28号", "29号", "30号", "31号"]
+        }
+    ],
+    yAxis: [
+        {
+            type: "value"
+        }
+    ],
+    series: [
+        {
+            name: "9月",
+            type: "bar",
+            data: [0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        },
+        {
+            name: "10月",
+            type: "bar",
+            data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0]
+        },
+        {
+            type: "bar",
+            name: "11月",
+            data: [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+        },
+        {
+            type: "bar",
+            name: "12月",
+            data: [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 1, 0, -1, 0, 1, 0, 0, 0, 1]
+        }
+    ]
+}
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
       
     </div>
     
@@ -499,8 +1172,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image" src="/images/avatar.gif" alt="WangDong">
           <p class="site-author-name" itemprop="name">WangDong</p>
@@ -560,6 +1242,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#用车申请统计"><span class="nav-number">1.</span> <span class="nav-text">用车申请统计</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3吨料车"><span class="nav-number">1.1.</span> <span class="nav-text">3吨料车</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5吨翻斗"><span class="nav-number">1.2.</span> <span class="nav-text">5吨翻斗</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5吨平板"><span class="nav-number">1.3.</span> <span class="nav-text">5吨平板</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5吨加长平"><span class="nav-number">1.4.</span> <span class="nav-text">5吨加长平</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#出入井数量差统计"><span class="nav-number">2.</span> <span class="nav-text">出入井数量差统计</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3吨料车-1"><span class="nav-number">2.1.</span> <span class="nav-text">3吨料车</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5吨翻斗-1"><span class="nav-number">2.2.</span> <span class="nav-text">5吨翻斗</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5吨平板-1"><span class="nav-number">2.3.</span> <span class="nav-text">5吨平板</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5吨加长平-1"><span class="nav-number">2.4.</span> <span class="nav-text">5吨加长平</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
