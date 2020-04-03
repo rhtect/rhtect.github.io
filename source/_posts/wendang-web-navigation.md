@@ -50,3 +50,6 @@ tags: 辅助运输
 
 ### WIFI信号统计后台
 * `管理地址`：http://59.48.22.230:8085/signalanalysis/index#
+
+### 用车申请文档
+* `文档地址`：https://www.showdoc.cc/537615784694102?page_id=3214067620741278
