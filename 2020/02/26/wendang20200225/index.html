@@ -445,11 +445,11 @@
 <h3 id="车载终端操作台功能"><a href="#车载终端操作台功能" class="headerlink" title="车载终端操作台功能"></a>车载终端操作台功能</h3><p>井下路况比较复杂，为了方便司机操作终端，系统设计了支持车载终端的操作底座。司机可以通过实体按键调出视频与通话界面、设置界面、任务列表界面等。操作底座还设计了双击和长按功能，有效减少了司机误操作的情况。同时由于井下施工生产噪声较大，操作底座还提供了麦克风与大功率扩音功能，充分保证了井上井下通话质量。车载终端安装效果如下图：<br> <img src="11.png" alt="操作台"></p>
 <h3 id="矿井地图在线更新功能"><a href="#矿井地图在线更新功能" class="headerlink" title="矿井地图在线更新功能"></a>矿井地图在线更新功能</h3><p>矿井生产过程中，掘进和综采的情况始终都在变化，每月都会对井下地图进行更新升级，车载终端APP采用目前先进的网络技术保持井下地图的同步更新。为了保证安全生产，地图的更新操作由管理员来统一完成，进入车载终端APP的地图更新界面，可以展示地图更新的信息：更新时间、更新巷道情况、更新大小等。当地图更新下载完成后，车载终端APP会重新启动并且显示地图更新进度，更新完成后即可使用最新的矿井地图。</p>
 <h2 id="车辆数据分析"><a href="#车辆数据分析" class="headerlink" title="车辆数据分析"></a>车辆数据分析</h2><hr>
-<h3 id="物料运输车辆"><a href="#物料运输车辆" class="headerlink" title="物料运输车辆"></a>物料运输车辆</h3><p>物料运输车辆早期调度模式是：早班、中班、晚班的三班制模式。传统的调度方法不了解各种车辆执行任务的平均时间，基本上每辆车每天的利用率在3-4趟左右。并且早班用车申请过于集中，晚班则相对空闲，这些因素都大大降低了资源利用率。<br>我们对料车的任务执行情况进行了统计分析，根据近几个月的料车类型的统计情况来看，可以得到使用频次最多的车辆种类，如下图：<br><div id="echarts8367" style="width: 100%;height: 400px;margin: 0 auto"></div>
+<h3 id="物料运输车辆"><a href="#物料运输车辆" class="headerlink" title="物料运输车辆"></a>物料运输车辆</h3><p>物料运输车辆早期调度模式是：早班、中班、晚班的三班制模式。传统的调度方法不了解各种车辆执行任务的平均时间，基本上每辆车每天的利用率在3-4趟左右。并且早班用车申请过于集中，晚班则相对空闲，这些因素都大大降低了资源利用率。<br>我们对料车的任务执行情况进行了统计分析，根据近几个月的料车类型的统计情况来看，可以得到使用频次最多的车辆种类，如下图：<br><div id="echarts6759" style="width: 100%;height: 400px;margin: 0 auto"></div>
 <script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
 <script type="text/javascript">
         // 基于准备好的dom，初始化echarts实例
-        var myChart = echarts.init(document.getElementById('echarts8367'));
+        var myChart = echarts.init(document.getElementById('echarts6759'));
         // 指定图表的配置项和数据
         var option = {
     title: {
@@ -525,11 +525,11 @@
 <ul>
 <li>车辆与任务统计<br>我们知道车辆从下井到出井的时间是与执行的任务强度有很大的关系，那么通过分析近期车辆出入井时间的统计数据可以得到对应使用时长的趋势，下图以使用频次最多的<code>三吨料车</code>为例： </li>
 </ul>
-<div id="echarts5204" style="width: 100%;height: 400px;margin: 0 auto"></div>
+<div id="echarts3299" style="width: 100%;height: 400px;margin: 0 auto"></div>
 <script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
 <script type="text/javascript">
         // 基于准备好的dom，初始化echarts实例
-        var myChart = echarts.init(document.getElementById('echarts5204'));
+        var myChart = echarts.init(document.getElementById('echarts3299'));
         // 指定图表的配置项和数据
         var option = {
     title: {
@@ -606,11 +606,11 @@
 </script>
 <p>通过上图，我们可以看出，<code>三吨料车</code>单次执行任务的使用是在<code>1-3小时</code>之间的占比超过了<code>70%</code>，而超过<code>4小时</code>的占比也达到了<code>18%</code>。因此，可以得出结论，虽然每个月的订单总数会发生变化，但是各项任务的执行比例与执行时间的趋势基本一致。这就可以有效地将现有紧张的车辆资源根据占比进行合理拆分，提高整体运力。</p>
 <ul>
-<li>车辆与项目部统计<br>这辆辅助运输的主体就是各执行项目部，那么关系车辆使用情况的另外一个重要因素就是项目部的使用情况。还是对近期车辆执行情况进行统计分析，同样可以得到项目部使用车辆的整体趋势，下图以<code>三吨料车</code>为例，我们可以看出，<code>掘进部门</code>的用车占比超过<code>75%</code>。<div id="echarts5961" style="width: 100%;height: 400px;margin: 0 auto"></div>
+<li>车辆与项目部统计<br>这辆辅助运输的主体就是各执行项目部，那么关系车辆使用情况的另外一个重要因素就是项目部的使用情况。还是对近期车辆执行情况进行统计分析，同样可以得到项目部使用车辆的整体趋势，下图以<code>三吨料车</code>为例，我们可以看出，<code>掘进部门</code>的用车占比超过<code>75%</code>。<div id="echarts8676" style="width: 100%;height: 400px;margin: 0 auto"></div>
 <script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
 <script type="text/javascript">
         // 基于准备好的dom，初始化echarts实例
-        var myChart = echarts.init(document.getElementById('echarts5961'));
+        var myChart = echarts.init(document.getElementById('echarts8676'));
         // 指定图表的配置项和数据
         var option = {
     title: {
@@ -715,11 +715,11 @@
         // 使用刚指定的配置项和数据显示图表。
         myChart.setOption(option);
 </script>
-下图以<code>五顿翻斗</code>为例，我们可以看出，<code>综采部门</code>的用车占比超过<code>80%</code>。<div id="echarts6266" style="width: 100%;height: 400px;margin: 0 auto"></div>
+下图以<code>五顿翻斗</code>为例，我们可以看出，<code>综采部门</code>的用车占比超过<code>80%</code>。<div id="echarts3183" style="width: 100%;height: 400px;margin: 0 auto"></div>
 <script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
 <script type="text/javascript">
         // 基于准备好的dom，初始化echarts实例
-        var myChart = echarts.init(document.getElementById('echarts6266'));
+        var myChart = echarts.init(document.getElementById('echarts3183'));
         // 指定图表的配置项和数据
         var option = {
     title: {
