@@ -64,8 +64,10 @@ category_map:
       汇报: report
       软件更新: update
       测试情况: test
+      回收站: trash
 tag_map:
       辅助运输: transportation
+      回收文档: trashDocument
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
