@@ -108,7 +108,7 @@
 <meta property="og:image" content="http://yoursite.com/2019/07/07/transportation190707/filter.jpg">
 <meta property="og:image" content="http://yoursite.com/2019/07/07/transportation190707/QC.jpg">
 <meta property="og:image" content="http://yoursite.com/2019/07/07/transportation190707/QC.jpg">
-<meta property="og:updated_time" content="2019-11-30T13:56:38.586Z">
+<meta property="og:updated_time" content="2020-05-14T10:00:36.175Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="辅助运输190707">
 <meta name="twitter:description" content="服务端增加功能  派车时增加手机号功能 统计一下现有手机号数量( 65个 )没有手机号不能提交派车已经绑定手机号：输入框显示手机号没有绑定手机号：输入框显示必填执行中更改司机的逻辑同派车逻辑，默认显示手机号，可以更换手机号提交派单后手机号自动插入手机后台，记录手机号使用次数    手机号管理后台（可以开放给执行车队） 不用与司机匹配手机号实现CRUD手机号唯一增加手机号使用次数增加威龙使用次数 塔">
@@ -357,8 +357,8 @@
               
                 <span class="post-meta-item-text">更新于</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-11-30T21:56:38+08:00">
-                2019-11-30
+              <time title="更新于" itemprop="dateModified" datetime="2020-05-14T18:00:36+08:00">
+                2020-05-14
               </time>
             
           </span>
@@ -419,15 +419,7 @@
 </blockquote>
 </li>
 <li style="list-style: none"><input type="checkbox" checked> 手机号管理后台（可以开放给执行车队）<blockquote>
-<p>不用与司机匹配<br>手机号实现CRUD<br>手机号唯一<br>增加手机号使用次数<br>增加<code>威龙使用次数</code> <code>塔通使用次数</code> <code>生产车队使用次数</code>字段</p>
-</blockquote>
-</li>
-<li style="list-style: none"><input type="checkbox"> 地图车辆信息增加司机手机号 (丹平)<blockquote>
-<p>如果没有手机号则不用显示</p>
-</blockquote>
-</li>
-<li style="list-style: none"><input type="checkbox"> 增加<code>威龙/塔通</code>指派车辆姓氏序号筛选功能<blockquote>
-<p>每组10个按钮<br>车辆增加序号筛选按钮，全部、其他和10个数一组，<br>司机增加姓名筛选按钮，全部、其他和姓氏（数量从多到少排列）<br><img src="filter.jpg" alt></p>
+<p>不用与司机匹配<br>手机号实现CRUD<br>手机号唯一<br>增加手机号使用次数<br>增加<code>威龙使用次数</code> <code>塔通使用次数</code> <code>生产车队使用次数</code>字段<br>地图车辆信息增加司机手机号 (丹平)<br>如果没有手机号则不用显示<br>增加<code>威龙/塔通</code>指派车辆姓氏序号筛选功能<br>每组10个按钮<br>车辆增加序号筛选按钮，全部、其他和10个数一组，<br>司机增加姓名筛选按钮，全部、其他和姓氏（数量从多到少排列）<br><img src="filter.jpg" alt></p>
 </blockquote>
 </li>
 </ul>
@@ -500,10 +492,9 @@
 </tr>
 </tbody>
 </table>
-<ul>
-<li style="list-style: none"><input type="checkbox"> 客户端更新后台<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">增加新的应用程序</span><br><span class="line">更新新的应用程序</span><br><span class="line">查看当前应用程序列表</span><br><span class="line">查看当前应用程序详情（显示历史更新记录）</span><br><span class="line">删除应用程序</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
+<blockquote>
+<p>客户端更新后台<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">增加新的应用程序</span><br><span class="line">更新新的应用程序</span><br><span class="line">查看当前应用程序列表</span><br><span class="line">查看当前应用程序详情（显示历史更新记录）</span><br><span class="line">删除应用程序</span><br></pre></td></tr></table></figure></p>
+</blockquote>
 <table>
 <thead>
 <tr>
@@ -545,33 +536,27 @@
 </table>
 <p>应用程序包含以下属性：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">软件名（必填，不可更改）</span><br><span class="line">软件标识（必填，唯一，不可更改）</span><br><span class="line">系统平台（必填， Ios和Android，不可更改，默认为Android）</span><br><span class="line">版本号（必填， 可更改）</span><br><span class="line">新功能（选填，可更改）</span><br><span class="line">下载地址（必填， 可更改）</span><br><span class="line">下载二维码 （选填，根据下载地址生成）</span><br><span class="line">更新状态（必填，必须和可选，可更改， 默认为可选状态）</span><br></pre></td></tr></table></figure></p>
 <p>历史更新记录包含：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">版本号</span><br><span class="line">更新时间</span><br><span class="line">新功能</span><br></pre></td></tr></table></figure></p>
-<h4 id="计划长期任务"><a href="#计划长期任务" class="headerlink" title="计划长期任务"></a>计划长期任务</h4><ul>
-<li style="list-style: none"><input type="checkbox"> WEBRTC技术评估（尽量多看一下相关东西）<ul>
-<li>第一步先做到可以跑起来一个DEMO</li>
-<li>语音一对多通话</li>
-<li>语音点对点通话 </li>
-<li>视频通话</li>
-<li>视频通话中关闭视频界面</li>
-</ul>
-</li>
-</ul>
-<h3 id="客户端"><a href="#客户端" class="headerlink" title="客户端"></a>客户端</h3><h4 id="用车申请客户端"><a href="#用车申请客户端" class="headerlink" title="用车申请客户端"></a>用车申请客户端</h4><ul>
-<li style="list-style: none"><input type="checkbox"> 原子化功能单元测试 （左俊）</li>
-<li style="list-style: none"><input type="checkbox"> 客户端使用统计 （左俊）<blockquote>
-<p>用车申请点击次数<br>进入提交申请页面的次数<br>使用趟数点击数统计<br>申请失败的次数（区分不同的失败种类）<br>统计打开客户端的时间<br>统计当前用户用户名</p>
+<h4 id="计划长期任务"><a href="#计划长期任务" class="headerlink" title="计划长期任务"></a>计划长期任务</h4><blockquote>
+<p>WEBRTC技术评估（尽量多看一下相关东西）</p>
+<pre><code>* 第一步先做到可以跑起来一个DEMO
+* 语音一对多通话
+* 语音点对点通话 
+* 视频通话
+* 视频通话中关闭视频界面
+</code></pre></blockquote>
+<h3 id="客户端"><a href="#客户端" class="headerlink" title="客户端"></a>客户端</h3><h4 id="用车申请客户端"><a href="#用车申请客户端" class="headerlink" title="用车申请客户端"></a>用车申请客户端</h4><blockquote>
+<p>原子化功能单元测试 （左俊）<br>客户端使用统计 （左俊）<br>用车申请点击次数<br>进入提交申请页面的次数<br>使用趟数点击数统计<br>申请失败的次数（区分不同的失败种类）<br>统计打开客户端的时间<br>统计当前用户用户名</p>
 </blockquote>
-<h4 id="WIFI统计客户端"><a href="#WIFI统计客户端" class="headerlink" title="WIFI统计客户端"></a>WIFI统计客户端</h4></li>
-<li style="list-style: none"><input type="checkbox"> WIFI客户端加入视频功能（左俊） <h4 id="车载终端"><a href="#车载终端" class="headerlink" title="车载终端"></a>车载终端</h4></li>
-<li style="list-style: none"><input type="checkbox"> 车载平板静默安装 （左俊）</li>
-<li style="list-style: none"><input type="checkbox"> 平板电脑ROOT （左俊）</li>
-<li style="list-style: none"><input type="checkbox"> WEBRTC技术优化（花雷）<ul>
-<li>语音一对多通话</li>
-<li>语音点对点通话 </li>
-<li>视频通话</li>
-<li>视频通话中关闭视频界面</li>
-</ul>
-</li>
-</ul>
+<h4 id="WIFI统计客户端"><a href="#WIFI统计客户端" class="headerlink" title="WIFI统计客户端"></a>WIFI统计客户端</h4><blockquote>
+<p>WIFI客户端加入视频功能（左俊） </p>
+</blockquote>
+<h4 id="车载终端"><a href="#车载终端" class="headerlink" title="车载终端"></a>车载终端</h4><blockquote>
+<p>车载平板静默安装 （左俊）<br>平板电脑ROOT （左俊）<br>WEBRTC技术优化（花雷）</p>
+<pre><code>* 语音一对多通话
+* 语音点对点通话 
+* 视频通话
+* 视频通话中关闭视频界面
+</code></pre></blockquote>
 
       
     </div>
@@ -689,7 +674,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">107</span>
+                <span class="site-state-item-count">108</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
