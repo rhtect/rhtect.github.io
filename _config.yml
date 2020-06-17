@@ -67,6 +67,7 @@ category_map:
       回收站: trash
 tag_map:
       辅助运输: transportation
+      三维地测系统: geodetic
       回收文档: trashDocument
 
 # Date / Time format
