@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css">
+
+
+  <meta name="keywords" content="CMMI,">
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2">
+
+
+
+
+
+
+<meta name="description" content="开场 （5分钟） 请简要做下自我介绍以及在项目中的角色  PP项目规划 / IPM集成项目管理 / RD需求开发 （20分钟） 项目计划阶段，是如何进行范围确定以及进行了那些估算？如何进行的？ SP 1.1 Estimate the Scope of the Project 估算项目范围    PP    SG 1 SP 1.2 Establish Estimates of Work Produc">
+<meta name="keywords" content="CMMI">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CMMI需求分析QA">
+<meta property="og:url" content="http://yoursite.com/2020/06/18/wendang-CMMI-REQ-QA/index.html">
+<meta property="og:site_name" content="瑞华科技">
+<meta property="og:description" content="开场 （5分钟） 请简要做下自我介绍以及在项目中的角色  PP项目规划 / IPM集成项目管理 / RD需求开发 （20分钟） 项目计划阶段，是如何进行范围确定以及进行了那些估算？如何进行的？ SP 1.1 Estimate the Scope of the Project 估算项目范围    PP    SG 1 SP 1.2 Establish Estimates of Work Produc">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2020-06-18T08:49:34.100Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="CMMI需求分析QA">
+<meta name="twitter:description" content="开场 （5分钟） 请简要做下自我介绍以及在项目中的角色  PP项目规划 / IPM集成项目管理 / RD需求开发 （20分钟） 项目计划阶段，是如何进行范围确定以及进行了那些估算？如何进行的？ SP 1.1 Estimate the Scope of the Project 估算项目范围    PP    SG 1 SP 1.2 Establish Estimates of Work Produc">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2020/06/18/wendang-CMMI-REQ-QA/">
+
+
+
+
+
+  <title>CMMI需求分析QA | 瑞华科技</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">瑞华科技</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">智慧化矿山的先行者</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/18/wendang-CMMI-REQ-QA/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="WangDong">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="瑞华科技">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">CMMI需求分析QA</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-06-18T15:26:29+08:00">
+                2020-06-18
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2020-06-18T16:49:34+08:00">
+                2020-06-18
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/document/" itemprop="url" rel="index">
+                    <span itemprop="name">文档</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h4 id="开场-（5分钟）"><a href="#开场-（5分钟）" class="headerlink" title="开场 （5分钟）"></a>开场 （5分钟）</h4><ol>
+<li>请简要做下自我介绍以及在项目中的角色</li>
+</ol>
+<h4 id="PP项目规划-IPM集成项目管理-RD需求开发-（20分钟）"><a href="#PP项目规划-IPM集成项目管理-RD需求开发-（20分钟）" class="headerlink" title="PP项目规划 / IPM集成项目管理 / RD需求开发 （20分钟）"></a>PP<code>项目规划</code> / IPM<code>集成项目管理</code> / RD<code>需求开发</code> （20分钟）</h4><ol>
+<li>项目计划阶段，是如何进行范围确定以及进行了那些估算？如何进行的？<blockquote>
+<p>SP 1.1 Estimate the Scope of the Project 估算项目范围    PP    SG 1 SP 1.2 Establish Estimates of Work Product and Task Attributes 建立对工作产品与任务属性的估算 SP 1.3 Define Project Lifecycle Phases 定义项目生命周期阶段 SP 1.4 Estimate Effort and Cost 估算工作量与成SP 1.1 Elicit Needs 挖掘需要    RD    SG 1 SP 1.2 Transform Stakeholder Needs into Customer Requirements 将干系人的需要转换为客户需求        </p>
+</blockquote>
+</li>
+<li>在估算、计划的过程中利用了哪些组织级的历史数据或历史资料？</li>
+<li>项目计划大致包含哪些方面的内容？请描述一下<blockquote>
+<p>SP 2.1 Establish the Budget and Schedule 建立预算与进度<br> SP 2.2 Identify Project Risks识别项目风险<br> SP 2.3 Plan Data Management 计划数据管理<br> SP 2.4 Plan the Project’s Resources 计划项目资源<br> SP 2.5 Plan Needed Knowledge and Skills 计划所需的知识与技能<br> 项目人员的知识与技能在培训后，是否对人员知识和技能是否满足要求进行跟踪管理？（PMC-SP 1.1)<br> SP 2.6 Plan Stakeholder Involvement 计划干系人的参与<br> 如何选择决策参与人的？（决策计划中未指定、决策分析流程中也未明确选择标准、决策报告中包含了参与人）<br> SP 2.4 Perform Make, Buy, or Reuse Analyses 执行自制、购买或复用分析<br> SP 2.7 Establish the Project Plan 建立项目计划<br> SP 1.1 Establish the Project’s Defined Process 建立项目已定义的过程    IPM    SP 1.1<br> SP 1.3 Establish the Project’s Work Environment 建立项目工作环境    IPM    SP 1.3<br> SP 1.6 Establish Teams 建立团队    IPM    SP 1.6</p>
+</blockquote>
+</li>
+<li>还进行了那些方面的计划？（如：CM计划，测试计划等）</li>
+<li>项目计划是如何活动相关方的同意和获得审批的？<blockquote>
+<p>SP 3.1 Review Plans That Affect the Project 评审影响项目的各项计划<br> SP 3.2 Reconcile Work and Resource Levels 协调工作与资源水平<br> SP 3.3 Obtain Plan Commitment 获得对计划的承诺</p>
+</blockquote>
+</li>
+</ol>
+<h4 id="PMC项目监控-IPM集成项目管理-（20分钟）"><a href="#PMC项目监控-IPM集成项目管理-（20分钟）" class="headerlink" title="PMC项目监控 / IPM集成项目管理     （20分钟）"></a>PMC<code>项目监控</code> / IPM<code>集成项目管理</code>     （20分钟）</h4><ol>
+<li>项目实施过程中你对项目进行了哪些跟踪活动？<blockquote>
+<p>SP 1.1 Monitor Project Planning Parameters 监督项目计划参数<br> SP 1.2 Monitor Commitments 监督承诺<br> SP 1.4 Monitor Data Management 监督数据管理<br> SP 1.5 Monitor Stakeholder Involvement 监督干系人的参与<br> SP 1.6 Conduct Progress Reviews 进行进展评审<br> SP 2.1 Manage Stakeholder Involvement  管理干系人的参与    IPM<br> SP 2.3 Resolve Coordination Issues 解决协调问题<br> SP 1.5 Manage the Project Using Integrated Plans 使用集成的计划管理项目        </p>
+</blockquote>
+</li>
+<li>项目在里程碑点进行哪些活动？    PMC    SP 1.7<blockquote>
+<p>SP 2.1 Manage Stakeholder Involvement  管理干系人的参与    IPM<br> SP 2.3 Resolve Coordination Issues 解决协调问题        </p>
+</blockquote>
+</li>
+<li>项目的关键依赖是如何进行管理的？</li>
+<li>项目监控过程中发现的问题是如何管理的？<blockquote>
+<p>SP 2.1 Analyze Issues 分析问题<br> SP 2.2 Take Corrective Action 采取纠正措施<br> SP 2.3 Manage Corrective Actions 管理纠正措施<br> SP 2.3 Resolve Coordination Issues 解决协调问题    IPM    SP 2.3</p>
+</blockquote>
+</li>
+<li>项目在收尾阶段进行哪些活动？如何为组织的过程财富库做贡献？    IPM    SP 1.7<br> 项目负责人如何向组织级风险库中提交风险？</li>
+</ol>
+<h4 id="RSKM风险管理（8分钟）"><a href="#RSKM风险管理（8分钟）" class="headerlink" title="RSKM风险管理（8分钟）"></a>RSKM<code>风险管理</code>（8分钟）</h4><ol>
+<li>项目的风险管理是如何进行的？进行了哪些主要风险管理活动？<blockquote>
+<p>SP 2.1 Identify Risks 识别风险<br> 基于组织风险识别表识别风险外，是否有其它的新识别的风险？<br> SP 2.2 Evaluate, Categorize, and Prioritize Risks 评价、分类风险并划分风险优先级<br> SP 3.1 Develop Risk Mitigation Plans 制订风险缓解计划<br> SP 3.2 Implement Risk Mitigation Plans 实施风险缓解计划<br> SP 2.2 Identify Project Risks识别项目风险    PP    SP 2.2<br> SP 1.3 Monitor Project Risks 监督项目风险    PMC    SP 1.3</p>
+</blockquote>
+</li>
+<li>公司有没有关于风险识别和管理的指南或策略？    RSKM    SG 1<blockquote>
+<p>SP 1.1 Determine Risk Sources and Categories 确定风险来源与类别<br> SP 1.2 Define Risk Parameters 定义风险参数<br> SP 1.3 Establish a Risk Management Strategy 建立风险管理策略</p>
+</blockquote>
+</li>
+</ol>
+<h4 id="MA质量-（7分钟）"><a href="#MA质量-（7分钟）" class="headerlink" title="MA质量 （7分钟）"></a>MA<code>质量</code> （7分钟）</h4><ol>
+<li>项目有哪些度量相关的活动？</li>
+<li>这些度量活动怎样进行计划的？    MA    SG 1<blockquote>
+<p>SP 1.1 Establish Measurement Objectives 建立度量目标<br> SP 1.2 Specify Measures 明确说明度量项<br> SP 1.3 Specify Data Collection and Storage Procedures 明确说明数据收集与存储的规程<br> SP 1.4 Specify Analysis Procedures 明确说明分析规程        </p>
+</blockquote>
+</li>
+<li>你的项目对度量数据做了哪些分析？    MA    SG 2<blockquote>
+<p>SP 2.1 Obtain Measurement Data 获得度量数据<br> SP 2.2 Analyze Measurement Data 分析度量数据<br> SP 2.3 Store Data and Results 存储数据与结果<br> SP 2.4 Communicate Results 沟通结果        </p>
+</blockquote>
+</li>
+</ol>
+<h4 id="VER验证（评审和测试）-VAL确认（验收）-（10分钟）"><a href="#VER验证（评审和测试）-VAL确认（验收）-（10分钟）" class="headerlink" title="VER验证（评审和测试） / VAL确认（验收） （10分钟）"></a>VER<code>验证（评审和测试）</code> / VAL<code>确认（验收）</code> （10分钟）</h4><ol>
+<li>在整个项目阶段，策划了有哪些验证和确认活动？验证时机、验证方法、验证目的、验证对象等。</li>
+</ol>
+<ul>
+<li><blockquote>
+<p>SP 1.1 Select Products for Validation 选择需要确认的产品<br>SP 1.2 Establish the Validation Environment 建立确认环境<br>SP 1.3 Establish Validation Procedures and Criteria 建立确认规程与准则        </p>
+</blockquote>
+</li>
+<li>SP 1.1 Select Work Products for Verification 选择需要验证的工作产品<br>SP 1.2 Establish the Verification Environment 建立验证环境<br>SP 1.3 Establish Verification Procedures and Criteria 建立验证规程与准则        </li>
+</ul>
+<ol start="2">
+<li>同行评审活动的数据会进行分析吗？什么时机分析？从哪些维度分析？能举例说明某一次的分析结果和结论吗？目前项目的同行评审的效率和效果，您怎么看？</li>
+</ol>
+<h4 id="GG共通目标"><a href="#GG共通目标" class="headerlink" title="GG共通目标"></a>GG<code>共通目标</code></h4><ol>
+<li>组织标准过程中，是否定义了相关过程的方针？定义在哪里？<blockquote>
+<p>不单独提问，参照PP整体部分    All    GP 2.2<br> 不单独提问，参照PP整体部分    All    GP 2.3<br> 不单独提问，参照PP整体部分    All    GP 2.4<br> 不单独提问，参照PP整体部分    All    GP 2.5</p>
+</blockquote>
+</li>
+<li>相关的工作产品是否置于配置管理之下？在哪里管理的？<blockquote>
+<p>不单独提问，参照PP整体部分    All    GP 2.7<br> 不单独提问，参照PMC整体部分    All    GP 2.8</p>
+</blockquote>
+</li>
+<li>是否有QA对您的工作进行符合性检查？<blockquote>
+<p>不单独提问，参照PMC整体部分    All    GP 2.10</p>
+</blockquote>
+</li>
+<li>组织标准流程中，是否定义了项目管理相关的流程/规范？项目在遵守该流程或规范时，是否进行了裁剪？<blockquote>
+<p>不单独提问，参照IPM SP1.7部分    All    GP 3.2</p>
+</blockquote>
+</li>
+</ol>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/CMMI/" rel="tag"># CMMI</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/06/16/Single-hole-histogram/" rel="next" title="单孔柱状图业务梳理">
+                <i class="fa fa-chevron-left"></i> 单孔柱状图业务梳理
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/06/18/wendang-CMMI-PM-QA/" rel="prev" title="CMMI项目管理QA">
+                CMMI项目管理QA <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image" src="/images/avatar.gif" alt="WangDong">
+          <p class="site-author-name" itemprop="name">WangDong</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">114</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#开场-（5分钟）"><span class="nav-number">1.</span> <span class="nav-text">开场 （5分钟）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#PP项目规划-IPM集成项目管理-RD需求开发-（20分钟）"><span class="nav-number">2.</span> <span class="nav-text">PP项目规划 / IPM集成项目管理 / RD需求开发 （20分钟）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#PMC项目监控-IPM集成项目管理-（20分钟）"><span class="nav-number">3.</span> <span class="nav-text">PMC项目监控 / IPM集成项目管理     （20分钟）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#RSKM风险管理（8分钟）"><span class="nav-number">4.</span> <span class="nav-text">RSKM风险管理（8分钟）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#MA质量-（7分钟）"><span class="nav-number">5.</span> <span class="nav-text">MA质量 （7分钟）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#VER验证（评审和测试）-VAL确认（验收）-（10分钟）"><span class="nav-number">6.</span> <span class="nav-text">VER验证（评审和测试） / VAL确认（验收） （10分钟）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#GG共通目标"><span class="nav-number">7.</span> <span class="nav-text">GG共通目标</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">WangDong</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+
+  
+
+  
+
+</body>
+</html>
