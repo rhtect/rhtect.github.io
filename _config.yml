@@ -68,6 +68,7 @@ category_map:
 tag_map:
       辅助运输: transportation
       三维地测系统: geodetic
+      CMMI: CMMI
       回收文档: trashDocument
 
 # Date / Time format
