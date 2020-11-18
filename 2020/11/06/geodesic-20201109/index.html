@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css">
+
+
+  <meta name="keywords" content="三维地测系统,">
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2">
+
+
+
+
+
+
+<meta name="description" content="加密文档, 请输入密码查看.">
+<meta name="keywords" content="三维地测系统">
+<meta property="og:type" content="article">
+<meta property="og:title" content="二维自动成图任务（20201109-20201114）">
+<meta property="og:url" content="http://yoursite.com/2020/11/06/geodesic-20201109/index.html">
+<meta property="og:site_name" content="瑞华科技">
+<meta property="og:description" content="加密文档, 请输入密码查看.">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2020-11-16T02:01:09.122Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="二维自动成图任务（20201109-20201114）">
+<meta name="twitter:description" content="加密文档, 请输入密码查看.">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2020/11/06/geodesic-20201109/">
+
+
+
+
+
+  <title>二维自动成图任务（20201109-20201114） | 瑞华科技</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">瑞华科技</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">智慧化矿山的先行者</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/11/06/geodesic-20201109/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="WangDong">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="瑞华科技">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">二维自动成图任务（20201109-20201114）</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-11-06T16:02:10+08:00">
+                2020-11-06
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2020-11-16T10:01:09+08:00">
+                2020-11-16
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/document/" itemprop="url" rel="index">
+                    <span itemprop="name">文档</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <div id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
+  <div class="hbe-input-container">
+  <input type="password" id="hbePass" placeholder>
+    <label for="hbePass">您好, 这里需要密码.</label>
+    <div class="bottom-line"></div>
+  </div>
+  <script id="hbeData" type="hbeData" data-hmacdigest="dc973464cd3e7b15f734543311590ed46c9c58aa3cdb6d8f2dfc3927d0f783e9">4fb4671b8a5ac6ea46b30845494578ade7ecc04337787501dff4c724e963bb0fe707a47631882a9db4e6e512b717836e84f03f7a1a48673383949b19a6f5376473b56de6f7445ba08dab140e21702557a9b4736408cf2d4b3691d9b950c904290af15c35cbed7341f91c339c329cb4c3cfcb410a8fe99cf13e857e2ea2359235e6820d8484bb0a6fc1c3e53369a9999addf1b8d9872a687b4b39c1abfde15143a1286f6ca0fa51e416d3e923b9d78289bed9b2bc8e7491c7a860ba33ab4280d6c0e51094a190ea28a4ad8aeee82d0fb6b1df83b32c078dcfb4194fb6de604bc134a5416ca14c93bb8889ea6aecff904cb04e4e6a53c16a5677aa57568fadfdd51e3c47bbde073c4500b9a0f852ee3c9cd5e0372c1d8d853d678409db2f7040a1133557046181f9ac128b8d2b436312007a06f151942c09db624190e82d24591841ac57d744b7cf281df985302d1e193776b1da03ca3c162624d50c777c0b72aaefc89ade21e4e016591e2a066f0dd2b3875edc781f27e00e38e259caa3531bec242fae509b1844bdf1f6797e635d7848f3c4f8888d3459c204bfd8d187760f543d39c83c2f844ce762061816e84b86c1788a9a833ac19792f5612095ee7988c0ab0698b183a05d9174643336223f7f8c5e7a3f08a29780f406b2a58d270904cacdcb15e47ef5b5e71cd5142eb039ff5506b747b606453b78c6a7f815a00688bc7144c0d88896a61d10bb6882c98bd5bc095cb3975805687bd09af69aa33fa055724ec0dcbfa4e0085946f3a7d771f6f1137c894781ecc671840a0540e539eb5bf6f540d454dc0aa50a7f0a4045e75be78f5d69b42c7f04e4d5e63950d5ac5bd756f4008d65dda6716e951f01c98badcc1ca6375d0147cd3aded374351b95921ab58e6e0704c07eea53aacf14a19aeacf8691d119fb1e60dbfe6eb9ad729f484dab1c49cf602f90eb607ac4cf0dd38df5d111ea95216e68149e25db25b2c1561be1f3b03f3f4e9333dbbe273a61afdd2d1489c1145c247083365446da4270d455a910691f20a61a3f1caed482c550b010cf43b05619fe61d5e706e72eb2cc4758d6d909c10cf8a814849ca95d16c9b22da2e057a09e52a8ccc4b99b9b490ae3589e32f7771825b7c2db7c38f8f24a1da693972a9c67d4cdf2a555fcf9b6ec7486bbabbf2911d62684cda8884c26e9fcf22ba136c57a540fbe6bc90b4ddaf99948f915b702926ed8cf0cd15b17e5ea749c1f9f6967053f57a161fb267e881f092b5978407632e993a5105f0dd6fa2856bb0775d34c9011fa046ecc7b81e41ac7d6090f112ab9b535d993b4cc911cb3f14eb0fa66391b909ca1148ab0a18fc1c49ddb4e3b03c989eb647709a84a0bf4af48ba9059675aeb04241f9ede07ef27c734c496a90d311a413236d3dedd7da3c05f3610a0f32e1f14934ba379488dea2c1d9c857048b81ef8a6185e9cdfb374b785e9be81de7c126e9c9f023e875a621ab0cf4d314b6362a24bd378f6cb395ffdfa9efdd86d6dd8aaaafa3f9e08d870182991846822f692b512d77536c61731dbb293679bbc2894bd32110cf8049a305fac349fb21251bca46f199629fa979a3aa8d65e3a2b48f083ea0de6852664389b50f65c70a867199c6dd0615da3421b7145e5d2ba3130bb25e286fcb9f18612269fea59632eccbe9d75ec10fe1e68efbcb0401a3ad3851e38c56c9afcc799040f96a0b016d37bf2b14481ec14630e1d99919168cdc47612e1ea398ccbb7a35b29f70ee93c68d528d180cedbaa685b74a4d0aa1af9f2d4191e45368649197f2d286f2cc5356e7f0ebfcb376e74401482679d88f7017bdfd85e2a336bb119edfb670727b1f73f45d65e73ff6c8e1333f0aba085f435ebffb48ccddf667416bc7ad00602c82eb8582121ebe8c9f3c0bcbf29ba446f3b8cc765180a627a3fb88ce08e4ea7ce766b0005d16e93c67efa0b594325521207e220bd3e774215dd022171b6895a72b23cf27c62359fa7b9489a9cf6c3d0296196f169603063feb38969726c06558308beafe564efffc3d642d8fce6ee7736633accb4e3c33eaf39ffef02e357f8544fc0529a076e7a1d634ca065a2ed64730078fc29b3fe14f4cd6d35061ebb518fb73dfc5c9f8003ad3a41d573bc20501074c7a20404571a14c81b3a0c11ec60f629e0ae8ccbbfba58ace4948d40564128fd09ceea5c262cacc3969bc373a85778707cb57d507d04c002c61ba927fd2027dd1dbbcfe8b49e828f60d995821706850a359873e6c23cdd82f396365c6a82e8814a0ffd7d5ec7060fd79e85d36e76507b7ab5405d0292b1c47bb65fa44cc404611b865aaf759c24c9cf5900e7aeaa8e6e6a4592a7b1950d5de1271ff5915472531ea9bb3a324d86db05b3977815ba9767a61f8c14597230f03ea71824031cafc9346fd7055297fa8690c47f6f5a87ad5deac4781bf1670d7e7ae4e907942ec39c7ec9e2ba35cb81e18ade5ff0f8e4a42ac75928d554d7956f911ff50a9f66f9f05344d57c774e475902b95f12ae908aca92daca3a1f571c7b5fb7688ce6845a4cb4359fbf74c14bdd66de596491d871153ea0ec648696111d5182473e61c20f80349b0537973f6fe4899b6410fa5b05c8627d49c786749a378f24a1632e4ab8f3ea1126e8bd05b377f87ded3cd7e25df3b9a4f21fe2398f973ee6177b9bff7e3274af8b73f0f59c2e04fe78b2d27a631bbd5f1c2933fb943c970d60089bd93ae855501939c6c75f445367ad6c181aeeb3a7a556ba40628d386d8a9d544034c532cd276c6875ff43ac45baa8b935f81617e55c273d7a3a0dd7d664309c1036020c83e2a2812cb5405ccfce3bc2ca34e9673e4501b322f3fca09305869795ed75919c466421768618e6ef7c0931a4c2d0390cb85a0ebd023716064c68297eedb42a95b7d17551a55b0daec93bdb5e104783a8b3183cb54aec7eba962b7db95594e246d3f5bfb2c64b20765272a883e50ec4243c219caaa1d158410a6d3be4e98c12684f822dfc1dac51b567ea33b70ddb598ac565cf4c2aa4cff8142d1bd48993a5970019f6a1665bf1e88d704d79ab52384ef7428843825f163476bd20f3e30545037a45d9ef5efbc62972fda0022451e17fca1acfdb3550a7462eb3c80b2c8033f641d94e9257c6f3290cf861f5b57cbed43778e99a2f4fa64627fe20469072735c09d52244e859d120900a512d480b694411c095b7ad0fc556bd4d82f507f1bc7f9c3ba0ad7ee7337fde4be8e4a248ac98337f9a82645d911a52f6ce625db6ea2f5ee2cb39ff9104d2773aec34b4b4679e13c2538d1d810f09fe7e62f5799015d483bfc6b15c0d8b6e098223766f1022091cd15c791e1dfbf850707883c56c6d4a1f94ece15b47f12e21ca1358ac04e6ce4d6df43f3f25442af04cbc90b46f941e69aaa9476b29329ee2c7d82fcb2b59b62b4a343915ae9859ee28ae32595d6e392c2568a7e75215ae8d29e433d4b3e727ec09ee8ec6135aa89d67dee04e55d89e685c8cb55e86671fb437c93230df68c0ab0f912416f1cb78e280b1f5da1d30888a70766ddbd6a6029722c933b30e7617d403ebd97de8f24962bec8038c2361b5212efd393fa0aa0633e0cc0a13b55d46582bb30174e239482233aec4455aa479d6221279470ee3cd0fa7f7eeab24d88baaceb9cbf507b7506140cc56104280f17e8f5fb056b06c71903817f43ef3c70c07192d3bc42b7e48ded6985eb475fadec1b6a74bdb0805467c82d2625008ea683b1011306d7e1bbfd3bb36e9320378d1f6f4e89dab58bfb2aa117e63d4cac02f0eeebbd5f866f072ef20bb141f68907cee625f875832759e2fd0a094e268905111f87f42c67e2229c059515c7f37f26b39ae9b0ee0028e5172c0698e8c39a275722a8eb8bce8343b894902b0884c6e0e8346e5581b20cc8b7ca6f55c23365aea9f2f824f51e13033fb133a7d50839ab49acaa7a874d4137bf7288bbad29d657e6e3d53eb886f1493f6bcca9b063b76f9a810bac78b3bb6de9f596969a3787b946a0442a274188eacf967b59d645adc0eb3f68bea8008d0593bf53f98d6be875f34279bd5966f09e701311ca6c0a07244bfee39b7fe81b15cddc226f88ba829a948577b81a89b29b6bdc5cfbcf5a73834c5499664f86378f0231447cf8f9c84507ae2ea1431897664c23c0e11abfa9d676bb430809b090f2a7dda50a2e123a951a2d15de89bf3eb065a5a77dc81031fa128a663eebd8f9aefc6c778e688e68fdaab71e1084a16691a75479072484a1ff3c0815e2a8e8ce5d85853459a071f50fa54367b8cbc6ecd9f2f7c22a0fccbcab31460593b9e9a01fd463b12f630e6665aa3d6777212a77b02875326313310654319af6030040ffb52d42da341b22816eb1352373d1e2de53d0218b017260f4c5ce71cdf6ea817824c31c4db4e20cd6f9114450bb9ff3db96a0ef00ac9e8f0ef51d62613cd1a1b034c39d215e97f786b01d6239a2a5db7f8bcd7f1397f77027520e6870c01b70f97e9aff5c670e431ff5b4e4655ab2d2c603fadcf34377410bb2846a468ef0a8656ebad03a12efd51beae42680984eca2f26cd82a14dac44c7639160621770fe6eea48dabe3dd9919ca2dc9a759264ab16a82a14999324b6329cfc4b6598674f329ac84771936ef0484abcf24583c43d5b176b844f7116f65e79a2615df3c1b5793c3ab9da46226ee66a8836ee29b0cc8a61f178e8706fe34b752d004ec41e267574f1dd0e02579781ef5b6d7355b63275d648794ea1328dcaf4ac383cfb7b1e36d2d8db26a1de5875bc5bd2aaa832f0e4b2ab2ac4630367aa0c3ffdc67c3e06fa1c1246e42699b1593266e619afe3bdff4eb7a460cf5ca70f892a98e4b53751cf1e42064eff170f6d69320f5fda6637e472c50a004ba83f82721e883477e1e940de94cc3de1c1d49ed47229e44e25164db99d3926c26b1ff8ee9adb3ea8d4c38c945cd366f90d2e7be72b0699c85d07bdea33b5f7bacce972e453eb2863a944c25120c32580fd8f6598c2ef068eabbe0fbff94a46a38286c62360ed83910352eb51dfe65c7e6dd9c416aa10f5fd8dc8702af4fe413aa70026eeee626919d5810789dfe9d8b796c95c07d0d74ecc616ffffa7d9ce4a5e1628c3d5ba7739d79cb18a1504e822eebc920c148f5410bf272416c00f2a63e5cf52a016b0b5d3b8f60d20c43b96a954873ad7166172508b32ce473416423b8e3f10a9b1df3913785ad3d56cd33d216d20dde97123c16fdb36bbd6ee197137b73192dccb5f82dc341472638733c2937ad0f8d20109a4f5eb556df09cece98e873ac93fcbd707d9154139148207ab249fd9ad008ab6d260a8836f1fb82decfa636abafc215bf2bcd5bc3d378b37cefaa7890c203889a5cf73c9bbfc670108a78d920569160024ebcf846677911789cc8667340d11d606901b02af6e2abbe617f33eb0d95cf8d4aff9ce616e2c840fc3f28e56dbb9f145feb691eb108199f2bf1508548474fa24c7430af777ad5b4a312b</script>
+</div>
+<script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/geodetic/" rel="tag"># 三维地测系统</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/10/30/geodesic-20201102/" rel="next" title="二维自动成图任务（20201102-20201106）">
+                <i class="fa fa-chevron-left"></i> 二维自动成图任务（20201102-20201106）
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/11/13/zongjie20201115/" rel="prev" title="2020年项目总结与2021年规划">
+                2020年项目总结与2021年规划 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image" src="/images/avatar.gif" alt="WangDong">
+          <p class="site-author-name" itemprop="name">WangDong</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">150</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">WangDong</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+  
+
+  
+
+</body>
+</html>

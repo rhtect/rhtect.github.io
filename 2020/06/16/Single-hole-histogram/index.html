@@ -1,0 +1,1416 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css">
+
+
+  <meta name="keywords" content="三维地测系统,">
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2">
+
+
+
+
+
+
+<meta name="description" content="单孔柱状图业务逻辑基础功能生成单孔柱状图 地址数据库输入柱状图数据 选择数据库 选择钻孔名称 选择钻孔模版（自定义模版需要开发） 选择侧斜资料注记方式  按度注记 按度分秒注记    比例尺 地层注记类型  地层名称：界 系 统 组 段  地层代码：Kz Q Qh  地层注记开关    煤层注记类型  煤层名称 煤层代码 地层注记开关    标志层注记类型  煤层名称 煤层代码  地层注记开关 设">
+<meta name="keywords" content="三维地测系统">
+<meta property="og:type" content="article">
+<meta property="og:title" content="单孔柱状图业务梳理">
+<meta property="og:url" content="http://yoursite.com/2020/06/16/Single-hole-histogram/index.html">
+<meta property="og:site_name" content="瑞华科技">
+<meta property="og:description" content="单孔柱状图业务逻辑基础功能生成单孔柱状图 地址数据库输入柱状图数据 选择数据库 选择钻孔名称 选择钻孔模版（自定义模版需要开发） 选择侧斜资料注记方式  按度注记 按度分秒注记    比例尺 地层注记类型  地层名称：界 系 统 组 段  地层代码：Kz Q Qh  地层注记开关    煤层注记类型  煤层名称 煤层代码 地层注记开关    标志层注记类型  煤层名称 煤层代码  地层注记开关 设">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/2020/06/16/Single-hole-histogram/F7A29AFE-2B86-45CC-9CF3-A1B9B83C153C.png">
+<meta property="og:image" content="http://yoursite.com/2020/06/16/Single-hole-histogram/85AA114F-8B8E-400E-A6EA-8FA3D9F475DE.png">
+<meta property="og:image" content="http://yoursite.com/2020/06/16/Single-hole-histogram/4ADDC03C-6581-4A44-8C78-6322B7441B5B.png">
+<meta property="og:image" content="http://yoursite.com/2020/06/16/Single-hole-histogram/4DF3B95B-B46E-4569-BC53-96E08144F5A8.png">
+<meta property="og:image" content="http://yoursite.com/2020/06/16/Single-hole-histogram/B2152112-D8AA-4B0C-85B6-8B5C102F09B1.png">
+<meta property="og:image" content="http://yoursite.com/2020/06/16/Single-hole-histogram/06263C2F-5942-40C6-AD80-7DC052580233.png">
+<meta property="og:image" content="http://yoursite.com/2020/06/16/Single-hole-histogram/ED063ABA-8ECC-4CAB-B40B-F8C587CEE444.png">
+<meta property="og:image" content="http://yoursite.com/2020/06/16/Single-hole-histogram/16680B32-B3EC-47F6-A41D-13A50CE6D88F.png">
+<meta property="og:image" content="http://yoursite.com/2020/06/16/Single-hole-histogram/82F9001B-77C5-462C-9F2A-E5C73819CDCA.png">
+<meta property="og:image" content="http://yoursite.com/2020/06/16/Single-hole-histogram/8A763300-17EE-4F55-8C76-F5755B051E29.png">
+<meta property="og:image" content="http://yoursite.com/2020/06/16/Single-hole-histogram/C3DB789B-1E3F-4083-9BA4-03F3BD92320A.png">
+<meta property="og:image" content="http://yoursite.com/2020/06/16/Single-hole-histogram/12527DFC-6D21-4509-9EE8-770C1A2F719D.png">
+<meta property="og:image" content="http://yoursite.com/2020/06/16/Single-hole-histogram/D03F38C6-E548-4C38-9B3C-1A9E5CA34C1A.png">
+<meta property="og:image" content="http://yoursite.com/2020/06/16/Single-hole-histogram/B4145C94-C072-43F0-B4D6-5C9E5E69C8F5.png">
+<meta property="og:image" content="http://yoursite.com/2020/06/16/Single-hole-histogram/814B9C40-4DE2-4567-BE77-19B3A0CFB805.png">
+<meta property="og:image" content="http://yoursite.com/2020/06/16/Single-hole-histogram/AACB585E-6340-4EBD-B342-F0E0A9ACB411.png">
+<meta property="og:image" content="http://yoursite.com/2020/06/16/Single-hole-histogram/698A747D-AE2D-4FB1-8FA2-E588B5E66467.png">
+<meta property="og:image" content="http://yoursite.com/2020/06/16/Single-hole-histogram/18333BA4-BF77-45B8-A72C-35406F0CA4C0.png">
+<meta property="og:image" content="http://yoursite.com/2020/06/16/Single-hole-histogram/16DFA980-03F9-4615-8174-804B99F5C832.png">
+<meta property="og:image" content="http://yoursite.com/2020/06/16/Single-hole-histogram/214C0237-05A7-4E64-845A-FAB3989840C8.png">
+<meta property="og:image" content="http://yoursite.com/2020/06/16/Single-hole-histogram/ACEF6312-1D9D-4D20-953F-E1BA9807DB36.png">
+<meta property="og:image" content="http://yoursite.com/2020/06/16/Single-hole-histogram/6836DED8-4327-490E-95F3-308CAE82FC16.png">
+<meta property="og:image" content="http://yoursite.com/2020/06/16/Single-hole-histogram/02BC4617-1EF7-4A2B-B449-6E63BB288123.png">
+<meta property="og:image" content="http://yoursite.com/2020/06/16/Single-hole-histogram/52DC0904-8C8F-4083-B4EE-B0DF971DCA8C.png">
+<meta property="og:image" content="http://yoursite.com/2020/06/16/Single-hole-histogram/25EA68D7-09BE-4E9B-B64F-0972032BF9A7.png">
+<meta property="og:image" content="http://yoursite.com/2020/06/16/Single-hole-histogram/BD28CC69-7999-4A87-B6FA-72DE5122F63C.png">
+<meta property="og:image" content="http://yoursite.com/2020/06/16/Single-hole-histogram/61D8FAF6-C8FA-43F8-8D17-83EB9EC9D6A6.png">
+<meta property="og:image" content="http://yoursite.com/2020/06/16/Single-hole-histogram/B4228D94-75B3-4AFD-A32A-B3AC8374DA55.png">
+<meta property="og:image" content="http://yoursite.com/2020/06/16/Single-hole-histogram/4C66F617-51C8-4B27-8F72-82EECA5FB4D5.png">
+<meta property="og:image" content="http://yoursite.com/2020/06/16/Single-hole-histogram/F14EEF7D-E382-4660-9484-19E6A6B1682F.png">
+<meta property="og:image" content="http://yoursite.com/2020/06/16/Single-hole-histogram/9BF2135E-2802-4C62-99CF-B6FA0D9619CA.png">
+<meta property="og:image" content="http://yoursite.com/2020/06/16/Single-hole-histogram/4EF2EF00-B15B-4125-8207-1FD5C5A50F63.png">
+<meta property="og:image" content="http://yoursite.com/2020/06/16/Single-hole-histogram/E8252356-1796-4D89-90F7-B3E5AED27F6B.png">
+<meta property="og:updated_time" content="2020-06-29T09:53:03.950Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="单孔柱状图业务梳理">
+<meta name="twitter:description" content="单孔柱状图业务逻辑基础功能生成单孔柱状图 地址数据库输入柱状图数据 选择数据库 选择钻孔名称 选择钻孔模版（自定义模版需要开发） 选择侧斜资料注记方式  按度注记 按度分秒注记    比例尺 地层注记类型  地层名称：界 系 统 组 段  地层代码：Kz Q Qh  地层注记开关    煤层注记类型  煤层名称 煤层代码 地层注记开关    标志层注记类型  煤层名称 煤层代码  地层注记开关 设">
+<meta name="twitter:image" content="http://yoursite.com/2020/06/16/Single-hole-histogram/F7A29AFE-2B86-45CC-9CF3-A1B9B83C153C.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2020/06/16/Single-hole-histogram/">
+
+
+
+
+
+  <title>单孔柱状图业务梳理 | 瑞华科技</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">瑞华科技</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">智慧化矿山的先行者</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/16/Single-hole-histogram/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="WangDong">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="瑞华科技">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">单孔柱状图业务梳理</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-06-16T14:42:53+08:00">
+                2020-06-16
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2020-06-29T17:53:03+08:00">
+                2020-06-29
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/document/" itemprop="url" rel="index">
+                    <span itemprop="name">文档</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="单孔柱状图业务逻辑"><a href="#单孔柱状图业务逻辑" class="headerlink" title="单孔柱状图业务逻辑"></a>单孔柱状图业务逻辑</h3><h4 id="基础功能"><a href="#基础功能" class="headerlink" title="基础功能"></a>基础功能</h4><h5 id="生成单孔柱状图"><a href="#生成单孔柱状图" class="headerlink" title="生成单孔柱状图"></a>生成单孔柱状图</h5><ul>
+<li>地址数据库输入柱状图数据</li>
+<li>选择数据库</li>
+<li>选择钻孔名称</li>
+<li>选择钻孔模版（自定义模版需要开发）</li>
+<li><del>选择侧斜资料注记方式</del><blockquote>
+<ul>
+<li><del>按度注记</del></li>
+<li><del>按度分秒注记</del></li>
+</ul>
+</blockquote>
+</li>
+<li>比例尺</li>
+<li>地层注记类型<blockquote>
+<ul>
+<li>地层名称：<code>界</code> <code>系</code> <code>统</code> <code>组</code> <code>段</code> </li>
+<li>地层代码：<code>Kz</code> <code>Q</code> <code>Qh</code> </li>
+<li>地层注记开关</li>
+</ul>
+</blockquote>
+</li>
+<li>煤层注记类型<blockquote>
+<ul>
+<li>煤层名称</li>
+<li>煤层代码</li>
+<li>地层注记开关</li>
+</ul>
+</blockquote>
+</li>
+<li>标志层注记类型<blockquote>
+<ul>
+<li>煤层名称</li>
+<li>煤层代码 </li>
+<li>地层注记开关</li>
+<li>设置需要注记的标志层</li>
+</ul>
+</blockquote>
+</li>
+<li>煤层厚度注记方式<blockquote>
+<ul>
+<li>分层注记：单独记录夹矸厚度,用<code>（）</code>表示<br><img src="F7A29AFE-2B86-45CC-9CF3-A1B9B83C153C.png" alt="单孔柱状图业务梳理"></li>
+<li>累加注记：<br><img src="85AA114F-8B8E-400E-A6EA-8FA3D9F475DE.png" alt="单孔柱状图业务梳理"></li>
+<li>累加分层注记：<br><img src="4ADDC03C-6581-4A44-8C78-6322B7441B5B.png" alt="单孔柱状图业务梳理"></li>
+</ul>
+</blockquote>
+</li>
+<li>测井柱状（控制绘制地层范围<blockquote>
+<ul>
+<li>只绘制煤层(其他岩性以无心状态表示)</li>
+<li>全部绘制</li>
+<li>分层注记</li>
+<li>累加注记</li>
+</ul>
+</blockquote>
+</li>
+<li>柱状分割线<blockquote>
+<ul>
+<li>用于较薄的煤层美观展示</li>
+<li>增加复选框，控制是否绘制</li>
+<li>左右分割线设置水平还是倾斜<br><img src="4DF3B95B-B46E-4569-BC53-96E08144F5A8.png" alt="单孔柱状图业务梳理"><br><img src="B2152112-D8AA-4B0C-85B6-8B5C102F09B1.png" alt="单孔柱状图业务梳理"></li>
+</ul>
+</blockquote>
+</li>
+</ul>
+<blockquote>
+<p><img src="06263C2F-5942-40C6-AD80-7DC052580233.png" alt="单孔柱状图业务梳理"></p>
+<ul>
+<li>煤层距离不够，可以适当压缩同一煤层距离</li>
+<li>分层注记设置</li>
+<li>设置数值小数点位置：<code>默认2位</code></li>
+<li>设置行高最小值：控制出图是文字大小超出边框范围<br><img src="ED063ABA-8ECC-4CAB-B40B-F8C587CEE444.png" alt="单孔柱状图业务梳理"></li>
+<li>岩性注记间距：内边距</li>
+<li>顶底距离</li>
+<li>两侧距离<br><img src="16680B32-B3EC-47F6-A41D-13A50CE6D88F.png" alt="单孔柱状图业务梳理"></li>
+</ul>
+</blockquote>
+<ul>
+<li><p>柱状与文字部分对齐</p>
+<blockquote>
+<ul>
+<li>选择<code>柱状与文字部分对齐</code>，将岩性描述部分按比例分割<br><img src="82F9001B-77C5-462C-9F2A-E5C73819CDCA.png" alt="单孔柱状图业务梳理"></li>
+<li>不选择<code>柱状与文字部分对齐</code>,将等分岩性描述的高<br><img src="8A763300-17EE-4F55-8C76-F5755B051E29.png" alt="单孔柱状图业务梳理"></li>
+</ul>
+</blockquote>
+</li>
+<li><p>消耗量曲线连成折线</p>
+<blockquote>
+<p><img src="C3DB789B-1E3F-4083-9BA4-03F3BD92320A.png" alt="单孔柱状图业务梳理"></p>
+</blockquote>
+</li>
+<li><p>标志层列每一行都连线 </p>
+<blockquote>
+<ul>
+<li>每一层都连线或者只在标注的层才连线<br><img src="12527DFC-6D21-4509-9EE8-770C1A2F719D.png" alt="单孔柱状图业务梳理"></li>
+</ul>
+</blockquote>
+</li>
+<li><p>同一煤层是采取率取平均值</p>
+<blockquote>
+<ul>
+<li>含有夹矸的煤层，采取率自动取平均值。</li>
+</ul>
+</blockquote>
+</li>
+<li>同一煤层时采长求和<blockquote>
+<ul>
+<li>含有夹矸的煤层，采长自动求和。</li>
+</ul>
+</blockquote>
+</li>
+<li><u>岩性填充时，填充符号占满整个格子，不协调调整填充</u><blockquote>
+<ul>
+<li>勾选此项，填充符号会占满整个格子。<br><img src="D03F38C6-E548-4C38-9B3C-1A9E5CA34C1A.png" alt="单孔柱状图业务梳理"></li>
+<li>不勾选时，系统会保证填充符号的完整。<br><img src="B4145C94-C072-43F0-B4D6-5C9E5E69C8F5.png" alt="单孔柱状图业务梳理"></li>
+</ul>
+</blockquote>
+</li>
+<li><u>反序绘制</u><blockquote>
+<ul>
+<li>当钻孔孔口在下时，根据实际情况绘制钻孔，累深为从大到小。</li>
+</ul>
+</blockquote>
+</li>
+<li><u>封孔按孔径绘制</u><blockquote>
+<ul>
+<li>参照孔径绘制钻孔封孔资料。</li>
+</ul>
+</blockquote>
+</li>
+<li><u>填充封孔</u><blockquote>
+<ul>
+<li>根据封孔材料自动填充封孔。</li>
+</ul>
+</blockquote>
+</li>
+<li><p><u>采用石油类型符号填充钻孔</u></p>
+<blockquote>
+<ul>
+<li>采用石油类型符号填充钻孔岩性。</li>
+</ul>
+</blockquote>
+</li>
+<li><p>选择测井曲线</p>
+<blockquote>
+<ul>
+<li>导入文件：<code>*.Dat</code> <code>*.fld</code></li>
+<li>设置数值上限额<br><img src="814B9C40-4DE2-4567-BE77-19B3A0CFB805.png" alt="单孔柱状图业务梳理"></li>
+</ul>
+</blockquote>
+</li>
+<li><ul>
+<li>对应曲线名称<blockquote>
+<p><img src="AACB585E-6340-4EBD-B342-F0E0A9ACB411.png" alt="单孔柱状图业务梳理"><br><img src="698A747D-AE2D-4FB1-8FA2-E588B5E66467.png" alt="单孔柱状图业务梳理"></p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>查看测井曲线数据</p>
+</li>
+<li><p>查看测井曲线</p>
+<blockquote>
+<p><img src="18333BA4-BF77-45B8-A72C-35406F0CA4C0.png" alt="单孔柱状图业务梳理"></p>
+<ul>
+<li>选择曲线类型，显示所有对应数据</li>
+<li>设置有效值开始和结束位置进行绘制</li>
+<li>设置有效参数范围：<code>深度</code> <code>井径</code> <code>密度</code>等<br><img src="16DFA980-03F9-4615-8174-804B99F5C832.png" alt="单孔柱状图业务梳理"></li>
+<li>点击<code>查看</code>-&gt;列出所有符合条件的数据</li>
+<li>可以导出文本文件（单根曲线对应数值）<br><img src="214C0237-05A7-4E64-845A-FAB3989840C8.png" alt="单孔柱状图业务梳理"></li>
+</ul>
+</blockquote>
+</li>
+<li><p>字段设置</p>
+<blockquote>
+<p>*<code>增加</code> <code>修改</code> 字段的对应<br><img src="ACEF6312-1D9D-4D20-953F-E1BA9807DB36.png" alt="单孔柱状图业务梳理"></p>
+</blockquote>
+</li>
+</ul>
+<blockquote>
+<ul>
+<li>曲线设置</li>
+<li>如果存在测井曲线字段，则必须添加测井曲线文件</li>
+<li>双击曲线修改<code>最大值</code> <code>最小值</code> <code>方向是否反向</code>属性<br><img src="6836DED8-4327-490E-95F3-308CAE82FC16.png" alt="单孔柱状图业务梳理"></li>
+</ul>
+</blockquote>
+<ul>
+<li>缺省值<blockquote>
+<ul>
+<li>设置单孔柱状图缺省值</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+<h5 id="生成测井曲线"><a href="#生成测井曲线" class="headerlink" title="生成测井曲线"></a>生成测井曲线</h5><p><img src="02BC4617-1EF7-4A2B-B449-6E63BB288123.png" alt="单孔柱状图业务梳理"></p>
+<ul>
+<li>选择测井曲线数据文件<blockquote>
+<ul>
+<li><code>txt文件</code>或者<del>其他任意文件</del><br><img src="52DC0904-8C8F-4083-B4EE-B0DF971DCA8C.png" alt="单孔柱状图业务梳理"></li>
+</ul>
+</blockquote>
+</li>
+<li><p>选择数据格式</p>
+<blockquote>
+<ul>
+<li>一般文本数据（如果原始数据被修改过）</li>
+<li>表头+测井数据（如果被修改过且包含表头）</li>
+<li>原始测井数据（常用）</li>
+</ul>
+</blockquote>
+</li>
+<li><p>输入比例尺</p>
+</li>
+<li><p><del>是否自动标注曲线最大值最小值</del>(3.2版已经去掉)</p>
+<blockquote>
+<ul>
+<li>点击<code>自动域值</code>自动剔除所选数据文件中的错误数值。</li>
+<li>修改曲线的<code>标注名称</code> <code>颜色</code>。</li>
+<li>显示<code>最大值</code> <code>最小值</code><br><img src="25EA68D7-09BE-4E9B-B64F-0972032BF9A7.png" alt="单孔柱状图业务梳理"></li>
+</ul>
+</blockquote>
+</li>
+<li><p>设置文件是否有表头（可以不用设置，自动识别）</p>
+<blockquote>
+<p><img src="BD28CC69-7999-4A87-B6FA-72DE5122F63C.png" alt="单孔柱状图业务梳理"><br><img src="61D8FAF6-C8FA-43F8-8D17-83EB9EC9D6A6.png" alt="单孔柱状图业务梳理"></p>
+</blockquote>
+</li>
+<li><p>设置文本分隔符（可以不用设置，自动识别）</p>
+</li>
+<li><img src="B4228D94-75B3-4AFD-A32A-B3AC8374DA55.png" alt="单孔柱状图业务梳理"></li>
+</ul>
+<ul>
+<li>曲线设置<br><img src="4C66F617-51C8-4B27-8F72-82EECA5FB4D5.png" alt="单孔柱状图业务梳理"><blockquote>
+<ul>
+<li>选择需要绘制的曲线</li>
+<li>设置曲线样式:<code>实线</code> <code>虚线</code></li>
+<li>绘制方式：<code>列表绘制</code> <code>重叠绘制</code></li>
+<li>确定生成测井曲线</li>
+<li>是否波幅取对数</li>
+<li>是否标注对数值</li>
+<li>是否标注最大值最小值</li>
+<li>设置注记高度：<code>mm</code></li>
+<li>曲线宽度：<code>mm</code></li>
+</ul>
+</blockquote>
+</li>
+</ul>
+<h5 id="生成测井综合成果图"><a href="#生成测井综合成果图" class="headerlink" title="生成测井综合成果图"></a>生成测井综合成果图</h5><h4 id="扩展功能"><a href="#扩展功能" class="headerlink" title="扩展功能"></a>扩展功能</h4><ul>
+<li><p>测井曲线数据查看</p>
+<blockquote>
+<ul>
+<li>查看坐标点详细信息<br><img src="F14EEF7D-E382-4660-9484-19E6A6B1682F.png" alt="单孔柱状图业务梳理"></li>
+</ul>
+</blockquote>
+</li>
+<li><p>柱状图缩短层间距</p>
+</li>
+<li><p>柱状图分幅</p>
+<blockquote>
+<p><img src="9BF2135E-2802-4C62-99CF-B6FA0D9619CA.png" alt="单孔柱状图业务梳理"></p>
+</blockquote>
+</li>
+<li><p>岩性代码对照表（由数据库接口维护）</p>
+<blockquote>
+<ul>
+<li>没有对照的岩性柱状图将不予显示<br><img src="4EF2EF00-B15B-4125-8207-1FD5C5A50F63.png" alt="单孔柱状图业务梳理"></li>
+</ul>
+</blockquote>
+</li>
+</ul>
+<h4 id="丢弃功能"><a href="#丢弃功能" class="headerlink" title="丢弃功能"></a>丢弃功能</h4><ul>
+<li><p>曲线标尺与位置</p>
+<blockquote>
+<ul>
+<li><del>给定标尺宽度</del>(由AUTO CAD完成)</li>
+<li><del>确定曲线位置</del>（由AUTO CAD完成)<br><img src="E8252356-1796-4D89-90F7-B3E5AED27F6B.png" alt="单孔柱状图业务梳理"></li>
+</ul>
+</blockquote>
+</li>
+<li><p>测井曲线数据导出至文本</p>
+</li>
+<li>测井曲线数据导出至数据库</li>
+</ul>
+<h4 id="自定义模版"><a href="#自定义模版" class="headerlink" title="自定义模版"></a>自定义模版</h4><h4 id="专业术语"><a href="#专业术语" class="headerlink" title="专业术语"></a>专业术语</h4>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/geodetic/" rel="tag"># 三维地测系统</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/06/16/Small-histogram/" rel="next" title="小柱状图业务梳理">
+                <i class="fa fa-chevron-left"></i> 小柱状图业务梳理
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/06/18/wendang-CMMI-PM-QA/" rel="prev" title="CMMI项目管理QA">
+                CMMI项目管理QA <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image" src="/images/avatar.gif" alt="WangDong">
+          <p class="site-author-name" itemprop="name">WangDong</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">150</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#单孔柱状图业务逻辑"><span class="nav-number">1.</span> <span class="nav-text">单孔柱状图业务逻辑</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#基础功能"><span class="nav-number">1.1.</span> <span class="nav-text">基础功能</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#生成单孔柱状图"><span class="nav-number">1.1.1.</span> <span class="nav-text">生成单孔柱状图</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#生成测井曲线"><span class="nav-number">1.1.2.</span> <span class="nav-text">生成测井曲线</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#生成测井综合成果图"><span class="nav-number">1.1.3.</span> <span class="nav-text">生成测井综合成果图</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#扩展功能"><span class="nav-number">1.2.</span> <span class="nav-text">扩展功能</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#丢弃功能"><span class="nav-number">1.3.</span> <span class="nav-text">丢弃功能</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#自定义模版"><span class="nav-number">1.4.</span> <span class="nav-text">自定义模版</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#专业术语"><span class="nav-number">1.5.</span> <span class="nav-text">专业术语</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">WangDong</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+  
+
+  
+
+</body>
+</html>

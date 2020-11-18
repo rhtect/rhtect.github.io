@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css">
+
+
+  <meta name="keywords" content="测试情况,">
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2">
+
+
+
+
+
+
+<meta name="description" content="背景信息 测试设备  测试部机器：1号机：C0000358982号机：C000035909   测试版本  20191227：蓝牙语音调大版本20200120：修复无坐标绘制路径20200220：增加多账户呼叫功能   测试人员  井下人员：乔通井上人员： 王志国 陈治雄 刘斌   备注信息  2月3日-2月5日期间测试车辆在维修无法使用2月7日-2月11日期间测试车辆在维修无法使用   操作手册">
+<meta name="keywords" content="测试情况">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2020年1-2月车载终端井下测试情况">
+<meta property="og:url" content="http://yoursite.com/2020/01/30/zongjie20200220/index.html">
+<meta property="og:site_name" content="瑞华科技">
+<meta property="og:description" content="背景信息 测试设备  测试部机器：1号机：C0000358982号机：C000035909   测试版本  20191227：蓝牙语音调大版本20200120：修复无坐标绘制路径20200220：增加多账户呼叫功能   测试人员  井下人员：乔通井上人员： 王志国 陈治雄 刘斌   备注信息  2月3日-2月5日期间测试车辆在维修无法使用2月7日-2月11日期间测试车辆在维修无法使用   操作手册">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2020-02-28T06:15:32.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="2020年1-2月车载终端井下测试情况">
+<meta name="twitter:description" content="背景信息 测试设备  测试部机器：1号机：C0000358982号机：C000035909   测试版本  20191227：蓝牙语音调大版本20200120：修复无坐标绘制路径20200220：增加多账户呼叫功能   测试人员  井下人员：乔通井上人员： 王志国 陈治雄 刘斌   备注信息  2月3日-2月5日期间测试车辆在维修无法使用2月7日-2月11日期间测试车辆在维修无法使用   操作手册">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2020/01/30/zongjie20200220/">
+
+
+
+
+
+  <title>2020年1-2月车载终端井下测试情况 | 瑞华科技</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">瑞华科技</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">智慧化矿山的先行者</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/30/zongjie20200220/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="WangDong">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="瑞华科技">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">2020年1-2月车载终端井下测试情况</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-01-30T22:52:55+08:00">
+                2020-01-30
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2020-02-28T14:15:32+08:00">
+                2020-02-28
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/summary/" itemprop="url" rel="index">
+                    <span itemprop="name">总结</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h4 id="背景信息"><a href="#背景信息" class="headerlink" title="背景信息"></a>背景信息</h4><ul>
+<li><p><strong>测试设备</strong></p>
+<blockquote>
+<p><code>测试部机器</code>：<br><code>1号机</code>：<code>C000035898</code><br><code>2号机</code>：<code>C000035909</code></p>
+</blockquote>
+</li>
+<li><p><strong>测试版本</strong></p>
+<blockquote>
+<p><code>20191227</code>：蓝牙语音调大版本<br><code>20200120</code>：修复无坐标绘制路径<br><code>20200220</code>：增加多账户呼叫功能</p>
+</blockquote>
+</li>
+<li><p><strong>测试人员</strong></p>
+<blockquote>
+<p>井下人员：<code>乔通</code><br>井上人员： <code>王志国</code> <code>陈治雄</code> <code>刘斌</code></p>
+</blockquote>
+</li>
+<li><p><strong>备注信息</strong></p>
+<blockquote>
+<p><code>2月3日</code>-<code>2月5日</code>期间测试车辆在维修无法使用<br><code>2月7日</code>-<code>2月11日</code>期间测试车辆在维修无法使用</p>
+</blockquote>
+</li>
+<li><p><strong>操作手册</strong><br><a href="https://rhtect.github.io/2020/01/16/wendang-manual-pad/" target="_blank" rel="noopener">测试操作手册</a></p>
+</li>
+</ul>
+<h4 id="1月18日测试情况"><a href="#1月18日测试情况" class="headerlink" title="1月18日测试情况"></a>1月18日测试情况</h4><ul>
+<li><strong>测试设备：</strong> <code>测试部机器</code></li>
+<li><strong>测试版本：</strong> <code>20191227</code></li>
+<li><strong>测试方法：</strong> <code>井下测试</code></li>
+<li><strong>测试项目：</strong> <blockquote>
+<p><code>视频通话</code> <code>语音通话</code></p>
+</blockquote>
+</li>
+<li><strong>测试结果：</strong> <blockquote>
+<p>无坐标点的目的地无法开始任务。<br><code>入井</code> ：8联巷-9联巷无画面；1070辅运巷1400m画面卡顿；1070辅运巷2500到三盘区600m车载无画面；三盘区2200m无画面。<br><code>出井</code>：三盘区2200m、1070辅运巷2900m、1070辅运巷1400m卡顿；1070辅运巷2300m～2600m无画面，8联巷到9联巷无画面。</p>
+</blockquote>
+</li>
+<li><strong>测试反馈：</strong> <blockquote>
+<p><code>1月19日</code>修复坐标点的目的地绘制路径的问题</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="1月20日测试情况"><a href="#1月20日测试情况" class="headerlink" title="1月20日测试情况"></a>1月20日测试情况</h4><ul>
+<li><strong>测试设备：</strong> <code>测试部机器</code></li>
+<li><strong>测试版本：</strong> <code>20200120</code></li>
+<li><strong>测试方法：</strong> <code>井下测试</code></li>
+<li><strong>测试项目：</strong> <blockquote>
+<p><code>视频通话</code> <code>语音通话</code> <code>订单推送</code> <code>导航路径规划</code></p>
+</blockquote>
+</li>
+<li><strong>测试结果：</strong> <blockquote>
+<p>派单消息提示成功6次 成功的最慢5秒内直接收到提示。失败3次 七连巷派单一直到二盘巷都没收到，二联巷派单一直到井口没收到，栈桥皮带走廊派单子回到值班室没收到。这三次任务都显示在消息列表里，但都没有弹出提示。最后值班室发了三个任务都瞬时收到提示。</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="1月21日测试情况"><a href="#1月21日测试情况" class="headerlink" title="1月21日测试情况"></a>1月21日测试情况</h4><ul>
+<li><strong>测试设备：</strong> <code>测试部机器</code></li>
+<li><strong>测试版本：</strong> <code>20200120</code></li>
+<li><strong>测试方法：</strong> <code>井下测试</code></li>
+<li><strong>测试项目：</strong> <blockquote>
+<p><code>视频通话</code> <code>语音通话</code> <code>订单推送</code> <code>导航路径规划</code></p>
+</blockquote>
+</li>
+<li><strong>测试结果：</strong> <blockquote>
+<p>派单消息提示成功6次 成功的最慢5秒内直接收到提示。失败3次 七连巷派单一直到二盘巷都没收到，二联巷派单一直到井口没收到，栈桥皮带走廊派单子回到值班室没收到。这三次任务都显示在消息列表里，但都没有弹出提示。最后值班室发了三个任务都瞬时收到提示。</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="1月23日测试情况"><a href="#1月23日测试情况" class="headerlink" title="1月23日测试情况"></a>1月23日测试情况</h4><ul>
+<li><strong>测试设备：</strong> <code>测试部机器</code></li>
+<li><strong>测试版本：</strong> <code>20200120</code></li>
+<li><strong>测试方法：</strong> <code>井下测试</code></li>
+<li><strong>测试项目：</strong> <blockquote>
+<p><code>视频通话</code> <code>语音通话</code> <code>订单推送</code> <code>导航路径规划</code></p>
+</blockquote>
+</li>
+<li><strong>测试结果：</strong> <blockquote>
+<p>进入掘进巷后、平板无信号，无法弹出派车通知（掘进巷通常只有巷口一个基站），网络差的情况下派车后无法收到派单通知，等到网路好的时候还是无法收到，需要重新杀死进程重联网新派单才能收到通。</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="2月2日测试情况"><a href="#2月2日测试情况" class="headerlink" title="2月2日测试情况"></a>2月2日测试情况</h4><ul>
+<li><strong>测试设备：</strong> <code>测试部机器</code></li>
+<li><strong>测试版本：</strong> <code>20200120</code></li>
+<li><strong>测试方法：</strong> <code>井下测试</code></li>
+<li><strong>测试项目：</strong> <blockquote>
+<p><code>视频通话</code><br><code>语音通话</code><br><code>订单推送</code><br><code>导航路径规划</code></p>
+</blockquote>
+</li>
+<li><strong>测试结果：</strong> <blockquote>
+<p>测试问题：未断网重连的情况下，可以连续的收到即时提示，如果发生一次断网，再重连则一直无法收到提示，重启平板后，联网以后测试又可以正常收到，但是如果再发生断网则又是一直无法再收到提示，即使连上网也收不到，以上说的只是无法收到弹框提示，但是消息列表里是可以看到任务的。</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="2月6日测试情况"><a href="#2月6日测试情况" class="headerlink" title="2月6日测试情况"></a>2月6日测试情况</h4><ul>
+<li><strong>测试设备：</strong> <code>测试部机器</code></li>
+<li><strong>测试版本：</strong> <code>20200120</code></li>
+<li><strong>测试方法：</strong> <code>井下测试</code></li>
+<li><strong>测试项目：</strong> <blockquote>
+<p><code>视频通话</code> <code>语音通话</code> <code>订单推送</code> <code>导航路径规划</code></p>
+</blockquote>
+</li>
+<li><strong>测试结果：</strong> <blockquote>
+<p>1.视频通话，以下位置信号不好，视频多次卡顿<br>（1）<code>二盘区</code>600-800米<br>（2）<code>一盘区</code>避难硐室-井底方向2850米，一盘区3800左右<br>（3）<code>三盘区</code>1100至2500<br>（4）<code>1070西翼</code>进100米-500米（1号站-2号站)，但出来视频流畅<br>2.派单问题，断网重连后无法收到弹出提示<br>3.硬件问题：<br>（1）平板wifi长时间不连自动关闭wifi<br>（2）平板断网重连 蓝牙无法自动连接 需手动连</p>
+</blockquote>
+</li>
+<li><strong>测试反馈：</strong> <blockquote>
+<p><code>2月10日</code>修复信号不好情况下订单任务推送的问题</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="2月12日测试情况"><a href="#2月12日测试情况" class="headerlink" title="2月12日测试情况"></a>2月12日测试情况</h4><ul>
+<li><strong>测试设备：</strong> <code>1号机</code></li>
+<li><strong>测试版本：</strong> <code>20200120</code></li>
+<li><strong>测试方法：</strong> <code>井上测试</code> <code>井下测试</code></li>
+<li><strong>测试项目：</strong> <blockquote>
+<p><code>视频通话</code> <code>语音通话</code> <code>订单推送</code> <code>导航路径规划</code> <code>操作台音箱</code> <code>操作台对讲机</code> <code>操作台按键</code></p>
+</blockquote>
+</li>
+<li><strong>测试结果：</strong> <blockquote>
+<p>入井的时候视频断网情况比较多，出井的时候比较流程很少断的，另外对讲机功能好使了，按键和音响可以用，只是音响声音太小也没有调节按钮。</p>
+</blockquote>
+</li>
+<li><strong>测试反馈：</strong> <blockquote>
+<p>无需修改，蓝牙操作步骤问题。</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="2月14日测试情况"><a href="#2月14日测试情况" class="headerlink" title="2月14日测试情况"></a>2月14日测试情况</h4><ul>
+<li><strong>测试设备：</strong> <code>1号机</code> <code>2号机</code></li>
+<li><strong>测试版本：</strong> <code>20200120</code> <code>20191227</code></li>
+<li><strong>测试方法：</strong> <code>井下测试</code></li>
+<li><strong>测试项目：</strong> <blockquote>
+<p><code>视频通话</code> <code>语音通话</code> <code>订单推送</code> <code>导航路径规划</code> <code>操作台音箱</code> <code>操作台对讲机</code> <code>操作台按键</code></p>
+</blockquote>
+</li>
+<li><strong>测试结果：</strong> <blockquote>
+<p>两平板做对比测试，2号平板测试蓝牙音箱的音量并且与1号平板做对比，结论无明显区别。<br>1.派单无弹出通知，且点出车或者拒绝，屏幕中心一直转圈，像是在连网中<br>2.车载只有在点开任务时，提示您有新任务，会发出声音</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="2月19日测试情况"><a href="#2月19日测试情况" class="headerlink" title="2月19日测试情况"></a>2月19日测试情况</h4><ul>
+<li><strong>测试设备：</strong> <code>1号机</code> <code>2号机</code></li>
+<li><strong>测试版本：</strong> <code>20200120</code> <code>20191227</code></li>
+<li><strong>测试方法：</strong> <code>井下测试</code></li>
+<li><strong>测试项目：</strong> <blockquote>
+<p><code>视频通话</code> <code>语音通话</code> <code>订单推送</code> <code>导航路径规划</code> <code>操作台音箱</code> <code>操作台对讲机</code> <code>操作台按键</code></p>
+</blockquote>
+</li>
+<li><strong>测试结果：</strong> <blockquote>
+<p>‘井上测试’:使用<code>1号机</code>和<code>2号机</code>平版测试 功能都正常 包含平板语音和视频 车载语音 和视频 按键功能和派单提示测试均正常 配合人刘振武<br>‘井下测试’:是下井时测试的，因为要赶着干活，测试时间较短，平板电量不足，干完活回程没能测试，测试结果：语音通话车载发音正常，视频通话没声音，派单没有提示</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="2月20日测试情况"><a href="#2月20日测试情况" class="headerlink" title="2月20日测试情况"></a>2月20日测试情况</h4><ul>
+<li><strong>测试设备：</strong> <code>1号机</code> <code>2号机</code></li>
+<li><strong>测试版本：</strong> <code>20200120</code> <code>20191227</code></li>
+<li><strong>测试方法：</strong> <code>井下测试</code></li>
+<li><strong>测试项目：</strong> <blockquote>
+<p><code>视频通话</code> <code>语音通话</code> <code>订单推送</code> <code>导航路径规划</code> <code>操作台音箱</code> <code>操作台对讲机</code> <code>操作台按键</code></p>
+</blockquote>
+</li>
+<li><strong>测试结果：</strong> <blockquote>
+<p><code>1号机</code>与<code>2号机</code>做对比测试<br><code>1号机</code> 网络正常情况下派单正常弹出提示 提示音跟<code>2号机</code>差不多 视频车载声音比<code>2号机</code>明显好很多 声音连续也大 但是声音还需更大<br><code>2号机</code>网络正常情况下派单正常弹出提示 提示声音效果还行 视频车载声音时有时无 不连续 车载声音井上将就井下声音在噪音环境下效果不好 还是不够响亮</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="2月22日测试情况"><a href="#2月22日测试情况" class="headerlink" title="2月22日测试情况"></a>2月22日测试情况</h4><ul>
+<li><strong>测试设备：</strong> <code>2号机</code></li>
+<li><strong>测试版本：</strong> <code>20200220</code></li>
+<li><strong>测试方法：</strong> <code>井上测试</code></li>
+<li><strong>测试项目：</strong> <blockquote>
+<p><code>视频通话</code>  <code>订单推送</code></p>
+</blockquote>
+</li>
+<li><strong>测试结果：</strong> <blockquote>
+<p><code>2号机</code> 呼叫服务端 10次 均正常接通。<br><code>2号机</code> 接收派单任务20次 延迟2秒以内， 均正常接收。</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="2月24日测试情况"><a href="#2月24日测试情况" class="headerlink" title="2月24日测试情况"></a>2月24日测试情况</h4><ul>
+<li><strong>测试设备：</strong> <code>2号机</code></li>
+<li><strong>测试版本：</strong> <code>20200220</code></li>
+<li><strong>测试方法：</strong> <code>井下测试</code></li>
+<li><strong>测试项目：</strong> <blockquote>
+<p><code>视频通话</code> <code>语音通话</code> <code>订单推送</code> <code>导航路径规划</code> <code>操作台音箱</code> <code>操作台对讲机</code> <code>操作台按键</code></p>
+</blockquote>
+</li>
+<li><strong>测试结果：</strong> <blockquote>
+<p>下井带错测试机器，无有效测试结果</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="2月26日测试情况"><a href="#2月26日测试情况" class="headerlink" title="2月26日测试情况"></a>2月26日测试情况</h4><ul>
+<li><strong>测试设备：</strong> <code>2号机</code></li>
+<li><strong>测试版本：</strong> <code>20200220</code></li>
+<li><strong>测试方法：</strong> <code>井下测试</code></li>
+<li><strong>测试项目：</strong> <blockquote>
+<p><code>视频通话</code> <code>语音通话</code> <code>订单推送</code> <code>导航路径规划</code> <code>操作台音箱</code> <code>操作台对讲机</code> <code>操作台按键</code></p>
+</blockquote>
+</li>
+<li><strong>测试结果：</strong> <blockquote>
+<p>派单收到通知正常，发车结束和拒绝功能正常，车载语音提示正常<br>井上和井下互发视频和语音，使用按键和触摸按钮均能正常收到，平板发音正常，但车载绝大多数情况不发音，偶尔有发音语句不连贯，逐个字蹦出来的情况，需要晚上拿回宿舍继续测试车载通话发音情况</p>
+</blockquote>
+</li>
+<li><strong>测试反馈：</strong> <blockquote>
+<p>当天晚上宿舍单独测试了一下蓝牙视频通话和语音通话，全部通过按键操作<br>（1）<code>语音通话</code>测试10多次，<code>100%</code>底座发声。<br>（2）<code>视频通话</code>测试10多次，<code>40%</code>左右底座发声，其余的平板发声。</p>
+</blockquote>
+</li>
+</ul>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/测试情况/" rel="tag"># 测试情况</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/01/16/wendang-manual-pad/" rel="next" title="辅助运输二期操作手册">
+                <i class="fa fa-chevron-left"></i> 辅助运输二期操作手册
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/02/02/transportation20200202/" rel="prev" title="辅助运输20200202">
+                辅助运输20200202 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image" src="/images/avatar.gif" alt="WangDong">
+          <p class="site-author-name" itemprop="name">WangDong</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">150</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#背景信息"><span class="nav-number">1.</span> <span class="nav-text">背景信息</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1月18日测试情况"><span class="nav-number">2.</span> <span class="nav-text">1月18日测试情况</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1月20日测试情况"><span class="nav-number">3.</span> <span class="nav-text">1月20日测试情况</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1月21日测试情况"><span class="nav-number">4.</span> <span class="nav-text">1月21日测试情况</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1月23日测试情况"><span class="nav-number">5.</span> <span class="nav-text">1月23日测试情况</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2月2日测试情况"><span class="nav-number">6.</span> <span class="nav-text">2月2日测试情况</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2月6日测试情况"><span class="nav-number">7.</span> <span class="nav-text">2月6日测试情况</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2月12日测试情况"><span class="nav-number">8.</span> <span class="nav-text">2月12日测试情况</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2月14日测试情况"><span class="nav-number">9.</span> <span class="nav-text">2月14日测试情况</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2月19日测试情况"><span class="nav-number">10.</span> <span class="nav-text">2月19日测试情况</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2月20日测试情况"><span class="nav-number">11.</span> <span class="nav-text">2月20日测试情况</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2月22日测试情况"><span class="nav-number">12.</span> <span class="nav-text">2月22日测试情况</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2月24日测试情况"><span class="nav-number">13.</span> <span class="nav-text">2月24日测试情况</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2月26日测试情况"><span class="nav-number">14.</span> <span class="nav-text">2月26日测试情况</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">WangDong</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+  
+
+  
+
+</body>
+</html>
