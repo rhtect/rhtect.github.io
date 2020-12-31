@@ -4,7 +4,7 @@ date: 2020-12-29 18:06:17
 categories: 文档
 tags: 三维地测系统
 mathjax: ture
-password: dice2
+password: password2
 ---
 
 * 单孔柱状图
