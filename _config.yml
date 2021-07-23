@@ -70,6 +70,7 @@ tag_map:
       三维地测系统: geodetic
       清华瑞华CAD: trcad
       CMMI: CMMI
+      产品经理: PM
       回收文档: trashDocument
 
 # Date / Time format
