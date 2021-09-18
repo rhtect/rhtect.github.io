@@ -127,7 +127,7 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">181</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">182</span></a>
 
   </li>
       <li class="menu-item menu-item-search">
@@ -180,6 +180,1059 @@
 
           <div class="content index posts-expand">
             
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/22/zongjie20191222/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="WangDong">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="瑞华科技">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/12/22/zongjie20191222/" class="post-title-link" itemprop="url">车辆出入井时长分布</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-12-22 17:44:26" itemprop="dateCreated datePublished" datetime="2019-12-22T17:44:26+08:00">2019-12-22</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/summary/" itemprop="url" rel="index"><span itemprop="name">总结</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><strong>没有下井记录的车辆类型</strong></p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>数量</th>
+<th>任务数</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>炸药车</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>煤泥车</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>10吨叉车</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>升降车</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>30装载机</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>拉管车</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>55吨支架车</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<hr>
+<div id="echarts275" style="width: 100%;height: 400px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts275'));
+        // 指定图表的配置项和数据
+        var option = {
+    title: {
+        text: "车辆类型统计",
+        subtext: ""
+    },
+    tooltip: {
+        trigger: "axis"
+    },
+    legend: {
+        data: ["9月", "10月", "11月", "12月"]
+    },
+    toolbox: {
+        show: true,
+        feature: {
+            mark: {
+                show: false
+            },
+            dataView: {
+                show: false,
+                readOnly: true
+            },
+            magicType: {
+                show: false,
+                type: ["line", "bar"]
+            },
+            restore: {
+                show: false
+            },
+            saveAsImage: {
+                show: true
+            }
+        }
+    },
+    calculable: true,
+    xAxis: [
+        {
+            type: "category",
+            data: ["人员运输车辆", "水泥罐车", "10吨多功能车", "50吨支架车", "炸药车", "5吨加长平板", "3吨料车", "12座人车", "40吨铲车", "20座人车", "5吨翻斗", "指挥车", "25吨铲车", "ED55吨铲车", "物料运输车辆", "5吨平板", "3吨料车(小)", "5吨叉车", "20座接待人车", "20装载机", "洒水车", "支架回撤车"]
+        }
+    ],
+    yAxis: [
+        {
+            type: "value"
+        }
+    ],
+    series: [
+        {
+            name: "9月",
+            type: "bar",
+            data: [1, 9, 2, 1, 1, 1, 60, 18, 2, 27, 7, 3, 1, 2, 26, 22, 3, 4, 4, 0, 0, 0]
+        },
+        {
+            name: "10月",
+            type: "bar",
+            data: [1, 9, 3, 1, 1, 1, 60, 17, 1, 26, 7, 3, 3, 2, 25, 23, 3, 4, 3, 0, 0, 0]
+        },
+        {
+            type: "bar",
+            name: "11月",
+            data: [1, 12, 2, 3, 1, 2, 59, 19, 1, 27, 7, 4, 1, 2, 22, 23, 3, 4, 4, 5, 0, 0]
+        },
+        {
+            type: "bar",
+            name: "12月",
+            data: [1, 10, 3, 4, 1, 2, 60, 18, 0, 25, 6, 4, 2, 2, 21, 21, 5, 4, 6, 5, 1, 1]
+        }
+    ]
+}
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<hr>
+<div id="echarts4155" style="width: 100%;height: 400px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts4155'));
+        // 指定图表的配置项和数据
+        var option = {
+    title: {
+        text: "3吨料车",
+        subtext: "",
+        x: "center"
+    },
+    tooltip: {
+        trigger: "item",
+        formatter: "{a} <br/>{b} : {c} ({d}%)"
+    },
+    toolbox: {
+        show: true,
+        feature: {
+            mark: {
+                show: false
+            },
+            dataView: {
+                show: false,
+                readOnly: true
+            },
+            restore: {
+                show: false
+            },
+            saveAsImage: {
+                show: true
+            }
+        }
+    },
+    calculable: true,
+    series: [
+        {
+            name: "",
+            type: "pie",
+            radius: "55%",
+            center: ["50%", "60%"],
+            data: [
+                {
+                    value: 248,
+                    name: "少于30分钟"
+                },
+                {
+                    value: 672,
+                    name: "大于30分钟小于一小时"
+                },
+                {
+                    value: 1723,
+                    name: "大于1小时小于1.5小时"
+                },
+                {
+                    value: 1861,
+                    name: "大于1.5小时小于2小时"
+                },
+                {
+                    value: 1440,
+                    name: "大于2小时小于2.5小时"
+                },
+                {
+                    value: 996,
+                    name: "大于2.5小时小于3小时"
+                },
+                {
+                    value: 736,
+                    name: "大于3小时小于3.5小时"
+                },
+                {
+                    value: 567,
+                    name: "大于3.5小时小于4小时"
+                },
+                {
+                    value: 2111,
+                    name: "大于4小时小于8小时"
+                },
+                {
+                    value: 305,
+                    name: "大于8小时"
+                }
+            ]
+        }
+    ]
+}
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+
+
+<div id="echarts3226" style="width: 100%;height: 400px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts3226'));
+        // 指定图表的配置项和数据
+        var option = {
+    title: {
+        text: "三吨料车",
+
+    },
+    tooltip: {
+        trigger: "axis"
+    },
+    legend: {
+        data: ["9月", "10月", "11月", "12月"]
+    },
+    toolbox: {
+        show: true,
+        feature: {
+            mark: {
+                show: false
+            },
+            dataView: {
+                show: false,
+                readOnly: true
+            },
+            magicType: {
+                show: false,
+                type: ["line", "bar"]
+            },
+            restore: {
+                show: false
+            },
+            saveAsImage: {
+                show: true
+            }
+        }
+    },
+    calculable: true,
+    xAxis: [
+        {
+            type: "category",
+            boundaryGap: false,
+            data: ["少于30分钟", "大于30分钟小于一小时", "大于1小时小于1.5小时", "大于1.5小时小于2小时", "大于2小时小于2.5小时", "大于2.5小时小于3小时", "大于3小时小于3.5小时", "大于3.5小时小于4小时", "大于4小时小于8小时", "大于8小时"]
+        }
+    ],
+    yAxis: [
+        {
+            type: "value",
+            name: "次"
+        }
+    ],
+    series: [
+        {
+            name: "9月",
+            type: "line",
+            data: [61, 191, 437, 377, 337, 277, 206, 170, 680, 108]
+        },
+        {
+            name: "10月",
+            type: "line",
+            data: [66, 234, 644, 882, 568, 326, 193, 140, 370, 26]
+        },
+        {
+            type: "line",
+            name: "11月",
+            data: [84, 135, 393, 351, 339, 246, 205, 164, 688, 109]
+        },
+        {
+            type: "line",
+            name: "12月",
+            data: [37, 112, 249, 251, 196, 147, 132, 93, 373, 62]
+        }
+    ]
+}
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<hr>
+<div id="echarts9764" style="width: 100%;height: 400px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts9764'));
+        // 指定图表的配置项和数据
+        var option = {
+    title: {
+        text: "3吨料车（小）",
+        subtext: "",
+        x: "center"
+    },
+    tooltip: {
+        trigger: "item",
+        formatter: "{a} <br/>{b} : {c} ({d}%)"
+    },
+    toolbox: {
+        show: true,
+        feature: {
+            mark: {
+                show: false
+            },
+            dataView: {
+                show: false,
+                readOnly: true
+            },
+            restore: {
+                show: false
+            },
+            saveAsImage: {
+                show: true
+            }
+        }
+    },
+    calculable: true,
+    series: [
+        {
+            name: "",
+            type: "pie",
+            radius: "55%",
+            center: ["50%", "60%"],
+            data: [
+                {
+                    value: 32,
+                    name: "少于30分钟"
+                },
+                {
+                    value: 21,
+                    name: "大于30分钟小于一小时"
+                },
+                {
+                    value: 54,
+                    name: "大于1小时小于1.5小时"
+                },
+                {
+                    value: 91,
+                    name: "大于1.5小时小于2小时"
+                },
+                {
+                    value: 48,
+                    name: "大于2小时小于2.5小时"
+                },
+                {
+                    value: 50,
+                    name: "大于2.5小时小于3小时"
+                },
+                {
+                    value: 49,
+                    name: "大于3小时小于3.5小时"
+                },
+                {
+                    value: 32,
+                    name: "大于3.5小时小于4小时"
+                },
+                {
+                    value: 263,
+                    name: "大于4小时小于8小时"
+                },
+                {
+                    value: 38,
+                    name: "大于8小时"
+                }
+            ]
+        }
+    ]
+}
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<div id="echarts3129" style="width: 100%;height: 400px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts3129'));
+        // 指定图表的配置项和数据
+        var option = {
+    title: {
+        text: "三吨料车(小)",
+
+    },
+    tooltip: {
+        trigger: "axis"
+    },
+    legend: {
+        data: ["9月", "10月", "11月", "12月"]
+    },
+    toolbox: {
+        show: true,
+        feature: {
+            mark: {
+                show: false
+            },
+            dataView: {
+                show: false,
+                readOnly: true
+            },
+            magicType: {
+                show: false,
+                type: ["line", "bar"]
+            },
+            restore: {
+                show: false
+            },
+            saveAsImage: {
+                show: true
+            }
+        }
+    },
+    calculable: true,
+    xAxis: [
+        {
+            type: "category",
+            boundaryGap: false,
+            data: ["少于30分钟", "大于30分钟小于一小时", "大于1小时小于1.5小时", "大于1.5小时小于2小时", "大于2小时小于2.5小时", "大于2.5小时小于3小时", "大于3小时小于3.5小时", "大于3.5小时小于4小时", "大于4小时小于8小时", "大于8小时"]
+        }
+    ],
+    yAxis: [
+        {
+            type: "value",
+            name: "次"
+        }
+    ],
+    series: [
+        {
+            name: "9月",
+            type: "line",
+            data: [2, 5, 11, 10, 12, 8, 6, 3, 104, 17]
+        },
+        {
+            name: "10月",
+            type: "line",
+            data: [12, 8, 25, 42, 26, 24, 21, 9, 45, 1]
+        },
+        {
+            type: "line",
+            name: "11月",
+            data: [11, 6, 8, 20, 6, 7, 13, 10, 83, 17]
+        },
+        {
+            type: "line",
+            name: "12月",
+            data: [7, 2, 10, 19, 4, 11, 9, 10, 31, 3]
+        }
+    ]
+}
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+
+<p>假设每班可以执行的任务数是X次，车辆总数是Y辆。那么不难得到结论：<br>$x=y \times 0.4 \times 1 + y \times 0.25 \times 2 + y \times 0.35 \times 3$</p>
+<hr>
+<div id="echarts860" style="width: 100%;height: 400px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts860'));
+        // 指定图表的配置项和数据
+        var option = {
+    title: {
+        text: "5吨翻斗",
+        subtext: "",
+        x: "center"
+    },
+    tooltip: {
+        trigger: "item",
+        formatter: "{a} <br/>{b} : {c} ({d}%)"
+    },
+    toolbox: {
+        show: true,
+        feature: {
+            mark: {
+                show: false
+            },
+            dataView: {
+                show: false,
+                readOnly: true
+            },
+            restore: {
+                show: false
+            },
+            saveAsImage: {
+                show: true
+            }
+        }
+    },
+    calculable: true,
+    series: [
+        {
+            name: "",
+            type: "pie",
+            radius: "55%",
+            center: ["50%", "60%"],
+            data: [
+                {
+                    value: 31,
+                    name: "少于30分钟"
+                },
+                {
+                    value: 100,
+                    name: "大于30分钟小于一小时"
+                },
+                {
+                    value: 242,
+                    name: "大于1小时小于1.5小时"
+                },
+                {
+                    value: 212,
+                    name: "大于1.5小时小于2小时"
+                },
+                {
+                    value: 156,
+                    name: "大于2小时小于2.5小时"
+                },
+                {
+                    value: 75,
+                    name: "大于2.5小时小于3小时"
+                },
+                {
+                    value: 49,
+                    name: "大于3小时小于3.5小时"
+                },
+                {
+                    value: 25,
+                    name: "大于3.5小时小于4小时"
+                },
+                {
+                    value: 42,
+                    name: "大于4小时小于8小时"
+                },
+                {
+                    value: 2,
+                    name: "大于8小时"
+                }
+            ]
+        }
+    ]
+}
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<div id="echarts4028" style="width: 100%;height: 400px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts4028'));
+        // 指定图表的配置项和数据
+        var option = {
+    title: {
+        text: "5吨翻斗",
+
+    },
+    tooltip: {
+        trigger: "axis"
+    },
+    legend: {
+        data: ["9月", "10月", "11月", "12月"]
+    },
+    toolbox: {
+        show: true,
+        feature: {
+            mark: {
+                show: false
+            },
+            dataView: {
+                show: false,
+                readOnly: true
+            },
+            magicType: {
+                show: false,
+                type: ["line", "bar"]
+            },
+            restore: {
+                show: false
+            },
+            saveAsImage: {
+                show: true
+            }
+        }
+    },
+    calculable: true,
+    xAxis: [
+        {
+            type: "category",
+            boundaryGap: false,
+            data: ["少于30分钟", "大于30分钟小于一小时", "大于1小时小于1.5小时", "大于1.5小时小于2小时", "大于2小时小于2.5小时", "大于2.5小时小于3小时", "大于3小时小于3.5小时", "大于3.5小时小于4小时", "大于4小时小于8小时", "大于8小时"]
+        }
+    ],
+    yAxis: [
+        {
+            type: "value",
+            name: "次"
+        }
+    ],
+    series: [
+        {
+            name: "9月",
+            type: "line",
+            data: [5, 33, 54, 36, 32, 20, 10, 10, 15, 0]
+        },
+        {
+            name: "10月",
+            type: "line",
+            data: [12, 27, 78, 87, 43, 19, 15, 6, 1, 0]
+        },
+        {
+            type: "line",
+            name: "11月",
+            data: [5, 25, 68, 46, 54, 27, 18, 2, 17, 1]
+        },
+        {
+            type: "line",
+            name: "12月",
+            data: [9, 15, 42, 43, 27, 9, 6, 7, 9, 1]
+        }
+    ]
+}
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+
+<hr>
+<div id="echarts3009" style="width: 100%;height: 400px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts3009'));
+        // 指定图表的配置项和数据
+        var option = {
+    title: {
+        text: "5吨平板",
+        subtext: "",
+        x: "center"
+    },
+    tooltip: {
+        trigger: "item",
+        formatter: "{a} <br/>{b} : {c} ({d}%)"
+    },
+    toolbox: {
+        show: true,
+        feature: {
+            mark: {
+                show: false
+            },
+            dataView: {
+                show: false,
+                readOnly: true
+            },
+            restore: {
+                show: false
+            },
+            saveAsImage: {
+                show: true
+            }
+        }
+    },
+    calculable: true,
+    series: [
+        {
+            name: "",
+            type: "pie",
+            radius: "55%",
+            center: ["50%", "60%"],
+            data: [
+                {
+                    value: 130,
+                    name: "少于30分钟"
+                },
+                {
+                    value: 262,
+                    name: "大于30分钟小于一小时"
+                },
+                {
+                    value: 537,
+                    name: "大于1小时小于1.5小时"
+                },
+                {
+                    value: 510,
+                    name: "大于1.5小时小于2小时"
+                },
+                {
+                    value: 391,
+                    name: "大于2小时小于2.5小时"
+                },
+                {
+                    value: 248,
+                    name: "大于2.5小时小于3小时"
+                },
+                {
+                    value: 181,
+                    name: "大于3小时小于3.5小时"
+                },
+                {
+                    value: 116,
+                    name: "大于3.5小时小于4小时"
+                },
+                {
+                    value: 205,
+                    name: "大于4小时小于8小时"
+                },
+                {
+                    value: 14,
+                    name: "大于8小时"
+                }
+            ]
+        }
+    ]
+}
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<div id="echarts2348" style="width: 100%;height: 400px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts2348'));
+        // 指定图表的配置项和数据
+        var option = {
+    title: {
+        text: "5吨平板",
+
+    },
+    tooltip: {
+        trigger: "axis"
+    },
+    legend: {
+        data: ["9月", "10月", "11月", "12月"]
+    },
+    toolbox: {
+        show: true,
+        feature: {
+            mark: {
+                show: false
+            },
+            dataView: {
+                show: false,
+                readOnly: true
+            },
+            magicType: {
+                show: false,
+                type: ["line", "bar"]
+            },
+            restore: {
+                show: false
+            },
+            saveAsImage: {
+                show: true
+            }
+        }
+    },
+    calculable: true,
+    xAxis: [
+        {
+            type: "category",
+            boundaryGap: false,
+            data: ["少于30分钟", "大于30分钟小于一小时", "大于1小时小于1.5小时", "大于1.5小时小于2小时", "大于2小时小于2.5小时", "大于2.5小时小于3小时", "大于3小时小于3.5小时", "大于3.5小时小于4小时", "大于4小时小于8小时", "大于8小时"]
+        }
+    ],
+    yAxis: [
+        {
+            type: "value",
+            name: "次"
+        }
+    ],
+    series: [
+        {
+            name: "9月",
+            type: "line",
+            data: [26, 88, 136, 151, 92, 64, 52, 39, 51, 2]
+        },
+        {
+            name: "10月",
+            type: "line",
+            data: [52, 62, 115, 114, 96, 72, 64, 28, 66, 3]
+        },
+        {
+            type: "line",
+            name: "11月",
+            data: [30, 71, 161, 134, 104, 60, 29, 26, 53, 7]
+        },
+        {
+            type: "line",
+            name: "12月",
+            data: [22, 41, 125, 111, 99, 52, 36, 23, 35, 2]
+        }
+    ]
+}
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+
+<hr>
+<div id="echarts2105" style="width: 100%;height: 400px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts2105'));
+        // 指定图表的配置项和数据
+        var option = {
+    title: {
+        text: "5吨加长平板",
+        subtext: "",
+        x: "center"
+    },
+    tooltip: {
+        trigger: "item",
+        formatter: "{a} <br/>{b} : {c} ({d}%)"
+    },
+    toolbox: {
+        show: true,
+        feature: {
+            mark: {
+                show: false
+            },
+            dataView: {
+                show: false,
+                readOnly: true
+            },
+            restore: {
+                show: false
+            },
+            saveAsImage: {
+                show: true
+            }
+        }
+    },
+    calculable: true,
+    series: [
+        {
+            name: "",
+            type: "pie",
+            radius: "55%",
+            center: ["50%", "60%"],
+            data: [
+                {
+                    value: 8,
+                    name: "少于30分钟"
+                },
+                {
+                    value: 10,
+                    name: "大于30分钟小于一小时"
+                },
+                {
+                    value: 30,
+                    name: "大于1小时小于1.5小时"
+                },
+                {
+                    value: 50,
+                    name: "大于1.5小时小于2小时"
+                },
+                {
+                    value: 19,
+                    name: "大于2小时小于2.5小时"
+                },
+                {
+                    value: 11,
+                    name: "大于2.5小时小于3小时"
+                },
+                {
+                    value: 7,
+                    name: "大于3小时小于3.5小时"
+                },
+                {
+                    value: 3,
+                    name: "大于3.5小时小于4小时"
+                },
+                {
+                    value: 2,
+                    name: "大于4小时小于8小时"
+                },
+                {
+                    value: 0,
+                    name: "大于8小时"
+                }
+            ]
+        }
+    ]
+}
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<div id="echarts2070" style="width: 100%;height: 400px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts2070'));
+        // 指定图表的配置项和数据
+        var option = {
+    title: {
+        text: "5吨加长平板",
+
+    },
+    tooltip: {
+        trigger: "axis"
+    },
+    legend: {
+        data: ["9月", "10月", "11月", "12月"]
+    },
+    toolbox: {
+        show: true,
+        feature: {
+            mark: {
+                show: false
+            },
+            dataView: {
+                show: false,
+                readOnly: true
+            },
+            magicType: {
+                show: false,
+                type: ["line", "bar"]
+            },
+            restore: {
+                show: false
+            },
+            saveAsImage: {
+                show: true
+            }
+        }
+    },
+    calculable: true,
+    xAxis: [
+        {
+            type: "category",
+            boundaryGap: false,
+            data: ["少于30分钟", "大于30分钟小于一小时", "大于1小时小于1.5小时", "大于1.5小时小于2小时", "大于2小时小于2.5小时", "大于2.5小时小于3小时", "大于3小时小于3.5小时", "大于3.5小时小于4小时", "大于4小时小于8小时", "大于8小时"]
+        }
+    ],
+    yAxis: [
+        {
+            type: "value",
+            name: "次"
+        }
+    ],
+    series: [
+        {
+            name: "9月",
+            type: "line",
+            data: [3, 2, 6, 6, 3, 2, 0, 0, 0, 0]
+        },
+        {
+            name: "10月",
+            type: "line",
+            data: [0, 4, 5, 9, 4, 4, 2, 2, 0, 0]
+        },
+        {
+            type: "line",
+            name: "11月",
+            data: [2, 4, 10, 20, 0, 3, 3, 1, 1, 0]
+        },
+        {
+            type: "line",
+            name: "12月",
+            data: [3, 0, 9, 15, 12, 2, 2, 0, 1, 0]
+        }
+    ]
+}
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+
+<hr>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
       
   
   
@@ -2452,87 +3505,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/08/zongjie20191114/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="WangDong">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="瑞华科技">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/11/08/zongjie20191114/" class="post-title-link" itemprop="url">辅助运输周总结</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-11-08 15:48:45" itemprop="dateCreated datePublished" datetime="2019-11-08T15:48:45+08:00">2019-11-08</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-11-09 12:00:00" itemprop="dateModified" datetime="2019-11-09T12:00:00+08:00">2019-11-09</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/summary/" itemprop="url" rel="index"><span itemprop="name">总结</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          加密文档, 请输入密码查看.
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2019/11/08/zongjie20191114/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -2602,7 +3574,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">181</span>
+          <span class="site-state-item-count">182</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
