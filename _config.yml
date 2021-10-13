@@ -8,7 +8,7 @@ subtitle: 智慧化矿山的先行者
 description:
 keywords:
 author: WangDong
-language: zh-Hans
+language: zh-CN
 timezone: Asia/Shanghai
 
 # URL
@@ -32,12 +32,17 @@ skip_render:
 new_post_name: :title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
-external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
 post_asset_folder: true
 relative_link: false
 future: true
+
+external_link:
+  enable: true
+  field: site # Apply to the whole site
+  exclude: ''
+
 highlight:
   enable: true
   line_number: true
@@ -68,6 +73,7 @@ category_map:
 tag_map:
       辅助运输: transportation
       三维地测系统: geodetic
+      生产技术管理: production_technology_management
       清华瑞华CAD: trcad
       CMMI: CMMI
       产品经理: PM
@@ -88,7 +94,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: next 
+theme: next_7 
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -101,8 +107,8 @@ deploy:
 search:
   path: search.xml
   field: post
-  format: html
-  limit: 10000
+  content: true
+  # template: ./search.xml
 
 # Security
 encrypt: # hexo-blog-encrypt

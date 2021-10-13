@@ -3,7 +3,7 @@ title: 区域坐标识别小工具
 date: 2021-05-31 15:17:31
 categories: 文档
 tags: 三维地测系统
-password: qinghua
+password: password2
 ---
 
 # 区域坐标识别小工具
