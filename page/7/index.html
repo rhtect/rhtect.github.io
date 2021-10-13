@@ -127,7 +127,7 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">182</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">183</span></a>
 
   </li>
       <li class="menu-item menu-item-search">
@@ -180,6 +180,932 @@
 
           <div class="content index posts-expand">
             
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/24/Huibao-Seizedvehicle/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="WangDong">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="瑞华科技">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/07/24/Huibao-Seizedvehicle/" class="post-title-link" itemprop="url">矿井车辆使用时长报告</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-07-24 14:16:59" itemprop="dateCreated datePublished" datetime="2020-07-24T14:16:59+08:00">2020-07-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-10-03 16:27:07" itemprop="dateModified" datetime="2020-10-03T16:27:07+08:00">2020-10-03</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/report/" itemprop="url" rel="index"><span itemprop="name">汇报</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="车辆出入井时长对比图"><a href="#车辆出入井时长对比图" class="headerlink" title="车辆出入井时长对比图"></a>车辆出入井时长对比图</h3><div id="echarts2108" style="width: 100%;height: 400px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts2108'));
+        // 指定图表的配置项和数据
+        var option = {
+    tooltip: {
+        trigger: "axis"
+    },
+    legend: {
+        data: ["2小时", "4小时", "8小时", "超时"]
+    },
+    toolbox: {
+        show: true,
+        feature: {
+            mark: {
+                show: false
+            },
+            dataView: {
+                show: false,
+                readOnly: true
+            },
+            magicType: {
+                show: false,
+                type: ["line", "bar", "stack", "tiled"]
+            },
+            restore: {
+                show: false
+            },
+            saveAsImage: {
+                show: true
+            }
+        }
+    },
+    calculable: true,
+    xAxis: [
+        {
+            type: "category",
+            boundaryGap: false,
+            data: ["3吨料车", "3吨料车(小)", "5吨加长平板", "5吨平板", "5吨翻斗"]
+        }
+    ],
+    yAxis: [
+        {
+            type: "value"
+        }
+    ],
+    series: [
+        {
+            type: "line",
+            itemStyle: {
+                normal: {
+                    areaStyle: {
+                        type: "default"
+                    }
+                }
+            },
+            name: "2小时",
+            data: [2330, 129, 96, 1268, 380]
+        },
+        {
+            type: "line",
+            itemStyle: {
+                normal: {
+                    areaStyle: {
+                        type: "default"
+                    }
+                }
+            },
+            name: "4小时",
+            data: [952, 54, 6, 219, 39]
+        },
+        {
+            type: "line",
+            itemStyle: {
+                normal: {
+                    areaStyle: {
+                        type: "default"
+                    }
+                }
+            },
+            name: "8小时",
+            data: [3868, 237, 12, 315, 76]
+        },
+        {
+            type: "line",
+            itemStyle: {
+                normal: {
+                    areaStyle: {
+                        type: "default"
+                    }
+                }
+            },
+            name: "超时",
+            data: [550, 34, 4, 31, 13]
+        }
+    ]
+}
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<ul>
+<li>统计日期范围：2020年1月-2020年6月</li>
+<li>对比车型：<code>3吨料车</code> <code>3吨料车(小)</code> <code>5吨加长平板</code> <code>5吨平板</code> <code>5吨翻斗</code></li>
+<li>对比时长段：<code>0-2小时</code> <code>2-4小时</code> <code>4-8小时</code> <code>超过8小时</code></li>
+<li>数据结论<blockquote>
+<p>各种车型大部分一次出入井时长可以控制在8小时内<br>各种车型均存在一次出入井时长超过8小时的情况</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="车辆出入井时长月度对比"><a href="#车辆出入井时长月度对比" class="headerlink" title="车辆出入井时长月度对比"></a>车辆出入井时长月度对比</h3><p><img src="15955836646320.jpg" alt="车辆出入井时长月度对比"></p>
+<ul>
+<li><code>3吨料车</code>：<code>8小时</code>与<code>超过8小时</code>任务占比相对稳定，曲线变化幅度不大。</li>
+<li><code>3吨料车(小)</code>：<code>8小时</code> <code>超过8小时</code>与<code>4小时</code>任务占比相对稳定，曲线变化幅度不大。</li>
+<li><code>5吨翻斗</code>：<code>8小时</code>与<code>超过8小时</code>任务占比相对稳定，曲线变化幅度不大。</li>
+<li><code>5吨平板</code>：<code>8小时</code>与<code>超过8小时</code>任务占比相对稳定，曲线变化幅度不大。</li>
+</ul>
+<h3 id="各种车型出入井时长占比"><a href="#各种车型出入井时长占比" class="headerlink" title="各种车型出入井时长占比"></a>各种车型出入井时长占比</h3><p><img src="15955799703118.jpg" alt="出入井时长对比"></p>
+<ul>
+<li><code>3吨料车</code>：超过4小时占比超过<code>50%</code>, 超过8小时占比达到<code>4.81%</code>。</li>
+<li><code>3吨料车(小)</code>：超过4小时占比超过<code>54%</code>, 超过8小时占比达到<code>5.46%</code>。</li>
+<li><code>5吨加长平板</code>：超过4小时占比超过<code>17%</code>, 超过8小时占比达到<code>5.88%</code>。</li>
+<li><code>5吨平板</code>：超过4小时占比超过<code>19%</code>, 超过8小时占比达到<code>1.17%</code>。</li>
+<li><code>5吨翻斗</code>：超过4小时占比超过<code>21%</code>, 超过8小时占比达到<code>2.75%</code>。</li>
+</ul>
+<h3 id="项目部申请车型占比"><a href="#项目部申请车型占比" class="headerlink" title="项目部申请车型占比"></a>项目部申请车型占比</h3><p><img src="15955798280001.jpg" alt="项目部占比"></p>
+<ul>
+<li><code>3吨料车</code>：前5名的用车单位9月-12月占比超过82%。</li>
+<li><code>3吨料车(小)</code>：掘进八区机掘18队占比为63.65%，前5名的用车单位9月-12月占比超过90%。</li>
+<li><code>5吨翻斗</code>：综采预备队占比为36.19%；前5名的用车单位9月-12月占比超过96%；9月-12月一共只有9个项目部申请5顿翻斗。</li>
+<li><code>5吨平板</code>：5吨平板执行的任务类型不确定；项目部使用5吨平板次数比较随机。</li>
+</ul>
+<h3 id="车型分类详情"><a href="#车型分类详情" class="headerlink" title="车型分类详情"></a>车型分类详情</h3><h4 id="3吨料车"><a href="#3吨料车" class="headerlink" title="3吨料车"></a>3吨料车</h4><div id="echarts9921" style="width: 100%;height: 400px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts9921'));
+        // 指定图表的配置项和数据
+        var option = 
+{
+    title: {
+        text: "3吨料车",
+        subtext: "",
+        x: "center"
+    },
+    tooltip: {
+        trigger: "item",
+        formatter: "{a} <br/>{b} : {c} ({d}%)"
+    },
+    legend: {
+        orient: "vertical",
+        x: "left",
+        data: ["2小时", "4小时", "8小时", "超时"]
+    },
+    toolbox: {
+        show: true,
+        feature: {
+            mark: {
+                show: false
+            },
+            dataView: {
+                show: false,
+                readOnly: true
+            },
+            restore: {
+                show: false
+            },
+            saveAsImage: {
+                show: true
+            }
+        }
+    },
+    calculable: true,
+    series: [
+        {
+            name: "3吨料车",
+            type: "pie",
+            radius: "55%",
+            center: ["50%", "60%"],
+            itemStyle: {
+                normal: {
+                    label: {
+                        show: true,
+                        formatter: "{b}: {c} ({d}%)"
+                    }
+                }
+            },
+            data: [
+                {
+                    value: 503,
+                    name: "2小时"
+                },
+                {
+                    value: 143,
+                    name: "4小时"
+                },
+                {
+                    value: 502,
+                    name: "8小时"
+                },
+                {
+                    value: 58,
+                    name: "超时"
+                }
+            ]
+        }
+    ]
+}
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+
+<h4 id="3吨料车-小"><a href="#3吨料车-小" class="headerlink" title="3吨料车(小)"></a>3吨料车(小)</h4><div id="echarts2115" style="width: 100%;height: 400px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts2115'));
+        // 指定图表的配置项和数据
+        var option = {
+    title: {
+        text: "3吨料车(小)",
+        subtext: "",
+        x: "center"
+    },
+    tooltip: {
+        trigger: "item",
+        formatter: "{a} <br/>{b} : {c} ({d}%)"
+    },
+    legend: {
+        orient: "vertical",
+        x: "left",
+        data: ["2小时", "4小时", "8小时", "超时"]
+    },
+    toolbox: {
+        show: true,
+        feature: {
+            mark: {
+                show: false
+            },
+            dataView: {
+                show: false,
+                readOnly: true
+            },
+            restore: {
+                show: false
+            },
+            saveAsImage: {
+                show: true
+            }
+        }
+    },
+    calculable: true,
+    series: [
+        {
+            name: "3吨料车(小)",
+            type: "pie",
+            radius: "55%",
+            center: ["50%", "60%"],
+            itemStyle: {
+                normal: {
+                    label: {
+                        show: true,
+                        formatter: "{b}: {c} ({d}%)"
+                    }
+                }
+            },
+            data: [
+                {
+                    value: 16,
+                    name: "2小时"
+                },
+                {
+                    value: 9,
+                    name: "4小时"
+                },
+                {
+                    value: 27,
+                    name: "8小时"
+                },
+                {
+                    value: 3,
+                    name: "超时"
+                }
+            ]
+        }
+    ]
+}
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+
+<h4 id="5吨加长平板"><a href="#5吨加长平板" class="headerlink" title="5吨加长平板"></a>5吨加长平板</h4><div id="echarts4010" style="width: 100%;height: 400px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts4010'));
+        // 指定图表的配置项和数据
+        var option = {
+    title: {
+        text: "5吨加长平板",
+        subtext: "",
+        x: "center"
+    },
+    tooltip: {
+        trigger: "item",
+        formatter: "{a} <br/>{b} : {c} ({d}%)"
+    },
+    legend: {
+        orient: "vertical",
+        x: "left",
+        data: ["2小时", "4小时", "8小时", "超时"]
+    },
+    toolbox: {
+        show: true,
+        feature: {
+            mark: {
+                show: false
+            },
+            dataView: {
+                show: false,
+                readOnly: true
+            },
+            restore: {
+                show: false
+            },
+            saveAsImage: {
+                show: true
+            }
+        }
+    },
+    calculable: true,
+    series: [
+        {
+            name: "5吨加长平板",
+            type: "pie",
+            radius: "55%",
+            center: ["50%", "60%"],
+            itemStyle: {
+                normal: {
+                    label: {
+                        show: true,
+                        formatter: "{b}: {c} ({d}%)"
+                    }
+                }
+            },
+            data: [
+                {
+                    value: 13,
+                    name: "2小时"
+                },
+                {
+                    value: 1,
+                    name: "4小时"
+                },
+                {
+                    value: 2,
+                    name: "8小时"
+                },
+                {
+                    value: 1,
+                    name: "超时"
+                }
+            ]
+        }
+    ]
+}
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<h4 id="5吨平板"><a href="#5吨平板" class="headerlink" title="5吨平板"></a>5吨平板</h4><div id="echarts2355" style="width: 100%;height: 400px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts2355'));
+        // 指定图表的配置项和数据
+        var option = {
+    title: {
+        text: "5吨平板",
+        subtext: "",
+        x: "center"
+    },
+    tooltip: {
+        trigger: "item",
+        formatter: "{a} <br/>{b} : {c} ({d}%)"
+    },
+    legend: {
+        orient: "vertical",
+        x: "left",
+        data: ["2小时", "4小时", "8小时", "超时"]
+    },
+    toolbox: {
+        show: true,
+        feature: {
+            mark: {
+                show: false
+            },
+            dataView: {
+                show: false,
+                readOnly: true
+            },
+            restore: {
+                show: false
+            },
+            saveAsImage: {
+                show: true
+            }
+        }
+    },
+    calculable: true,
+    series: [
+        {
+            name: "5吨平板",
+            type: "pie",
+            radius: "55%",
+            center: ["50%", "60%"],
+            itemStyle: {
+                normal: {
+                    label: {
+                        show: true,
+                        formatter: "{b}: {c} ({d}%)"
+                    }
+                }
+            },
+            data: [
+                {
+                    value: 298,
+                    name: "2小时"
+                },
+                {
+                    value: 47,
+                    name: "4小时"
+                },
+                {
+                    value: 78,
+                    name: "8小时"
+                },
+                {
+                    value: 5,
+                    name: "超时"
+                }
+            ]
+        }
+    ]
+}
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<h4 id="5吨翻斗"><a href="#5吨翻斗" class="headerlink" title="5吨翻斗"></a>5吨翻斗</h4><div id="echarts7503" style="width: 100%;height: 400px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts7503'));
+        // 指定图表的配置项和数据
+        var option = {
+    title: {
+        text: "5吨翻斗",
+        subtext: "",
+        x: "center"
+    },
+    tooltip: {
+        trigger: "item",
+        formatter: "{a} <br/>{b} : {c} ({d}%)"
+    },
+    legend: {
+        orient: "vertical",
+        x: "left",
+        data: ["2小时", "4小时", "8小时", "超时"]
+    },
+    toolbox: {
+        show: true,
+        feature: {
+            mark: {
+                show: false
+            },
+            dataView: {
+                show: false,
+                readOnly: true
+            },
+            restore: {
+                show: false
+            },
+            saveAsImage: {
+                show: true
+            }
+        }
+    },
+    calculable: true,
+    series: [
+        {
+            name: "5吨翻斗",
+            type: "pie",
+            radius: "55%",
+            center: ["50%", "60%"],
+            itemStyle: {
+                normal: {
+                    label: {
+                        show: true,
+                        formatter: "{b}: {c} ({d}%)"
+                    }
+                }
+            },
+            data: [
+                {
+                    value: 76,
+                    name: "2小时"
+                },
+                {
+                    value: 10,
+                    name: "4小时"
+                },
+                {
+                    value: 20,
+                    name: "8小时"
+                },
+                {
+                    value: 3,
+                    name: "超时"
+                }
+            ]
+        }
+    ]
+}
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<h3 id="车辆出入井时长月度详情"><a href="#车辆出入井时长月度详情" class="headerlink" title="车辆出入井时长月度详情"></a>车辆出入井时长月度详情</h3><h4 id="3吨料车-1"><a href="#3吨料车-1" class="headerlink" title="3吨料车"></a>3吨料车</h4><div id="echarts3543" style="width: 80%;height: 350px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts3543'));
+        // 指定图表的配置项和数据
+        var option = {
+    title: {
+        text: "",
+        subtext: ""
+    },
+    tooltip: {
+        trigger: "axis"
+    },
+    legend: {
+        data: ["2小时", "4小时", "8小时", "超时"]
+    },
+    toolbox: {
+        show: true,
+        feature: {
+            mark: {
+                show: false
+            },
+            dataView: {
+                show: false,
+                readOnly: true
+            },
+            magicType: {
+                show: false,
+                type: ["line", "bar"]
+            },
+            restore: {
+                show: false
+            },
+            saveAsImage: {
+                show: true
+            }
+        }
+    },
+    calculable: true,
+    xAxis: [
+        {
+            type: "category",
+            boundaryGap: false,
+            data: ["一月", "二月", "三月", "四月", "五月", "六月"]
+        }
+    ],
+    yAxis: [
+        {
+            type: "value",
+            name: "°C"
+        }
+    ],
+    series: [
+        {
+            type: "line",
+            name: "2小时",
+            data: [388, 305, 348, 382, 403, 503]
+        },
+        {
+            type: "line",
+            name: "4小时",
+            data: [166, 144, 175, 162, 155, 143]
+        },
+        {
+            type: "line",
+            name: "8小时",
+            data: [629, 625, 757, 693, 617, 502]
+        },
+        {
+            type: "line",
+            name: "超时",
+            data: [95, 115, 124, 93, 57, 58]
+        }
+    ]
+}
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+<h4 id="3吨料车（小）"><a href="#3吨料车（小）" class="headerlink" title="3吨料车（小）"></a>3吨料车（小）</h4><div id="echarts2883" style="width: 80%;height: 350px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts2883'));
+        // 指定图表的配置项和数据
+        var option = {
+    title: {
+        text: "",
+        subtext: ""
+    },
+    tooltip: {
+        trigger: "axis"
+    },
+    legend: {
+        data: ["2小时", "4小时", "8小时", "超时"]
+    },
+    toolbox: {
+        show: true,
+        feature: {
+            mark: {
+                show: false
+            },
+            dataView: {
+                show: false,
+                readOnly: true
+            },
+            magicType: {
+                show: false,
+                type: ["line", "bar"]
+            },
+            restore: {
+                show: false
+            },
+            saveAsImage: {
+                show: true
+            }
+        }
+    },
+    calculable: true,
+    xAxis: [
+        {
+            type: "category",
+            boundaryGap: false,
+            data: ["一月", "二月", "三月", "四月", "五月", "六月"]
+        }
+    ],
+    yAxis: [
+        {
+            type: "value",
+            name: "°C"
+        }
+    ],
+    series: [
+        {
+            type: "line",
+            name: "2小时",
+            data: [27, 14, 27, 22, 23, 16]
+        },
+        {
+            type: "line",
+            name: "4小时",
+            data: [7, 10, 5, 13, 9, 9]
+        },
+        {
+            type: "line",
+            name: "8小时",
+            data: [42, 48, 44, 41, 34, 27]
+        },
+        {
+            type: "line",
+            name: "超时",
+            data: [11, 4, 7, 7, 2, 3]
+        }
+    ]
+}
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+<h4 id="5吨平板-1"><a href="#5吨平板-1" class="headerlink" title="5吨平板"></a>5吨平板</h4><div id="echarts4827" style="width: 80%;height: 350px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts4827'));
+        // 指定图表的配置项和数据
+        var option = {
+    title: {
+        text: "",
+        subtext: ""
+    },
+    tooltip: {
+        trigger: "axis"
+    },
+    legend: {
+        data: ["2小时", "4小时", "8小时", "超时"]
+    },
+    toolbox: {
+        show: true,
+        feature: {
+            mark: {
+                show: false
+            },
+            dataView: {
+                show: false,
+                readOnly: true
+            },
+            magicType: {
+                show: false,
+                type: ["line", "bar"]
+            },
+            restore: {
+                show: false
+            },
+            saveAsImage: {
+                show: true
+            }
+        }
+    },
+    calculable: true,
+    xAxis: [
+        {
+            type: "category",
+            boundaryGap: false,
+            data: ["一月", "二月", "三月", "四月", "五月", "六月"]
+        }
+    ],
+    yAxis: [
+        {
+            type: "value",
+            name: "°C"
+        }
+    ],
+    series: [
+        {
+            type: "line",
+            name: "2小时",
+            data: [149, 152, 204, 212, 252, 298]
+        },
+        {
+            type: "line",
+            name: "4小时",
+            data: [32, 29, 51, 30, 30, 47]
+        },
+        {
+            type: "line",
+            name: "8小时",
+            data: [47, 39, 69, 39, 43, 78]
+        },
+        {
+            type: "line",
+            name: "超时",
+            data: [2, 4, 5, 11, 3, 5]
+        }
+    ]
+}
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<h4 id="5吨翻斗-1"><a href="#5吨翻斗-1" class="headerlink" title="5吨翻斗"></a>5吨翻斗</h4><div id="echarts550" style="width: 80%;height: 350px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts550'));
+        // 指定图表的配置项和数据
+        var option = {
+    title: {
+        text: "",
+        subtext: ""
+    },
+    tooltip: {
+        trigger: "axis"
+    },
+    legend: {
+        data: ["2小时", "4小时", "8小时", "超时"]
+    },
+    toolbox: {
+        show: true,
+        feature: {
+            mark: {
+                show: false
+            },
+            dataView: {
+                show: false,
+                readOnly: true
+            },
+            magicType: {
+                show: false,
+                type: ["line", "bar"]
+            },
+            restore: {
+                show: false
+            },
+            saveAsImage: {
+                show: true
+            }
+        }
+    },
+    calculable: true,
+    xAxis: [
+        {
+            type: "category",
+            boundaryGap: false,
+            data: ["一月", "二月", "三月", "四月", "五月", "六月"]
+        }
+    ],
+    yAxis: [
+        {
+            type: "value",
+            name: "°C"
+        }
+    ],
+    series: [
+        {
+            type: "line",
+            name: "2小时",
+            data: [58, 43, 57, 73, 73, 76]
+        },
+        {
+            type: "line",
+            name: "4小时",
+            data: [3, 2, 10, 8, 6, 10]
+        },
+        {
+            type: "line",
+            name: "8小时",
+            data: [9, 9, 16, 8, 14, 20]
+        },
+        {
+            type: "line",
+            name: "超时",
+            data: [3, 2, 0, 3, 2, 3]
+        }
+    ]
+}
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
       
   
   
@@ -1419,87 +2345,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/18/wendang-CMMI-PM-QA/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="WangDong">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="瑞华科技">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/06/18/wendang-CMMI-PM-QA/" class="post-title-link" itemprop="url">CMMI项目管理QA</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-06-18 15:26:29" itemprop="dateCreated datePublished" datetime="2020-06-18T15:26:29+08:00">2020-06-18</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-06-22 14:56:43" itemprop="dateModified" datetime="2020-06-22T14:56:43+08:00">2020-06-22</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/document/" itemprop="url" rel="index"><span itemprop="name">文档</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          加密文档, 请输入密码查看.
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/06/18/wendang-CMMI-PM-QA/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1569,7 +2414,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">182</span>
+          <span class="site-state-item-count">183</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
