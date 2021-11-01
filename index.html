@@ -521,7 +521,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-10-28 16:01:32" itemprop="dateModified" datetime="2021-10-28T16:01:32+08:00">2021-10-28</time>
+                <time title="修改时间：2021-11-01 17:08:36" itemprop="dateModified" datetime="2021-11-01T17:08:36+08:00">2021-11-01</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -544,15 +544,181 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          加密文档, 请输入密码查看.
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/08/31/wendang-scjs-describe/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
+          <h3 id="协同设计模块架构"><a href="#协同设计模块架构" class="headerlink" title="协同设计模块架构"></a>协同设计模块架构</h3><p><img src="16303365546879.jpg" alt="生产管理系统功能结构2"></p>
+<h3 id="信息描述"><a href="#信息描述" class="headerlink" title="信息描述"></a>信息描述</h3><table>
+<thead>
+<tr>
+<th align="center">功能模块</th>
+<th align="left">技术难点</th>
+<th align="center">N模块复用</th>
+<th align="center">地测知识</th>
+<th align="center">可外包程度</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">系统图</td>
+<td align="left">1.WEB端管理后台; 2.有C端功能; 3.业务要求高; 4.涉及核心算法。</td>
+<td align="center">低</td>
+<td align="center">不需要</td>
+<td align="center">低</td>
+</tr>
+<tr>
+<td align="center">解算报告</td>
+<td align="left">1.WEB端解算功能; 2.生成WORD报告; 3.业务要求极高; 4.涉及核心算法。</td>
+<td align="center">低</td>
+<td align="center">不需要</td>
+<td align="center">底</td>
+</tr>
+<tr>
+<td align="center">设备布置图</td>
+<td align="left">1.WEB端管理功能; 2.有C端功能; 3.业务要求高; 4.涉及核心算法。</td>
+<td align="center">中（出图逻辑一致）</td>
+<td align="center">需要采掘工程平面图基础</td>
+<td align="center">中</td>
+</tr>
+<tr>
+<td align="center">台账管理</td>
+<td align="left">1.WEB端增删改查操作（N个模块高复用）; 2. 无C端功能; 3.不涉及核心数据; 4.不涉及核心算法。</td>
+<td align="center">高</td>
+<td align="center">不需要</td>
+<td align="center">高</td>
+</tr>
+</tbody></table>
+<h3 id="系统架构效果图"><a href="#系统架构效果图" class="headerlink" title="系统架构效果图"></a>系统架构效果图</h3><p><img src="%E9%A6%96%E9%A1%B5-%E6%96%B0.png" alt="首页-新"><br><img src="%E9%A6%96%E9%A1%B5-%E6%96%B01.png" alt="首页-新1"><br><img src="%E9%A6%96%E9%A1%B5-%E6%96%B02.png" alt="首页-新2"><br><img src="%E5%9C%B0%E8%B4%A8%E6%B5%8B%E9%87%8F.png" alt="地质测量"></p>
+<p><img src="%E7%94%9F%E4%BA%A7%E7%AE%A1%E7%90%86.png" alt="生产管理"><br><img src="%E5%A4%A7%E6%95%B0%E6%8D%AE.png" alt="大数据"></p>
+<h3 id="资源分配图"><a href="#资源分配图" class="headerlink" title="资源分配图"></a>资源分配图</h3><p><img src="16357376935371.jpg"></p>
+<h3 id="功能模块结构拓扑图"><a href="#功能模块结构拓扑图" class="headerlink" title="功能模块结构拓扑图"></a>功能模块结构拓扑图</h3><p><img src="16357391224726.jpg"></p>
+<h3 id="系统里程碑"><a href="#系统里程碑" class="headerlink" title="系统里程碑"></a>系统里程碑</h3><table>
+<thead>
+<tr>
+<th align="center">名称</th>
+<th align="left">时间</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">供电协同设计</td>
+<td align="left">2021年12月23日</td>
+<td align="center">完成供电协同设计全部产品设计</td>
+</tr>
+<tr>
+<td align="center">通风协同设计</td>
+<td align="left">2022年1月28日</td>
+<td align="center">完成通风协同设计全部产品设计</td>
+</tr>
+<tr>
+<td align="center">供排水协同设计</td>
+<td align="left">2022年1月28日</td>
+<td align="center">完成供排水协同设计全部产品设计</td>
+</tr>
+<tr>
+<td align="center">采掘协同设计</td>
+<td align="left">2021年1月24日</td>
+<td align="center">完成采掘协同设计全部产品设计</td>
+</tr>
+</tbody></table>
+<h4 id="通风协同设计"><a href="#通风协同设计" class="headerlink" title="通风协同设计"></a>通风协同设计</h4><table>
+<thead>
+<tr>
+<th align="center">通风协同设计</th>
+<th align="left">时间</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">通风台帐管理</td>
+<td align="left">2021年11月17日</td>
+<td align="center">设备台账、运行台账</td>
+</tr>
+<tr>
+<td align="center">通风设备布置图</td>
+<td align="left">2021年12月2日</td>
+<td align="center">后台管理，前端显示</td>
+</tr>
+<tr>
+<td align="center">通风系统图</td>
+<td align="left">2022年1月18日</td>
+<td align="center">后台管理，前端显示</td>
+</tr>
+<tr>
+<td align="center">通风解算报告</td>
+<td align="left">2021年1月28日</td>
+<td align="center">导出通风解算报告</td>
+</tr>
+</tbody></table>
+<h4 id="供电协同设计"><a href="#供电协同设计" class="headerlink" title="供电协同设计"></a>供电协同设计</h4><table>
+<thead>
+<tr>
+<th align="center">供电协调设计</th>
+<th align="left">时间</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">供电设备布置图</td>
+<td align="left">2021年11月23日</td>
+<td align="center">后台管理，前端显示</td>
+</tr>
+<tr>
+<td align="center">供电系统图</td>
+<td align="left">2021年12月8日</td>
+<td align="center">后台管理，前端显示</td>
+</tr>
+<tr>
+<td align="center">供电台帐管理</td>
+<td align="left">2021年12月23日</td>
+<td align="center">设备台账、运行台账</td>
+</tr>
+<tr>
+<td align="center">供电整定计算报告</td>
+<td align="left">2021年12月23日</td>
+<td align="center">导出供电整定计算报告</td>
+</tr>
+</tbody></table>
+<h4 id="供排水协同设计"><a href="#供排水协同设计" class="headerlink" title="供排水协同设计"></a>供排水协同设计</h4><table>
+<thead>
+<tr>
+<th align="center">供排水协同设计</th>
+<th align="left">时间</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">供排水台帐管理</td>
+<td align="left">2022年1月10日</td>
+<td align="center">设备台账、运行台账</td>
+</tr>
+<tr>
+<td align="center">供排水解算报告</td>
+<td align="left">2022年1月18日</td>
+<td align="center">导出供排水解算报告</td>
+</tr>
+<tr>
+<td align="center">供排水系统图</td>
+<td align="left">2022年1月28日</td>
+<td align="center">后台管理，前端显示</td>
+</tr>
+</tbody></table>
+<h4 id="采掘协同设计"><a href="#采掘协同设计" class="headerlink" title="采掘协同设计"></a>采掘协同设计</h4><table>
+<thead>
+<tr>
+<th align="center">采掘协同设计</th>
+<th align="left">时间</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">采掘系统图</td>
+<td align="left">2022年1月20日</td>
+<td align="center">后台管理，前端显示</td>
+</tr>
+<tr>
+<td align="center">采掘台帐管理</td>
+<td align="left">2022年1月24日</td>
+<td align="center">设备台账、运行台账</td>
+</tr>
+</tbody></table>
+
       
     </div>
 
