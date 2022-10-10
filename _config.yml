@@ -67,6 +67,7 @@ category_map:
       技术选型: technology
       文档: document
       汇报: report
+      演示脚本: script
       软件更新: update
       测试情况: test
       回收站: trash
@@ -74,6 +75,7 @@ tag_map:
       辅助运输: transportation
       三维地测系统: geodetic
       生产技术管理: production_technology_management
+      研发中心: development_center
       清华瑞华CAD: trcad
       CMMI: CMMI
       张影: zhangying
