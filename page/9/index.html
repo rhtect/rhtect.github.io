@@ -127,7 +127,7 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">191</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">192</span></a>
 
   </li>
       <li class="menu-item menu-item-search">
@@ -180,6 +180,293 @@
 
           <div class="content index posts-expand">
             
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/16/Single-hole-histogram/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="WangDong">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="瑞华科技">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/06/16/Single-hole-histogram/" class="post-title-link" itemprop="url">单孔柱状图业务梳理</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-06-16 14:42:53" itemprop="dateCreated datePublished" datetime="2020-06-16T14:42:53+08:00">2020-06-16</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-06-29 17:53:03" itemprop="dateModified" datetime="2020-06-29T17:53:03+08:00">2020-06-29</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/document/" itemprop="url" rel="index"><span itemprop="name">文档</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="单孔柱状图业务逻辑"><a href="#单孔柱状图业务逻辑" class="headerlink" title="单孔柱状图业务逻辑"></a>单孔柱状图业务逻辑</h3><h4 id="基础功能"><a href="#基础功能" class="headerlink" title="基础功能"></a>基础功能</h4><h5 id="生成单孔柱状图"><a href="#生成单孔柱状图" class="headerlink" title="生成单孔柱状图"></a>生成单孔柱状图</h5><ul>
+<li>地址数据库输入柱状图数据</li>
+<li>选择数据库</li>
+<li>选择钻孔名称</li>
+<li>选择钻孔模版（自定义模版需要开发）</li>
+<li><del>选择侧斜资料注记方式</del><blockquote>
+<ul>
+<li><del>按度注记</del></li>
+<li><del>按度分秒注记</del></li>
+</ul>
+</blockquote>
+</li>
+<li>比例尺</li>
+<li>地层注记类型<blockquote>
+<ul>
+<li>地层名称：<code>界</code> <code>系</code> <code>统</code> <code>组</code> <code>段</code> </li>
+<li>地层代码：<code>Kz</code> <code>Q</code> <code>Qh</code> </li>
+<li>地层注记开关</li>
+</ul>
+</blockquote>
+</li>
+<li>煤层注记类型<blockquote>
+<ul>
+<li>煤层名称</li>
+<li>煤层代码</li>
+<li>地层注记开关</li>
+</ul>
+</blockquote>
+</li>
+<li>标志层注记类型<blockquote>
+<ul>
+<li>煤层名称</li>
+<li>煤层代码 </li>
+<li>地层注记开关</li>
+<li>设置需要注记的标志层</li>
+</ul>
+</blockquote>
+</li>
+<li>煤层厚度注记方式<blockquote>
+<ul>
+<li>分层注记：单独记录夹矸厚度,用<code>（）</code>表示<br><img src="F7A29AFE-2B86-45CC-9CF3-A1B9B83C153C.png" alt="单孔柱状图业务梳理"></li>
+<li>累加注记：<br><img src="85AA114F-8B8E-400E-A6EA-8FA3D9F475DE.png" alt="单孔柱状图业务梳理"></li>
+<li>累加分层注记：<br><img src="4ADDC03C-6581-4A44-8C78-6322B7441B5B.png" alt="单孔柱状图业务梳理"></li>
+</ul>
+</blockquote>
+</li>
+<li>测井柱状（控制绘制地层范围<blockquote>
+<ul>
+<li>只绘制煤层(其他岩性以无心状态表示)</li>
+<li>全部绘制</li>
+<li>分层注记</li>
+<li>累加注记</li>
+</ul>
+</blockquote>
+</li>
+<li>柱状分割线<blockquote>
+<ul>
+<li>用于较薄的煤层美观展示</li>
+<li>增加复选框，控制是否绘制</li>
+<li>左右分割线设置水平还是倾斜<br><img src="4DF3B95B-B46E-4569-BC53-96E08144F5A8.png" alt="单孔柱状图业务梳理"><br><img src="B2152112-D8AA-4B0C-85B6-8B5C102F09B1.png" alt="单孔柱状图业务梳理"></li>
+</ul>
+</blockquote>
+</li>
+</ul>
+<blockquote>
+<p><img src="06263C2F-5942-40C6-AD80-7DC052580233.png" alt="单孔柱状图业务梳理"></p>
+</blockquote>
+<ul>
+<li><p>煤层距离不够，可以适当压缩同一煤层距离</p>
+</li>
+<li><p>分层注记设置</p>
+<blockquote>
+<ul>
+<li>设置数值小数点位置：<code>默认2位</code></li>
+<li>设置行高最小值：控制出图是文字大小超出边框范围<br><img src="ED063ABA-8ECC-4CAB-B40B-F8C587CEE444.png" alt="单孔柱状图业务梳理"></li>
+</ul>
+</blockquote>
+</li>
+<li><p>岩性注记间距：内边距</p>
+<blockquote>
+<ul>
+<li>顶底距离</li>
+<li>两侧距离<br><img src="16680B32-B3EC-47F6-A41D-13A50CE6D88F.png" alt="单孔柱状图业务梳理"></li>
+</ul>
+</blockquote>
+</li>
+<li><p>柱状与文字部分对齐</p>
+<blockquote>
+<ul>
+<li>选择<code>柱状与文字部分对齐</code>，将岩性描述部分按比例分割<br><img src="82F9001B-77C5-462C-9F2A-E5C73819CDCA.png" alt="单孔柱状图业务梳理"></li>
+<li>不选择<code>柱状与文字部分对齐</code>,将等分岩性描述的高<br><img src="8A763300-17EE-4F55-8C76-F5755B051E29.png" alt="单孔柱状图业务梳理"></li>
+</ul>
+</blockquote>
+</li>
+<li><p>消耗量曲线连成折线</p>
+<blockquote>
+<p><img src="C3DB789B-1E3F-4083-9BA4-03F3BD92320A.png" alt="单孔柱状图业务梳理"></p>
+</blockquote>
+</li>
+<li><p>标志层列每一行都连线 </p>
+<blockquote>
+<ul>
+<li>每一层都连线或者只在标注的层才连线<br><img src="12527DFC-6D21-4509-9EE8-770C1A2F719D.png" alt="单孔柱状图业务梳理"></li>
+</ul>
+</blockquote>
+</li>
+<li><p>同一煤层是采取率取平均值</p>
+<blockquote>
+<ul>
+<li>含有夹矸的煤层，采取率自动取平均值。</li>
+</ul>
+</blockquote>
+</li>
+<li><p>同一煤层时采长求和</p>
+<blockquote>
+<ul>
+<li>含有夹矸的煤层，采长自动求和。</li>
+</ul>
+</blockquote>
+</li>
+<li><p><u>岩性填充时，填充符号占满整个格子，不协调调整填充</u></p>
+<blockquote>
+<ul>
+<li>勾选此项，填充符号会占满整个格子。<br><img src="D03F38C6-E548-4C38-9B3C-1A9E5CA34C1A.png" alt="单孔柱状图业务梳理"></li>
+<li>不勾选时，系统会保证填充符号的完整。<br><img src="B4145C94-C072-43F0-B4D6-5C9E5E69C8F5.png" alt="单孔柱状图业务梳理"></li>
+</ul>
+</blockquote>
+</li>
+<li><p><u>反序绘制</u></p>
+<blockquote>
+<ul>
+<li>当钻孔孔口在下时，根据实际情况绘制钻孔，累深为从大到小。</li>
+</ul>
+</blockquote>
+</li>
+<li><p><u>封孔按孔径绘制</u></p>
+<blockquote>
+<ul>
+<li>参照孔径绘制钻孔封孔资料。</li>
+</ul>
+</blockquote>
+</li>
+<li><p><u>填充封孔</u></p>
+<blockquote>
+<ul>
+<li>根据封孔材料自动填充封孔。</li>
+</ul>
+</blockquote>
+</li>
+<li><p><u>采用石油类型符号填充钻孔</u></p>
+<blockquote>
+<ul>
+<li>采用石油类型符号填充钻孔岩性。</li>
+</ul>
+</blockquote>
+</li>
+<li><p>选择测井曲线</p>
+<blockquote>
+<ul>
+<li>导入文件：<code>*.Dat</code> <code>*.fld</code></li>
+<li>设置数值上限额<br><img src="814B9C40-4DE2-4567-BE77-19B3A0CFB805.png" alt="单孔柱状图业务梳理"></li>
+</ul>
+</blockquote>
+</li>
+<li><ul>
+<li>对应曲线名称<blockquote>
+<p><img src="AACB585E-6340-4EBD-B342-F0E0A9ACB411.png" alt="单孔柱状图业务梳理"><br><img src="698A747D-AE2D-4FB1-8FA2-E588B5E66467.png" alt="单孔柱状图业务梳理"></p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>查看测井曲线数据</p>
+</li>
+<li><p>查看测井曲线</p>
+<blockquote>
+<p><img src="18333BA4-BF77-45B8-A72C-35406F0CA4C0.png" alt="单孔柱状图业务梳理"></p>
+<ul>
+<li>选择曲线类型，显示所有对应数据</li>
+<li>设置有效值开始和结束位置进行绘制</li>
+<li>设置有效参数范围：<code>深度</code> <code>井径</code> <code>密度</code>等<br><img src="16DFA980-03F9-4615-8174-804B99F5C832.png" alt="单孔柱状图业务梳理"></li>
+<li>点击<code>查看</code>-&gt;列出所有符合条件的数据</li>
+<li>可以导出文本文件（单根曲线对应数值）<br><img src="214C0237-05A7-4E64-845A-FAB3989840C8.png" alt="单孔柱状图业务梳理"></li>
+</ul>
+</blockquote>
+</li>
+<li><p>字段设置</p>
+<blockquote>
+<p>*<code>增加</code> <code>修改</code> 字段的对应<br><img src="ACEF6312-1D9D-4D20-953F-E1BA9807DB36.png" alt="单孔柱状图业务梳理"></p>
+</blockquote>
+</li>
+</ul>
+<blockquote>
+<ul>
+<li>曲线设置</li>
+<li>如果存在测井曲线字段，则必须添加测井曲线文件</li>
+<li>双击曲线修改<code>最大值</code> <code>最小值</code> <code>方向是否反向</code>属性<br><img src="6836DED8-4327-490E-95F3-308CAE82FC16.png" alt="单孔柱状图业务梳理"></li>
+</ul>
+</blockquote>
+<ul>
+<li>缺省值<blockquote>
+<ul>
+<li>设置单孔柱状图缺省值</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+<h5 id="生成测井曲线"><a href="#生成测井曲线" class="headerlink" title="生成测井曲线"></a>生成测井曲线</h5><p><img src="02BC4617-1EF7-4A2B-B449-6E63BB288123.png" alt="单孔柱状图业务梳理"></p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/06/16/Single-hole-histogram/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
       
   
   
@@ -1017,91 +1304,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/10/transportation20200413/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="WangDong">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="瑞华科技">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/04/10/transportation20200413/" class="post-title-link" itemprop="url">辅助运输20200413</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-04-10 17:59:38" itemprop="dateCreated datePublished" datetime="2020-04-10T17:59:38+08:00">2020-04-10</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/plan/" itemprop="url" rel="index"><span itemprop="name">计划任务</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="be2feb17778ec85762f898a50434e2b7d1799db133e36e138e40191875ea5342">69447d42c586aa6c679b0a700793c0bffbe03ec8f32b33bb206f57a9285a29ddcd03ef31b88deb472b08e10ac075ec625bce6dfd35fbe29a11d45fbc1c1eb8a59336485414119fc8de89fe5a05df962b512e687e820635afb3523d97c050ae20274014117c0174125fbe4e013e0538fbb17c269bd57f514ba64a726f9e3570bf3f364d0f3c2f2083727751b74ffcfedbae51ae2009d26984a2b2641843bb05e3f1181282089ce1ee7b066bd6d117c48294d5bdd5ef48f3c2df46a5914c236373bd378010827d5e62569043d9e91114de6a801bc4af90f4c80f6506b16025b07c78c24e63a148982c866f307b175d40fc8e202e49d5906f4fda01bcc9f396940b9268b07f0a534950152e9ae8b4d9837d8df06643540fd7ed9754d5fcfcb1edafb7f958e4555c98fb49f053a1d8e21bfca343e4ff53342206d7d85588a59ac0971c640216289d805cc9f4834ba6ec77aa9f22e7dbc0351d1e9fb21d5088b485027ca252aeced5859f8729ede410c970b9704ad20268c3118476ef53c86d185af62ddd993d3fbf25e8842be876191a9d2f6a6c89b97ad9ca1da5f99a1c86bc1b3034b45d1b31f9a454ecc18e53226a7e3c651676b651512b5fe7ce3d909b04e1a517ffc3bfebbd6ef0aa897efd261c155eaf2cf7d0c5e35bfb881bcff2156ed567b45013dadfaa077cfee4cec659c9c010504b19e1084bd5bf32d75f382524ef15f48a4044354f9705f4c46fc46679cbe45d00149cf0b58aae17db39250b9ec82d13c91a89365130b68e5e61068a329d1113319e287be350823979c58dc734646c1f19a52a62eb1b410070c04341dab993317e67dba070c14c39c3ec6fe0d79b90ea192980d2032b843d29c7133f21414c3d4e7429c3951fff22efc2d2d8c06715c688f9d372adcf6d0fed02449b7410d64aaaefa6b91358baae9bec9d97c37e9e7dbdc1945b07dd619469a74221173a1c00022934f26ca15d16cf4485961f99dffbc275e094274a346608257a9f8d3eb6fb11a97c813cddc3df75474ceebc6dbbb250b5ca0ee9446c1595a5cae49b26b22520e36c684dfb698b9b31f873a9d0c191a86684fc0ae91f0a53783cc6f7be6c0a0c97b5ce4e5d847599f682b4a63a7a13420af75b2f1a8e0c3bb11a55d051ce226573c3b4dcfc8afd7861415b2da5b51bc2ff4828f68eae7c062ef33ea56270c2ffda10989836e5374d334b01a856a1abb37f66e3765d5d15aa395d3602c3cb9eb6e2411823f85ce6c0132281e7ae84dd6000b940ee77089ada5dabe2952dcf94a44e25f05a8dc97027bcae589a20b96bd21192fed8fbea1762b67accb2f91729ac3347b4732cc03d50af99b72d1c2c346adc0023087f85264b5af57d1178075eb949507c8303954d1efe8040a5e96987fc2413e43d8cfba9aa86ec51b454558c74aeb2d31d4b1aaa0417c3dfa25911f6dd27650ef423f1e9ae562957ac7985f0973dd29ad45e40647e25f2ac0cbd29630e8699576e3cb9fb68b4b0c5ddeaf7695e03b36677d100c73a8a7c9cf33aaadcfcdfa168d224b2dce40db30cb1cc1f6c569826c9d424f507ed5c9967feafeff7be9af7a6f8aa748caf5656765cac3ad7bbc31959d792d6f1b9c3b4a9748d156ed90a5fb935965c81392e1c81b0759e836a8949f319623fec17bda1e35be51b2e235950e7569b947b55fa396c245f4bba810bad1e4af3a74037b98ad905bfee9c3791ff569aebe5ea8a65ec9e12df80a4096b6e7ce9abc0454ff46bd6b27a8be7d6aaf99089c3a9c08cc2075b99cd39e68f4a737a0e6252b952a15cf1c8ab87327fef42c28db77fb27ad911119549ab50961c8460b38f64c18031dcc1d40ad7ecc7abf5f2ddfe0f017385270e371b603771956518f1ac9263b5aa722b2361874b242041340b0e070c9090fdf295b58825cf655d1efa92b53697670a653c274825975f621ec4861962b6a3fb66c4fa2a139560d6d51d822f687f48b76f2ee7232a5b64fe4fcc58a9cbc885cc6418b26e5861622d6f2c89690813e4ca8013b2fc4f3eaca845d64d1345f9d041f064626627eb3f04dfad585f2564393bc1491f48eefb7c58d59cb1dcb8c5d18752af877c022d429dca895706afe5a0212531c46865f206f5bd1ff6029971c2dbfcf17f0784ed517a2bb645f80f7d28dc373b57e31e0ea31105ebcc572d96eb9c0e8480b31c6b9c3b84fc79c77a97c0ec42a6fdf80aaf505a63f666bcca90417a848d87a0e7aeb723d04b922624ad93f49ddb9a5f01c5448cbfd92441a1526c1a6dc3b6d182c301684bf5ab3bf36c86cbb342068df69e2ea5f42e9b739637b28e5dea3d0760d67214dbc36bfed4ef958f2881d8bf81e220f19cb737a6909d256d88b651fc634894e25fee8089fab8240ea33a18d409588237cd51818b18a258a48125ff903b2c2a1901e3b8285bf29468f04a963cfe0d10093881222c2d9322188d5f1f4afe4b7d73dcc1a6953c16aa9a33016a583341fe1b4bc58a5272011beaeb13e80e421fec30622ae994425856006c610c97fb0a8fd726278490dee865b626c074c331a397130a6c120804f07cfa56b50637980e134fd0a6fe8cff3efeeff8a77ddd3929fa4bdef3c4dd81d03b81995dddb1bd5155db6ad69b86051dd6140574cc84711431d913615d28bc3c98601234d33f45c9e493893547f627b372d76b213ee13954e0d5a7a0c7c8cb65455584632e25dffbdabf8266ee89474ed1126f00154d452c95703636c288b5c1e9b6bdb2094587b72a11c0df9d9db8e6a579a648a43b7c2a4d5969903d356c57e2bffc767e0a2eec5b0eefd4a6e6e9ff5d195c6b040946bcf85627511e601b416db419664b5431cd0a69de20f671b3d8b2cff1754a6a47db95f00943a3ebe32b0080e8cd232d9f55e07fb6ac44fea23050fd555cd4b8a6f84264feb727947df2ccf0a5586cc050fe98c2c393b5c62c47b94fc5d5b4e411fddaa2ef23adb4275df36fb4a908e8eb64d4c48271d88a867ca17fd0194b128dcc396f2fc465b5b2a7bbbd4280ff4b6fc3810a89530a75fec1be51127236fb9631090a90726e1fa8b0de60e83394662e9f857171e5c090d9d711d7620ee0b983687f10b54c64cf4357613cf28ea5eba18823e5f9385405f76331f7bed98542afd26adececae584d33658c00d0ce60822bc1cf0d050e7ef282c15331b6a8f78c640d3981e5b3a6111dd46e81dc524dd32a75e5cf99d75db921f6ff76ae15ee7b3cd479a09f5bc80dc8b55765748c7342bc0da955607150fd385850e0dab5cbc46d7c75cc7e64867a7c0cdf238a5adb755e60db0ab076ed9c992f68395b05ed1302e23607165ecc537a7cd5a250c07fae492879c83d939b210d219f3efadc4a0e8a5f076f2cdf60b0febcfdeddbc0b8640b03addcc153dbf14d538f003c57314dbf21863d2bb79d6296387aa161caf66ea4cfb6bb18263ac59abbe9dd8bce7bdf1deb3d6f40846c0595b350c61eb667e25df318b892814e26302649e377b31564830003d48e56adb99928cb6b85affbba6536e25463ce5ea30a5c4e4e4d5d4fa73ca8200f09e549056c0f3b128524098b5154de6a24f27f85d4d9c73551799b0437bdfb468129c5bf546b15e2ebad246b1eda9d6671ea018b43e9069676e57339b942ffd7748b489fe56b53cdac9d08cd96e47d20c950318bcfa76b722b7754cc1bec9925161b29f1a938c3df99ee4eba80fdf6130465b7bbd86b361156d6bda02a5d152e775b6672665063771de3de494fdd2d8763561da0cada80eeb1be4afdee7601d907d289280eb5e01780116fed866409492492faf1380b29ee34957ad08fe95e535c6aec46597e9157ebd581676c1204205210b63e7b2a3053461389e9d01fa4ccf425cee6069daf0b57a092af01845da39edd0edc74d6647174214aaf169a48e4aaffb73a7adf546dc10584f269a3af7b38d20aee876073d285633451db094752f155dec71f12d04f313ae34766d525a76884491769cad1b379b58b2c4de2a5dd39f2a61b720895b2c37b34013f34586b4e61407748c48ed9d63c4c431851b388d8dcca447928920522bb3c48a4061173c76d637b8e8b2991f519f35c292d43ec5cca681f5ac0c90c8595323ff55b08de4449077a875a5360530916424421c9bf12e9b21b3f74c4f43c9560113a97d3ca90109ca9ca0243660ee5444e261998269765ea727fdd488c78bbb20966a31fb29acbb9683683fa9bbd65b3983a849d6215f729df5d23f32b65b224df59e3f7df477ab072e6f9822cdfa39bdde620a3a962a0b9af8c352dc78f82e9f49335267d480e751cd487a76e507dbcf6512e8b66ee2e2eca689d907c9f7f47fa5df42da3ef8e5427532e09c056254025217707076e64fa60974c9bee42d3dbe7a96bd54c8061dbbd439143836137e4787ded0dcbf3069f6f9aa5a98e611854cef446d5ec2f6e64057da5e03e19942d590696c5aae8c6122e79c96ed1ebb7ce675856fc940bd6b508ac5eddbd346a8c60d17b8d8cde5ae27d2aec42efdf954033fef1e339de56c20789709f1f204e418d0077dc7363ac260680f9518d6f6cb76c617cd771ed38920d56a2b159a85b11c0104c7f7559e74474cf1dd625ea147987e798ab4586fa39f24a012dc2c6f1b6f0320ed7f63f66d284952f9990e61f4220d2447f8c74e7d9830897037112a2787a3bd0369b52f0ca708f860f5a57e3b868ba362df0f06f50f8b7b75d89672ee08e5bd808df09d7c1c7eb39386c1242d4893f52818f981d1df5675d1be8f10411cf20467ba487f7fab45d0d9d9d2ec1adb61ac96dd43ccb89db4fc4b3a5a10e23c9940b773748fc6c0292407106eef0df4df62d8610fdf2df911a186df022857000af399f7ecfbc1aa39d7d21d83b2defe77b23861177b1312c6d1c0bd1456fd73a9963ebed620f7531b0b87c06694cd76d69ed85b1405e062e633047ae8feee4dedd99f54abe03b649cbc5ec08dcea4942463959da8f2d797ced1dec668e1400ce24dde337ad64898cbcce8fe1f2e3ce153a5f800092dc9b894be3c831596d7025083d668622d62c4fbe3afa8416cad0018eb1d2e2bee057901af5c42595f60e5493b5494552a3f5c4d462c2ad153975784f3e704a9a959876e787e227b80cf9121f3d60e1e03c604e2b83992d023a5bfce71ae49d44bdf562ec80c6c564b19c801dd4c10554824a632c6e560ab9651359c7a4b1e7723de2d05c8470f583bd399d0a1cdb8769b7766f89d7e4809f82d7ffa5867e96fb2ad4353b8ed5f894ff7f3</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">您好, 这里需要密码.</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/04/10/transportation20200413/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1171,7 +1373,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">191</span>
+          <span class="site-state-item-count">192</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -1211,7 +1413,7 @@
 <div class="copyright">
   
   &copy; 
-  <span itemprop="copyrightYear">2022</span>
+  <span itemprop="copyrightYear">2023</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>

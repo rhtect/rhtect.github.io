@@ -127,7 +127,7 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">191</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">192</span></a>
 
   </li>
       <li class="menu-item menu-item-search">
@@ -180,6 +180,140 @@
 
           <div class="content index posts-expand">
             
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/20/wendang20190720/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="WangDong">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="瑞华科技">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/07/20/wendang20190720/" class="post-title-link" itemprop="url">辅助运输因系统演示文档 v1.0</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-07-20 19:46:36" itemprop="dateCreated datePublished" datetime="2019-07-20T19:46:36+08:00">2019-07-20</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-11-30 21:56:38" itemprop="dateModified" datetime="2019-11-30T21:56:38+08:00">2019-11-30</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/document/" itemprop="url" rel="index"><span itemprop="name">文档</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h3><h4 id="服务端"><a href="#服务端" class="headerlink" title="服务端"></a>服务端</h4><ul>
+<li><strong>外网服务</strong><blockquote>
+<p>外网IP：<a target="_blank" rel="noopener" href="http://218.240.142.222:8085/">http://218.240.142.222:8085</a><br>需要使用<code>Google Chrome浏览器</code>访问</p>
+</blockquote>
+</li>
+<li><strong>局域网服务</strong><blockquote>
+<p>搭建NodeJS服务<br>运行视频服务<code>ProjectRTC.zip</code><br>运行导航模拟轨迹服务<code>Debug.7z</code><br><img src="Service.jpg"></p>
+</blockquote>
+</li>
+</ul>
+<h4 id="客户端"><a href="#客户端" class="headerlink" title="客户端"></a>客户端</h4><ul>
+<li><strong>手机-用车申请客户端</strong><blockquote>
+<p><code>MobileMine_BJ.apk.1.zip</code><br>如果不需要掩饰调度系统可以不安装</p>
+</blockquote>
+</li>
+<li><strong>手机-辅助运输客户端</strong><blockquote>
+<p><code>MobileMine_ZMJ.apk.1.zip</code></p>
+</blockquote>
+</li>
+<li><strong>平板-煤矿控制管理客户端</strong><blockquote>
+<p><code>ZmjMineCenter.apk.1.zip</code><br>手机目录下（和Download平级）下面依次 /MineControl/arcgis/<br><code>Layers.zip</code>解压后复制到新建目录<br><img src="APP.jpg"></p>
+</blockquote>
+</li>
+</ul>
+<h3 id="操作手册"><a href="#操作手册" class="headerlink" title="操作手册"></a>操作手册</h3><h4 id="车载终端导航功能"><a href="#车载终端导航功能" class="headerlink" title="车载终端导航功能"></a>车载终端导航功能</h4><ul>
+<li><p><strong>辅助运输客户端</strong></p>
+<blockquote>
+<p>由<code>用车单位</code>使用<code>辅助运输客户端</code>提交用车申请<br>登录系统的用户名：<code>ZC1</code>，密码：<code>123456</code><br>点击<code>用车申请</code>，创建新的订单<br>填写<code>用车申请</code>时需要注意。发车地点：<code>副井口</code>，到达地点：<code>干部澡堂</code><br>其他信息可以随便填写<br><img src="Ycsq.jpg"></p>
+</blockquote>
+</li>
+<li><p><strong>煤矿控制管理客户端</strong></p>
+<blockquote>
+<p>打开<code>煤矿控制管理客户端</code>，登录后看到地图界面说明<code>Layers</code>加载正确<br>设置<code>视频语音</code>通话的<code>IP地址</code>和<code>端口号</code>按照图释<font color="red">红色方框</font>标出的地方，依次点击操作<br><img src="Chezai.jpg"></p>
+</blockquote>
+</li>
+<li><p><strong>导航模拟轨迹服务</strong></p>
+<blockquote>
+<p>打开<font color="red">红色方框</font>标出的<code>UpdTest.exe</code>文件，运行<code>导航模拟轨迹服务</code><br><font color="orange">黄色方框</font>标出的时在地图上显示的类型：<code>人像图标</code>或者<code>车辆图标</code><br><font color="blue">篮色方框</font>标出的时<code>端口号</code>一定要设为<font color="blue"><strong>14000</strong></font><br><img src="Debug.jpg"></p>
+</blockquote>
+</li>
+<li><p><strong>语音通话</strong></p>
+<blockquote>
+<p>操作演示之前，先确定<code>煤矿控制管理客户端</code>和<code>ProjectRTC.zip</code>在同一个局域网内<br>运行视频服务<code>ProjectRTC.zip</code>（无界面显示，如果已经运行可以忽略）<br>打开<code>Google Chrome浏览器</code>，访问 <a target="_blank" rel="noopener" href="http://localhost:3000/">http://localhost:3000</a><br>点击<font color="red">红色方框</font>标出的图标进行<code>蓝牙连接</code><br>点击<font color="blue">蓝色方框</font>标出的图标进行<code>客户端视频通话</code><br><img src="Connect.jpg"><br>点击<font color="green">绿色方框</font>标出的图标进行<code>服务端视频通话</code><br>点击<font color="red">红色方框</font>标出的图标进行刷新（如果没有<code>CALL</code>按钮才需要点击）<br><img src="Video.jpg"></p>
+</blockquote>
+</li>
+</ul>
+<ul>
+<li><strong>演示流程</strong><blockquote>
+<p>操作演示之前，先确定<code>煤矿控制管理客户端</code>和<code>Debug.7z</code>在同一个局域网内</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">用车单位通过“辅助运输客户端”提交用车申请</span><br><span class="line">“煤矿控制管理客户端”会收到最新的用车申请</span><br><span class="line">司机点击“出车”，进入地图导航模式</span><br><span class="line">到达目的地后，由司机点击“完成”，本次任务执行结束</span><br></pre></td></tr></table></figure>
+<img src="Navigation.jpg"></li>
+</ul>
+<h4 id="辅助运输调度功能"><a href="#辅助运输调度功能" class="headerlink" title="辅助运输调度功能"></a>辅助运输调度功能</h4>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/07/20/wendang20190720/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
       
   
   
@@ -2070,256 +2204,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/28/zongjie20190630/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="WangDong">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="瑞华科技">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/06/28/zongjie20190630/" class="post-title-link" itemprop="url">辅助运输周总结</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-06-28 16:20:52" itemprop="dateCreated datePublished" datetime="2019-06-28T16:20:52+08:00">2019-06-28</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-11-30 21:56:38" itemprop="dateModified" datetime="2019-11-30T21:56:38+08:00">2019-11-30</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/summary/" itemprop="url" rel="index"><span itemprop="name">总结</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h4 id="统计数据"><a href="#统计数据" class="headerlink" title="统计数据"></a>统计数据</h4><p><font color="red">红色</font>表示执行优秀，<font color="green">绿色</font>表示执行欠佳， <font color="orange">橙色</font>表示数据异常</p>
-<table>
-<thead>
-<tr>
-<th align="left">生产车队</th>
-<th align="center">6月21日 李永</th>
-<th align="center"><font color="red">6月22日 杨小强 </font></th>
-<th align="center"><font color="red">6月23日 杨振中</font></th>
-<th align="center"><font color="red">6月24日 李永</font></th>
-<th align="center"><font color="red">6月25日 杨小强</font></th>
-<th align="center">6月26日 杨振中</th>
-<th align="center">6月27日 李永</th>
-<th align="center">周记</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">用车申请总数</td>
-<td align="center">90</td>
-<td align="center">98</td>
-<td align="center">83</td>
-<td align="center">93</td>
-<td align="center">98</td>
-<td align="center">94</td>
-<td align="center">101</td>
-<td align="center">657</td>
-</tr>
-<tr>
-<td align="left">车队驳回数量</td>
-<td align="center"><font color="orange"><strong>0</strong></font></td>
-<td align="center">11</td>
-<td align="center">11</td>
-<td align="center">8</td>
-<td align="center">7</td>
-<td align="center">12</td>
-<td align="center">3</td>
-<td align="center">52</td>
-</tr>
-<tr>
-<td align="left">车队未指派数量</td>
-<td align="center">0</td>
-<td align="center">2</td>
-<td align="center">6</td>
-<td align="center">0</td>
-<td align="center">10</td>
-<td align="center"><font color="green"><strong>26</strong></font></td>
-<td align="center"><font color="green"><strong>19</strong></font></td>
-<td align="center"><font color="green"><strong>63</strong></font></td>
-</tr>
-<tr>
-<td align="left">早于用车时间数量</td>
-<td align="center">29</td>
-<td align="center">16</td>
-<td align="center">5</td>
-<td align="center">25</td>
-<td align="center">37</td>
-<td align="center">14</td>
-<td align="center">39</td>
-<td align="center">165</td>
-</tr>
-<tr>
-<td align="left">早于用车时间30分钟数量</td>
-<td align="center">25</td>
-<td align="center">15</td>
-<td align="center">4</td>
-<td align="center">19</td>
-<td align="center">19</td>
-<td align="center">7</td>
-<td align="center">35</td>
-<td align="center">124</td>
-</tr>
-</tbody></table>
-<table>
-<thead>
-<tr>
-<th align="left">威龙车队</th>
-<th align="center">6月21日</th>
-<th align="center"><font color="red">6月22日</font></th>
-<th align="center"><font color="red">6月23日</font></th>
-<th align="center">6月24日</th>
-<th align="center"><font color="red">6月25日</font></th>
-<th align="center">6月26日</th>
-<th align="center">6月27日</th>
-<th align="center">周记</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">已派车数量</td>
-<td align="center">30</td>
-<td align="center">44</td>
-<td align="center">42</td>
-<td align="center">43</td>
-<td align="center">51</td>
-<td align="center">32</td>
-<td align="center">46</td>
-<td align="center">288</td>
-</tr>
-<tr>
-<td align="left">未派车数量</td>
-<td align="center"><font color="green"><strong>12</strong></font></td>
-<td align="center">0</td>
-<td align="center">0</td>
-<td align="center">5</td>
-<td align="center">0</td>
-<td align="center">5</td>
-<td align="center">6</td>
-<td align="center">28</td>
-</tr>
-<tr>
-<td align="left">无效派车数量</td>
-<td align="center">0</td>
-<td align="center">0</td>
-<td align="center">0</td>
-<td align="center">0</td>
-<td align="center">0</td>
-<td align="center">0</td>
-<td align="center">0</td>
-<td align="center">0</td>
-</tr>
-</tbody></table>
-<table>
-<thead>
-<tr>
-<th align="left">塔通车队</th>
-<th align="center">6月21日</th>
-<th align="center">6月22日</th>
-<th align="center">6月23日</th>
-<th align="center"><font color="red">6月24日</font></th>
-<th align="center"><font color="red">6月25日</font></th>
-<th align="center"><font color="red">6月26日</font></th>
-<th align="center">6月27日</th>
-<th align="center">周记</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">已派车数量</td>
-<td align="center">22</td>
-<td align="center">24</td>
-<td align="center">16</td>
-<td align="center">39</td>
-<td align="center">24</td>
-<td align="center">16</td>
-<td align="center">15</td>
-<td align="center">141</td>
-</tr>
-<tr>
-<td align="left">未派车数量</td>
-<td align="center"><font color="green"><strong>11</strong></font></td>
-<td align="center">4</td>
-<td align="center">6</td>
-<td align="center">0</td>
-<td align="center">0</td>
-<td align="center">0</td>
-<td align="center">8</td>
-<td align="center">29</td>
-</tr>
-<tr>
-<td align="left">无效派车数量</td>
-<td align="center">2</td>
-<td align="center">0</td>
-<td align="center">0</td>
-<td align="center">0</td>
-<td align="center">2</td>
-<td align="center">0</td>
-<td align="center">0</td>
-<td align="center">4</td>
-</tr>
-</tbody></table>
-<h4 id="本周总结"><a href="#本周总结" class="headerlink" title="本周总结"></a>本周总结</h4><p>本周与上周对比，派车完成度有了很大的提高，**<code>杨小强</code>**组的成员完成度最好。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">车队调度指派车队的完整天数为4天，涵盖了每一位调度员，使用上没什么问题了。</span><br><span class="line">车队调度6月26、27号两天积压用车申请较多</span><br><span class="line">21号整体派车完整性较差</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h4 id="后续工作"><a href="#后续工作" class="headerlink" title="后续工作"></a>后续工作</h4><p>后续工作的重点放在派车的实时性上，最终可以准确地判断出车辆任务完成情况：</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2019/06/28/zongjie20190630/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -2389,7 +2273,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">191</span>
+          <span class="site-state-item-count">192</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -2429,7 +2313,7 @@
 <div class="copyright">
   
   &copy; 
-  <span itemprop="copyrightYear">2022</span>
+  <span itemprop="copyrightYear">2023</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
